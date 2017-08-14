@@ -1,0 +1,84 @@
+\hypertarget{classORBextractor}{}\section{O\+R\+Bextractor Class Reference}
+\label{classORBextractor}\index{O\+R\+Bextractor@{O\+R\+Bextractor}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries H\+A\+R\+R\+I\+S\+\_\+\+S\+C\+O\+RE} =0, 
+{\bfseries F\+A\+S\+T\+\_\+\+S\+C\+O\+RE} =1
+ \}\hypertarget{classORBextractor_a7409479401f9399a61a455724388eb7b}{}\label{classORBextractor_a7409479401f9399a61a455724388eb7b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries O\+R\+Bextractor} (int nfeatures=1000, double scale\+Factor=1.\+2, int nlevels=8, int score\+Type=F\+A\+S\+T\+\_\+\+S\+C\+O\+RE, int fast\+Th=20)\hypertarget{classORBextractor_a67f3aa9855d4b106ee1d04f9a7853b61}{}\label{classORBextractor_a67f3aa9855d4b106ee1d04f9a7853b61}
+
+\item 
+void {\bfseries operator()} (cv\+::\+Input\+Array image, cv\+::\+Input\+Array mask, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints, cv\+::\+Output\+Array descriptors)\hypertarget{classORBextractor_a392a8432077d810625f5ae3080e69819}{}\label{classORBextractor_a392a8432077d810625f5ae3080e69819}
+
+\item 
+int {\bfseries Get\+Levels} ()\hypertarget{classORBextractor_ad8baed9f5385ae9c8403442eaa8967e5}{}\label{classORBextractor_ad8baed9f5385ae9c8403442eaa8967e5}
+
+\item 
+double {\bfseries Get\+Scale\+Factor} ()\hypertarget{classORBextractor_af3b9f80e41f9209dd9ff29dae3bd9d9d}{}\label{classORBextractor_af3b9f80e41f9209dd9ff29dae3bd9d9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Compute\+Pyramid} (cv\+::\+Mat image, cv\+::\+Mat Mask=cv\+::\+Mat())\hypertarget{classORBextractor_a737c03fe3df8552491f6bfe2d7abcc55}{}\label{classORBextractor_a737c03fe3df8552491f6bfe2d7abcc55}
+
+\item 
+void {\bfseries Compute\+Key\+Points\+Oct\+Tree} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Key\+Point $>$ $>$ \&all\+Keypoints)\hypertarget{classORBextractor_a2d24cca6d6ea431e7e300536331a5157}{}\label{classORBextractor_a2d24cca6d6ea431e7e300536331a5157}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries Distribute\+Oct\+Tree} (const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+To\+Distribute\+Keys, const int \&minX, const int \&maxX, const int \&minY, const int \&maxY, const int \&n\+Features, const int \&level)\hypertarget{classORBextractor_a9826f626998e1fff645a2d336c6bfb0d}{}\label{classORBextractor_a9826f626998e1fff645a2d336c6bfb0d}
+
+\item 
+void {\bfseries Compute\+Key\+Points\+Old} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Key\+Point $>$ $>$ \&all\+Keypoints)\hypertarget{classORBextractor_aaf4575f9355b939a07090976946bc97f}{}\label{classORBextractor_aaf4575f9355b939a07090976946bc97f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Point $>$ {\bfseries pattern}\hypertarget{classORBextractor_a97a32d109f922387c28f5b1935248143}{}\label{classORBextractor_a97a32d109f922387c28f5b1935248143}
+
+\item 
+int {\bfseries nfeatures}\hypertarget{classORBextractor_af3b97911474d38b1940b86fbe98b1950}{}\label{classORBextractor_af3b97911474d38b1940b86fbe98b1950}
+
+\item 
+double {\bfseries scale\+Factor}\hypertarget{classORBextractor_a281a6a438940caf9f0c2366a9103ca3d}{}\label{classORBextractor_a281a6a438940caf9f0c2366a9103ca3d}
+
+\item 
+int {\bfseries nlevels}\hypertarget{classORBextractor_a443288adfa27cb108a89af883477914e}{}\label{classORBextractor_a443288adfa27cb108a89af883477914e}
+
+\item 
+int {\bfseries score\+Type}\hypertarget{classORBextractor_a2e5bc2b746121ded921a626888dd2f62}{}\label{classORBextractor_a2e5bc2b746121ded921a626888dd2f62}
+
+\item 
+int {\bfseries fast\+Th}\hypertarget{classORBextractor_aa9872940b82997452bbdcf9142631e04}{}\label{classORBextractor_aa9872940b82997452bbdcf9142631e04}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Features\+Per\+Level}\hypertarget{classORBextractor_ac3d3f1a3b6e33fd049bd5f3e72a9acc1}{}\label{classORBextractor_ac3d3f1a3b6e33fd049bd5f3e72a9acc1}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries umax}\hypertarget{classORBextractor_a74ae6eae25b93a2a9476aedbc07816c0}{}\label{classORBextractor_a74ae6eae25b93a2a9476aedbc07816c0}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Scale\+Factor}\hypertarget{classORBextractor_a8ece9ed69908f8b10346fb65e3dfe174}{}\label{classORBextractor_a8ece9ed69908f8b10346fb65e3dfe174}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Inv\+Scale\+Factor}\hypertarget{classORBextractor_a78a489192a93bbc99fc9c30d96311283}{}\label{classORBextractor_a78a489192a93bbc99fc9c30d96311283}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Image\+Pyramid}\hypertarget{classORBextractor_a764565729bfc43be8adda3283ce57b8e}{}\label{classORBextractor_a764565729bfc43be8adda3283ce57b8e}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Mask\+Pyramid}\hypertarget{classORBextractor_ab14e37e8b44afc9f480da3f14dcd0da9}{}\label{classORBextractor_ab14e37e8b44afc9f480da3f14dcd0da9}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+O\+R\+Bextractor.\+h\end{DoxyCompactItemize}

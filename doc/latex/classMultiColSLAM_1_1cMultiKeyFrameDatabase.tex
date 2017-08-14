@@ -1,0 +1,40 @@
+\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Multi\+Key\+Frame\+Database Class Reference}
+\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Key\+Frame\+Database@{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Key\+Frame\+Database}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Multi\+Key\+Frame\+Database} (const O\+R\+B\+Vocabulary \&voc)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ab29a6160bdeb966b09d0be7d9218c246}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ab29a6160bdeb966b09d0be7d9218c246}
+
+\item 
+void {\bfseries add} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a38bd74684f7305328aeed1746114a552}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a38bd74684f7305328aeed1746114a552}
+
+\item 
+void {\bfseries erase} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ac0e6d14d82b485944b82a88323df936b}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ac0e6d14d82b485944b82a88323df936b}
+
+\item 
+void {\bfseries clear} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a87a52c69730c5447f0501b3d138dac03}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a87a52c69730c5447f0501b3d138dac03}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Detect\+Loop\+Candidates} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, double min\+Score)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_aaad03ebcc61793922762f23362b841a2}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_aaad03ebcc61793922762f23362b841a2}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Detect\+Relocalisation\+Candidates} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} $\ast$F)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ade0a91aa50a9ff43df3c17ff99496f7b}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_ade0a91aa50a9ff43df3c17ff99496f7b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const O\+R\+B\+Vocabulary $\ast$ {\bfseries mp\+Voc}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_abdcfff8ce1d6fe5595451b7718817468}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_abdcfff8ce1d6fe5595451b7718817468}
+
+\item 
+std\+::vector$<$ std\+::list$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ $>$ {\bfseries mv\+Inverted\+File}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a70e605cb1144ad5811ef6c952013de88}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a70e605cb1144ad5811ef6c952013de88}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a69a4cb117272f1f1ff244b3b0a4c5c61}{}\label{classMultiColSLAM_1_1cMultiKeyFrameDatabase_a69a4cb117272f1f1ff244b3b0a4c5c61}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Multi\+Key\+Frame\+Database.\+h\end{DoxyCompactItemize}

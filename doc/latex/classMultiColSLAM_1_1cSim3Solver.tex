@@ -1,0 +1,181 @@
+\hypertarget{classMultiColSLAM_1_1cSim3Solver}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Sim3\+Solver Class Reference}
+\label{classMultiColSLAM_1_1cSim3Solver}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Sim3\+Solver@{Multi\+Col\+S\+L\+A\+M\+::c\+Sim3\+Solver}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Sim3\+Solver} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Matched12, \hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} $\ast$cam\+Sys)\hypertarget{classMultiColSLAM_1_1cSim3Solver_a9e6faed89d1b53c020821c9a52b6010a}{}\label{classMultiColSLAM_1_1cSim3Solver_a9e6faed89d1b53c020821c9a52b6010a}
+
+\item 
+void {\bfseries Set\+Ransac\+Parameters} (double probability=0.\+99, int min\+Inliers=6, int max\+Iterations=300)\hypertarget{classMultiColSLAM_1_1cSim3Solver_a70f372cb7b83033006f2fe338fde14a1}{}\label{classMultiColSLAM_1_1cSim3Solver_a70f372cb7b83033006f2fe338fde14a1}
+
+\item 
+bool {\bfseries find} (std\+::vector$<$ bool $>$ \&vb\+Inliers12, int \&n\+Inliers, cv\+::\+Matx44d \&result)\hypertarget{classMultiColSLAM_1_1cSim3Solver_a6196d1e11afdcaa287d3ab2ee6ab1bc6}{}\label{classMultiColSLAM_1_1cSim3Solver_a6196d1e11afdcaa287d3ab2ee6ab1bc6}
+
+\item 
+bool {\bfseries iterate} (int n\+Iterations, bool \&b\+No\+More, std\+::vector$<$ bool $>$ \&vb\+Inliers, int \&n\+Inliers, cv\+::\+Matx44d \&result)\hypertarget{classMultiColSLAM_1_1cSim3Solver_a8867796afb511f6fe5333e78cb793697}{}\label{classMultiColSLAM_1_1cSim3Solver_a8867796afb511f6fe5333e78cb793697}
+
+\item 
+cv\+::\+Matx33d {\bfseries Get\+Estimated\+Rotation} ()\hypertarget{classMultiColSLAM_1_1cSim3Solver_a17175d1d8cbe7cc657d1684dc5502a90}{}\label{classMultiColSLAM_1_1cSim3Solver_a17175d1d8cbe7cc657d1684dc5502a90}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+Estimated\+Translation} ()\hypertarget{classMultiColSLAM_1_1cSim3Solver_afa067f4aa52ebd82ef79aa530b9bba4a}{}\label{classMultiColSLAM_1_1cSim3Solver_afa067f4aa52ebd82ef79aa530b9bba4a}
+
+\item 
+double {\bfseries Get\+Estimated\+Scale} ()\hypertarget{classMultiColSLAM_1_1cSim3Solver_ac0012ab08bc83267f8fdc7ed3925be9c}{}\label{classMultiColSLAM_1_1cSim3Solver_ac0012ab08bc83267f8fdc7ed3925be9c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Refine} ()\hypertarget{classMultiColSLAM_1_1cSim3Solver_aca681741e68a5a4ee4484cba712abbbd}{}\label{classMultiColSLAM_1_1cSim3Solver_aca681741e68a5a4ee4484cba712abbbd}
+
+\item 
+void {\bfseries centroid} (cv\+::\+Matx33d \&P, cv\+::\+Matx33d \&Pr, cv\+::\+Vec3d \&C)\hypertarget{classMultiColSLAM_1_1cSim3Solver_afa6b91282bbabb212135aad933021a1a}{}\label{classMultiColSLAM_1_1cSim3Solver_afa6b91282bbabb212135aad933021a1a}
+
+\item 
+void {\bfseries computeT} (cv\+::\+Matx33d \&P1, cv\+::\+Matx33d \&P2)\hypertarget{classMultiColSLAM_1_1cSim3Solver_a61b527a40ac6bdcf15c121885884c3b1}{}\label{classMultiColSLAM_1_1cSim3Solver_a61b527a40ac6bdcf15c121885884c3b1}
+
+\item 
+void {\bfseries Check\+Inliers} ()\hypertarget{classMultiColSLAM_1_1cSim3Solver_a41285a2ab1f57cf2dbded0fc69a55375}{}\label{classMultiColSLAM_1_1cSim3Solver_a41285a2ab1f57cf2dbded0fc69a55375}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+K\+F1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a7f989ed2f8a9841b0bc8663896119c5c}{}\label{classMultiColSLAM_1_1cSim3Solver_a7f989ed2f8a9841b0bc8663896119c5c}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+K\+F2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_ac30b1199214e9485a3635638f367351a}{}\label{classMultiColSLAM_1_1cSim3Solver_ac30b1199214e9485a3635638f367351a}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries mv\+X3\+Dc1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a3f609361b56f44b7420dd2de60ad7cc7}{}\label{classMultiColSLAM_1_1cSim3Solver_a3f609361b56f44b7420dd2de60ad7cc7}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries mv\+X3\+Dc2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a05f8d6639a704d952e85a9c0a3d9008d}{}\label{classMultiColSLAM_1_1cSim3Solver_a05f8d6639a704d952e85a9c0a3d9008d}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Map\+Points1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_ad4a5495af1991b455b4569bd72035453}{}\label{classMultiColSLAM_1_1cSim3Solver_ad4a5495af1991b455b4569bd72035453}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Map\+Points2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a9c3b7afac61ea6e3897e33a05a468e88}{}\label{classMultiColSLAM_1_1cSim3Solver_a9c3b7afac61ea6e3897e33a05a468e88}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Matches12}\hypertarget{classMultiColSLAM_1_1cSim3Solver_af120b88578ac6bd74c44f98bc5d85f8d}{}\label{classMultiColSLAM_1_1cSim3Solver_af120b88578ac6bd74c44f98bc5d85f8d}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mvn\+Indices1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a2160fae2491985e3d71a5caa408ff429}{}\label{classMultiColSLAM_1_1cSim3Solver_a2160fae2491985e3d71a5caa408ff429}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mv\+Sigma\+Square1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a93a25be97908b7bfaf7fa376b6e36c4b}{}\label{classMultiColSLAM_1_1cSim3Solver_a93a25be97908b7bfaf7fa376b6e36c4b}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mv\+Sigma\+Square2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aa457fd03b5537c16aad7b21f6da675f9}{}\label{classMultiColSLAM_1_1cSim3Solver_aa457fd03b5537c16aad7b21f6da675f9}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mvn\+Max\+Error1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a6ac1418423b5f89d19f4bcce13c97d4a}{}\label{classMultiColSLAM_1_1cSim3Solver_a6ac1418423b5f89d19f4bcce13c97d4a}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mvn\+Max\+Error2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a7264be9a04147601add6ba2b3ba9de23}{}\label{classMultiColSLAM_1_1cSim3Solver_a7264be9a04147601add6ba2b3ba9de23}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries cam\+Idx1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_af9cfe693f71012ca195698bc8ded2dd8}{}\label{classMultiColSLAM_1_1cSim3Solver_af9cfe693f71012ca195698bc8ded2dd8}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries cam\+Idx2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a004efcfea12d9c6b824fbf27971c7533}{}\label{classMultiColSLAM_1_1cSim3Solver_a004efcfea12d9c6b824fbf27971c7533}
+
+\item 
+int {\bfseries N}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a87ba938b64ad462efc8536361c306b8c}{}\label{classMultiColSLAM_1_1cSim3Solver_a87ba938b64ad462efc8536361c306b8c}
+
+\item 
+int {\bfseries m\+N1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aabb5db997888d32d5c1bb9348a801dec}{}\label{classMultiColSLAM_1_1cSim3Solver_aabb5db997888d32d5c1bb9348a801dec}
+
+\item 
+cv\+::\+Matx33d {\bfseries m\+R12i}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aea342dc41a1cacb5bb61a13339683543}{}\label{classMultiColSLAM_1_1cSim3Solver_aea342dc41a1cacb5bb61a13339683543}
+
+\item 
+cv\+::\+Vec3d {\bfseries mt12i}\hypertarget{classMultiColSLAM_1_1cSim3Solver_abef01b684a074ec9681352e27fd13dcd}{}\label{classMultiColSLAM_1_1cSim3Solver_abef01b684a074ec9681352e27fd13dcd}
+
+\item 
+double {\bfseries ms12i}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aae0e85a8d49ab3fa7a5e81f93f7a2c32}{}\label{classMultiColSLAM_1_1cSim3Solver_aae0e85a8d49ab3fa7a5e81f93f7a2c32}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+T12i}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a38d451572a6586369fb21e2e131e8ab8}{}\label{classMultiColSLAM_1_1cSim3Solver_a38d451572a6586369fb21e2e131e8ab8}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+T21i}\hypertarget{classMultiColSLAM_1_1cSim3Solver_adccf73c51bb312dcde4851ccf663e8b9}{}\label{classMultiColSLAM_1_1cSim3Solver_adccf73c51bb312dcde4851ccf663e8b9}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+T12i\+\_\+rigid}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a09a38394237e00f1acb233b10d046307}{}\label{classMultiColSLAM_1_1cSim3Solver_a09a38394237e00f1acb233b10d046307}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+T21i\+\_\+rigid}\hypertarget{classMultiColSLAM_1_1cSim3Solver_ad12c8637d47cfcb87a2d41586fbeaf3f}{}\label{classMultiColSLAM_1_1cSim3Solver_ad12c8637d47cfcb87a2d41586fbeaf3f}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mvb\+Inliersi}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a346c893955c46c7b74acd6822c6ce75f}{}\label{classMultiColSLAM_1_1cSim3Solver_a346c893955c46c7b74acd6822c6ce75f}
+
+\item 
+int {\bfseries mn\+Inliersi}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a73693386d9ae4f196eb4a27a777403f1}{}\label{classMultiColSLAM_1_1cSim3Solver_a73693386d9ae4f196eb4a27a777403f1}
+
+\item 
+int {\bfseries mn\+Iterations}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a780e00358263d84285cb134dfbad8fe8}{}\label{classMultiColSLAM_1_1cSim3Solver_a780e00358263d84285cb134dfbad8fe8}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mvb\+Best\+Inliers}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a3df2f65d4ca9d2085cc6b89036878be1}{}\label{classMultiColSLAM_1_1cSim3Solver_a3df2f65d4ca9d2085cc6b89036878be1}
+
+\item 
+int {\bfseries mn\+Best\+Inliers}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aedd64d3d952f1939fada0ab172c5b641}{}\label{classMultiColSLAM_1_1cSim3Solver_aedd64d3d952f1939fada0ab172c5b641}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+Best\+T12}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aecb8464cfd502f564732b81af4e17961}{}\label{classMultiColSLAM_1_1cSim3Solver_aecb8464cfd502f564732b81af4e17961}
+
+\item 
+cv\+::\+Matx33d {\bfseries m\+Best\+Rotation}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aa27ba87d351a2957dd7e020bff1451d8}{}\label{classMultiColSLAM_1_1cSim3Solver_aa27ba87d351a2957dd7e020bff1451d8}
+
+\item 
+cv\+::\+Vec3d {\bfseries m\+Best\+Translation}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aa7572e9112ee601ca4e3ec294086ae1d}{}\label{classMultiColSLAM_1_1cSim3Solver_aa7572e9112ee601ca4e3ec294086ae1d}
+
+\item 
+double {\bfseries m\+Best\+Scale}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a77682026683630b3b0f4ee4c995712ae}{}\label{classMultiColSLAM_1_1cSim3Solver_a77682026683630b3b0f4ee4c995712ae}
+
+\item 
+cv\+::\+Mat {\bfseries m\+Refined\+T12}\hypertarget{classMultiColSLAM_1_1cSim3Solver_adeea600813c43b4b146da25eac7e1cf4}{}\label{classMultiColSLAM_1_1cSim3Solver_adeea600813c43b4b146da25eac7e1cf4}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mvb\+Refined\+Inliers}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a1c09f999e36f6feabf131e872771c05e}{}\label{classMultiColSLAM_1_1cSim3Solver_a1c09f999e36f6feabf131e872771c05e}
+
+\item 
+int {\bfseries mn\+Refined\+Inliers}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aedb8087e00d89cb28bbbbe2befc92ae1}{}\label{classMultiColSLAM_1_1cSim3Solver_aedb8087e00d89cb28bbbbe2befc92ae1}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries mv\+All\+Indices}\hypertarget{classMultiColSLAM_1_1cSim3Solver_ae42dbf6c521a6c86d2f55baf284ea850}{}\label{classMultiColSLAM_1_1cSim3Solver_ae42dbf6c521a6c86d2f55baf284ea850}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec2d $>$ {\bfseries mv\+P1im1}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a174b5ca0f8e2bc12d1ec1ab4c2c717c4}{}\label{classMultiColSLAM_1_1cSim3Solver_a174b5ca0f8e2bc12d1ec1ab4c2c717c4}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec2d $>$ {\bfseries mv\+P2im2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a7ae450aadaccab2af93a9790201f0f93}{}\label{classMultiColSLAM_1_1cSim3Solver_a7ae450aadaccab2af93a9790201f0f93}
+
+\item 
+double {\bfseries m\+Ransac\+Prob}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a5e1106e8f4740a88b719655b46e9e8e4}{}\label{classMultiColSLAM_1_1cSim3Solver_a5e1106e8f4740a88b719655b46e9e8e4}
+
+\item 
+int {\bfseries m\+Ransac\+Min\+Inliers}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a84bccc9eb447c56757edbe5190e3dd55}{}\label{classMultiColSLAM_1_1cSim3Solver_a84bccc9eb447c56757edbe5190e3dd55}
+
+\item 
+int {\bfseries m\+Ransac\+Max\+Its}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a3f1c4554794933736cec99d8c0101d13}{}\label{classMultiColSLAM_1_1cSim3Solver_a3f1c4554794933736cec99d8c0101d13}
+
+\item 
+double {\bfseries m\+Th}\hypertarget{classMultiColSLAM_1_1cSim3Solver_afeb3b428fee73a6b79876a41d822cd04}{}\label{classMultiColSLAM_1_1cSim3Solver_afeb3b428fee73a6b79876a41d822cd04}
+
+\item 
+double {\bfseries m\+Sigma2}\hypertarget{classMultiColSLAM_1_1cSim3Solver_a5d0081f29b5a63b754d63ab6fd537688}{}\label{classMultiColSLAM_1_1cSim3Solver_a5d0081f29b5a63b754d63ab6fd537688}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} $\ast$ {\bfseries cam\+Sys\+Local}\hypertarget{classMultiColSLAM_1_1cSim3Solver_aa6b6054be688ae0e21b05efc84b40025}{}\label{classMultiColSLAM_1_1cSim3Solver_aa6b6054be688ae0e21b05efc84b40025}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Sim3\+Solver.\+h\end{DoxyCompactItemize}

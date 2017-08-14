@@ -1,0 +1,112 @@
+\hypertarget{classMultiColSLAM_1_1cMultiCamSys__}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Multi\+Cam\+Sys\+\_\+ Class Reference}
+\label{classMultiColSLAM_1_1cMultiCamSys__}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Cam\+Sys\+\_\+@{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Cam\+Sys\+\_\+}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Multi\+Cam\+Sys\+\_\+} (cv\+::\+Matx$<$ double, 4, 4 $>$ M\+\_\+t\+\_\+, std\+::vector$<$ cv\+::\+Matx$<$ double, 4, 4 $>$$>$ M\+\_\+c\+\_\+, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} $>$ cam\+Models\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a94d83f3bd851844d9b86866b899aac14}{}\label{classMultiColSLAM_1_1cMultiCamSys___a94d83f3bd851844d9b86866b899aac14}
+
+\item 
+void {\bfseries World\+To\+Cam} (int c, cv\+::\+Point3\+\_\+$<$ double $>$ \&pt3, cv\+::\+Point\+\_\+$<$ double $>$ \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a5252fc027f0a0f8db1b096392302eae8}{}\label{classMultiColSLAM_1_1cMultiCamSys___a5252fc027f0a0f8db1b096392302eae8}
+
+\item 
+void {\bfseries World\+To\+Cam} (int c, cv\+::\+Point3\+\_\+$<$ double $>$ \&pt3, cv\+::\+Vec2d \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___abfc2a17f67cd88fbf51e1459b5618c96}{}\label{classMultiColSLAM_1_1cMultiCamSys___abfc2a17f67cd88fbf51e1459b5618c96}
+
+\item 
+void {\bfseries World\+To\+Cam\+Hom} (int c, cv\+::\+Vec$<$ double, 4 $>$ \&pt4, cv\+::\+Vec2d \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a9e6567244dbfa1fc64b2a59ba4653559}{}\label{classMultiColSLAM_1_1cMultiCamSys___a9e6567244dbfa1fc64b2a59ba4653559}
+
+\item 
+bool {\bfseries World\+To\+Cam\+Hom\+\_\+fast} (int c, cv\+::\+Vec$<$ double, 4 $>$ \&pt4, cv\+::\+Vec$<$ double, 2 $>$ \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a3b69acbfaf8be51d44ba4b6fa59afa13}{}\label{classMultiColSLAM_1_1cMultiCamSys___a3b69acbfaf8be51d44ba4b6fa59afa13}
+
+\item 
+void {\bfseries World\+To\+Cam\+Hom\+\_\+fast} (int c, cv\+::\+Vec$<$ double, 3 $>$ \&pt3, cv\+::\+Vec$<$ double, 2 $>$ \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a32ccb45fcc1754abf27858be133b25ed}{}\label{classMultiColSLAM_1_1cMultiCamSys___a32ccb45fcc1754abf27858be133b25ed}
+
+\item 
+void {\bfseries Cam\+To\+World\+\_\+ogv} (int c, opengv\+::bearing\+Vector\+\_\+t \&bearingV, cv\+::\+Point\+\_\+$<$ double $>$ pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___aad5f0cfbbd2017e49b49b0a49d5acda6}{}\label{classMultiColSLAM_1_1cMultiCamSys___aad5f0cfbbd2017e49b49b0a49d5acda6}
+
+\item 
+void {\bfseries Cam\+To\+World} (int c, cv\+::\+Point3\+\_\+$<$ double $>$ \&pt3, cv\+::\+Point\+\_\+$<$ double $>$ \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a6d1acde556e1a3e1a439103ccffa7431}{}\label{classMultiColSLAM_1_1cMultiCamSys___a6d1acde556e1a3e1a439103ccffa7431}
+
+\item 
+void {\bfseries Cam\+To\+World} (int c, cv\+::\+Vec$<$ double, 3 $>$ \&pt3, cv\+::\+Point\+\_\+$<$ double $>$ \&pt2)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___af1406b95527481a1527016e6ae7b31aa}{}\label{classMultiColSLAM_1_1cMultiCamSys___af1406b95527481a1527016e6ae7b31aa}
+
+\item 
+void {\bfseries Set\+\_\+\+M\+\_\+t\+\_\+from\+\_\+min} (cv\+::\+Matx$<$ double, 6, 1 $>$ M\+\_\+t\+\_\+min\+Rep)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a8778a4538527a291be32dbb542d31a10}{}\label{classMultiColSLAM_1_1cMultiCamSys___a8778a4538527a291be32dbb542d31a10}
+
+\item 
+void {\bfseries Set\+\_\+\+M\+\_\+t} (cv\+::\+Matx$<$ double, 4, 4 $>$ M\+\_\+t\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a5f55a4c3d92dda52ecaf3517df5daa12}{}\label{classMultiColSLAM_1_1cMultiCamSys___a5f55a4c3d92dda52ecaf3517df5daa12}
+
+\item 
+void {\bfseries Set\+\_\+\+M\+\_\+c\+\_\+from\+\_\+min} (int c, cv\+::\+Matx$<$ double, 6, 1 $>$ M\+\_\+c\+\_\+min\+Rep)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a989b4a52f4e372d2620ced94fc675b02}{}\label{classMultiColSLAM_1_1cMultiCamSys___a989b4a52f4e372d2620ced94fc675b02}
+
+\item 
+void {\bfseries Set\+\_\+\+M\+\_\+c} (int c, cv\+::\+Matx$<$ double, 4, 4 $>$ M\+\_\+c\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a39483546d528acc5acdbe500cbf9d23c}{}\label{classMultiColSLAM_1_1cMultiCamSys___a39483546d528acc5acdbe500cbf9d23c}
+
+\item 
+void {\bfseries Set\+\_\+\+All\+\_\+\+M\+\_\+c} (std\+::vector$<$ cv\+::\+Matx$<$ double, 4, 4 $>$$>$ M\+\_\+c\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a8aed2953b9921d66fb483286307f25a5}{}\label{classMultiColSLAM_1_1cMultiCamSys___a8aed2953b9921d66fb483286307f25a5}
+
+\item 
+void {\bfseries Set\+\_\+\+All\+\_\+\+M\+\_\+c\+\_\+from\+\_\+min} (std\+::vector$<$ cv\+::\+Matx$<$ double, 6, 1 $>$$>$ M\+\_\+c\+\_\+min\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___aa65265786747902d0dc2c631c12f54ca}{}\label{classMultiColSLAM_1_1cMultiCamSys___aa65265786747902d0dc2c631c12f54ca}
+
+\item 
+void {\bfseries Add\+\_\+\+M\+\_\+c} (cv\+::\+Matx$<$ double, 4, 4 $>$ M\+\_\+c\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___af7af083b06c487bb6383d77ea09b41ba}{}\label{classMultiColSLAM_1_1cMultiCamSys___af7af083b06c487bb6383d77ea09b41ba}
+
+\item 
+void {\bfseries Add\+\_\+\+M\+\_\+c\+\_\+from\+\_\+min} (cv\+::\+Matx$<$ double, 6, 1 $>$ M\+\_\+c\+\_\+min\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___aef2b4de35eccc1ed3948568efa3cdada}{}\label{classMultiColSLAM_1_1cMultiCamSys___aef2b4de35eccc1ed3948568efa3cdada}
+
+\item 
+void {\bfseries Add\+\_\+\+M\+\_\+c\+\_\+from\+\_\+min\+\_\+and\+\_\+\+IO} (cv\+::\+Matx$<$ double, 6, 1 $>$ M\+\_\+c\+\_\+min\+\_\+, \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} camM)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a0dff9ed09343e4b39441683477709e2b}{}\label{classMultiColSLAM_1_1cMultiCamSys___a0dff9ed09343e4b39441683477709e2b}
+
+\item 
+void {\bfseries Set\+\_\+\+M\+\_\+c\+\_\+from\+\_\+min\+\_\+and\+\_\+\+IO} (int c, cv\+::\+Matx$<$ double, 6, 1 $>$ M\+\_\+c\+\_\+min\+\_\+, \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} camM)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a70f5bf5167933561ffde33350312509b}{}\label{classMultiColSLAM_1_1cMultiCamSys___a70f5bf5167933561ffde33350312509b}
+
+\item 
+void {\bfseries Set\+\_\+\+IO} (int c, \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} camM)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a50b9a082a2aaf50d1113a32c06e02fe7}{}\label{classMultiColSLAM_1_1cMultiCamSys___a50b9a082a2aaf50d1113a32c06e02fe7}
+
+\item 
+void {\bfseries Set\+\_\+\+I\+Os} (std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} $>$ cam\+Models\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___aafd27e6e2abbb9e6785b1d562eb863a0}{}\label{classMultiColSLAM_1_1cMultiCamSys___aafd27e6e2abbb9e6785b1d562eb863a0}
+
+\item 
+int {\bfseries Get\+Nr\+Cams} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___ad06f07ebb253231e62be662b271b29fa}{}\label{classMultiColSLAM_1_1cMultiCamSys___ad06f07ebb253231e62be662b271b29fa}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} {\bfseries Get\+Cam\+Model\+Obj} (int c)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a83137646fa518549ea0dbc47bff7a19b}{}\label{classMultiColSLAM_1_1cMultiCamSys___a83137646fa518549ea0dbc47bff7a19b}
+
+\item 
+cv\+::\+Matx$<$ double, 6, 1 $>$ {\bfseries Get\+\_\+\+M\+\_\+t\+\_\+min} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a4d73aea59fec86187cae86fad0abcf65}{}\label{classMultiColSLAM_1_1cMultiCamSys___a4d73aea59fec86187cae86fad0abcf65}
+
+\item 
+cv\+::\+Matx$<$ double, 6, 1 $>$ {\bfseries Get\+\_\+\+M\+\_\+c\+\_\+min} (int c)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a96e69baff40ac22079a732070245d9d9}{}\label{classMultiColSLAM_1_1cMultiCamSys___a96e69baff40ac22079a732070245d9d9}
+
+\item 
+cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries Get\+\_\+\+M\+\_\+t} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a826084e53d1948770b010afb7914c67a}{}\label{classMultiColSLAM_1_1cMultiCamSys___a826084e53d1948770b010afb7914c67a}
+
+\item 
+cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries Get\+\_\+\+M\+\_\+c} (int c)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a4de21b71db310b287cc666bed789109e}{}\label{classMultiColSLAM_1_1cMultiCamSys___a4de21b71db310b287cc666bed789109e}
+
+\item 
+Eigen\+::\+Matrix3d {\bfseries Get\+\_\+\+R\+\_\+c\+\_\+ogv} (int c)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a87f8e9e1e66b1416078d416acf5f1f39}{}\label{classMultiColSLAM_1_1cMultiCamSys___a87f8e9e1e66b1416078d416acf5f1f39}
+
+\item 
+Eigen\+::\+Vector3d {\bfseries Get\+\_\+t\+\_\+c\+\_\+ogv} (int c)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a1f45ac2f302bea8db20e734fc0225996}{}\label{classMultiColSLAM_1_1cMultiCamSys___a1f45ac2f302bea8db20e734fc0225996}
+
+\item 
+opengv\+::rotations\+\_\+t {\bfseries Get\+\_\+\+All\+\_\+\+R\+\_\+c\+\_\+ogv} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___ab028b78c5dab72629fd74ec15443ade9}{}\label{classMultiColSLAM_1_1cMultiCamSys___ab028b78c5dab72629fd74ec15443ade9}
+
+\item 
+opengv\+::translations\+\_\+t {\bfseries Get\+\_\+\+All\+\_\+t\+\_\+c\+\_\+ogv} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___aeb6629eb3f8395a9bedaa36135a9905e}{}\label{classMultiColSLAM_1_1cMultiCamSys___aeb6629eb3f8395a9bedaa36135a9905e}
+
+\item 
+std\+::vector$<$ cv\+::\+Matx$<$ double, 4, 4 $>$ $>$ {\bfseries Get\+\_\+\+All\+\_\+\+M\+\_\+c} ()\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a65429b5a22428e060a0cb86c440675d2}{}\label{classMultiColSLAM_1_1cMultiCamSys___a65429b5a22428e060a0cb86c440675d2}
+
+\item 
+cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries Get\+\_\+\+Mt\+Mc} (int cam)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a7c8caf0456b22287af685f936c389880}{}\label{classMultiColSLAM_1_1cMultiCamSys___a7c8caf0456b22287af685f936c389880}
+
+\item 
+cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries Get\+\_\+\+Mt\+Mc\+\_\+inv} (int cam)\hypertarget{classMultiColSLAM_1_1cMultiCamSys___a36c683b72ee7277016e2ff563acc4b1b}{}\label{classMultiColSLAM_1_1cMultiCamSys___a36c683b72ee7277016e2ff563acc4b1b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cam\+\_\+system\+\_\+omni.\+h\end{DoxyCompactItemize}

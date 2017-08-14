@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classMultiColSLAM_1_1simpleVertexSim3Expmap.html" title="Sim3 Vertex, (x,y,z,qw,qx,qy,qz) the parameterization for the increments constructed is a 7d vector (..." alt="" coords="153,5,343,47"/>
+<area shape="rect" id="node3" href="$classMultiColSLAM_1_1VertexMc__cayley.html" title="MultiColSLAM::VertexMc\l_cayley" alt="" coords="163,71,333,112"/>
+<area shape="rect" id="node4" href="$classMultiColSLAM_1_1VertexMt__cayley.html" title="MultiColSLAM::VertexMt\l_cayley" alt="" coords="165,136,331,177"/>
+<area shape="rect" id="node5" href="$classMultiColSLAM_1_1VertexOmniCameraParameters.html" title="MultiColSLAM::VertexOmni\lCameraParameters" alt="" coords="157,201,339,243"/>
+<area shape="rect" id="node6" href="$classMultiColSLAM_1_1VertexPointXYZ.html" title="Point vertex, XYZ. " alt="" coords="144,267,352,294"/>
+<area shape="rect" id="node7" href="$classMultiColSLAM_1_1VertexSim3Expmap__Multi.html" title="MultiColSLAM::VertexSim3\lExpmap_Multi" alt="" coords="157,319,339,360"/>
+</map>

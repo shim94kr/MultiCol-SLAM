@@ -1,0 +1,126 @@
+\hypertarget{classmdBRIEFextractor}{}\section{md\+B\+R\+I\+E\+Fextractor Class Reference}
+\label{classmdBRIEFextractor}\index{md\+B\+R\+I\+E\+Fextractor@{md\+B\+R\+I\+E\+Fextractor}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries H\+A\+R\+R\+I\+S\+\_\+\+S\+C\+O\+RE} =0, 
+{\bfseries F\+A\+S\+T\+\_\+\+S\+C\+O\+RE} =1
+ \}\hypertarget{classmdBRIEFextractor_a2279809ca1249b3020ac675e25d0a20d}{}\label{classmdBRIEFextractor_a2279809ca1249b3020ac675e25d0a20d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries md\+B\+R\+I\+E\+Fextractor} (int \+\_\+nfeatures=1000, float \+\_\+scale\+Factor=1.\+2, int \+\_\+nlevels=8, int \+\_\+edge\+Threshold=25, int \+\_\+first\+Level=0, int \+\_\+score\+Type=H\+A\+R\+R\+I\+S\+\_\+\+S\+C\+O\+RE, int \+\_\+patch\+Size=32, int \+\_\+fast\+Threshold=20, bool \+\_\+use\+Agast=false, int \+\_\+fast\+Agast\+Type=2, bool \+\_\+learn\+Masks=false, int \+\_\+desc\+Size=32)\hypertarget{classmdBRIEFextractor_aa27776bf46a0c9577c1b7cb996deea60}{}\label{classmdBRIEFextractor_aa27776bf46a0c9577c1b7cb996deea60}
+
+\item 
+void {\bfseries operator()} (cv\+::\+Input\+Array \+\_\+image, cv\+::\+Input\+Array \+\_\+mask, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&\+\_\+keypoints, c\+Cam\+Model\+General\+\_\+ \&cam\+Model, cv\+::\+Output\+Array \+\_\+descriptors, cv\+::\+Output\+Array \+\_\+descriptor\+Masks)\hypertarget{classmdBRIEFextractor_a156d65fed08bcb31eafca1fb8f3ba2b7}{}\label{classmdBRIEFextractor_a156d65fed08bcb31eafca1fb8f3ba2b7}
+
+\item 
+int {\bfseries Get\+Levels} ()\hypertarget{classmdBRIEFextractor_a77a55b01f8c829bc5a402ed984a636ab}{}\label{classmdBRIEFextractor_a77a55b01f8c829bc5a402ed984a636ab}
+
+\item 
+double {\bfseries Get\+Scale\+Factor} ()\hypertarget{classmdBRIEFextractor_a2fc1fac3f793191e1e7de1b5b6c3062c}{}\label{classmdBRIEFextractor_a2fc1fac3f793191e1e7de1b5b6c3062c}
+
+\item 
+bool {\bfseries Get\+Masks\+Learned} ()\hypertarget{classmdBRIEFextractor_a0f0028be442cff90f0da8cf7956c0ee3}{}\label{classmdBRIEFextractor_a0f0028be442cff90f0da8cf7956c0ee3}
+
+\item 
+int {\bfseries Get\+Descriptor\+Size} ()\hypertarget{classmdBRIEFextractor_a6f343fc7ead5bb8714a483fad353e977}{}\label{classmdBRIEFextractor_a6f343fc7ead5bb8714a483fad353e977}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries H\+A\+L\+F\+\_\+\+P\+A\+T\+C\+H\+\_\+\+S\+I\+ZE}\hypertarget{classmdBRIEFextractor_aa4ff165effca9090aafbcc78172571bd}{}\label{classmdBRIEFextractor_aa4ff165effca9090aafbcc78172571bd}
+
+\item 
+static int {\bfseries E\+D\+G\+E\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}\hypertarget{classmdBRIEFextractor_acca8f6f32082195ccb23acb6616cb67e}{}\label{classmdBRIEFextractor_acca8f6f32082195ccb23acb6616cb67e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries descriptor\+Size} () const \hypertarget{classmdBRIEFextractor_a9de61227e11bd3a79339197e7d68071c}{}\label{classmdBRIEFextractor_a9de61227e11bd3a79339197e7d68071c}
+
+\item 
+int {\bfseries descriptor\+Type} () const \hypertarget{classmdBRIEFextractor_adf35fa5de268c265694a3bfb1b1de41b}{}\label{classmdBRIEFextractor_adf35fa5de268c265694a3bfb1b1de41b}
+
+\item 
+int {\bfseries default\+Norm} () const \hypertarget{classmdBRIEFextractor_abbbcf3ddb0a8a9cf2e907495fb2dc688}{}\label{classmdBRIEFextractor_abbbcf3ddb0a8a9cf2e907495fb2dc688}
+
+\item 
+void {\bfseries Compute\+Pyramid} (cv\+::\+Mat image, cv\+::\+Mat Mask=cv\+::\+Mat())\hypertarget{classmdBRIEFextractor_a343fc2937c41686f0794c30b0d57e594}{}\label{classmdBRIEFextractor_a343fc2937c41686f0794c30b0d57e594}
+
+\item 
+void {\bfseries Compute\+Key\+Points} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Key\+Point $>$ $>$ \&all\+Keypoints)\hypertarget{classmdBRIEFextractor_a286c01b9ff8c90f4ff3d704b66635f6a}{}\label{classmdBRIEFextractor_a286c01b9ff8c90f4ff3d704b66635f6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Point $>$ {\bfseries pattern}\hypertarget{classmdBRIEFextractor_acf4203311d4a48cca2c4e01a6095fda9}{}\label{classmdBRIEFextractor_acf4203311d4a48cca2c4e01a6095fda9}
+
+\item 
+int {\bfseries nfeatures}\hypertarget{classmdBRIEFextractor_ad05427a45d8bb5b3e6eb629c4829a65b}{}\label{classmdBRIEFextractor_ad05427a45d8bb5b3e6eb629c4829a65b}
+
+\item 
+double {\bfseries scale\+Factor}\hypertarget{classmdBRIEFextractor_a68bd33089308f7d68081d3b1f36efae3}{}\label{classmdBRIEFextractor_a68bd33089308f7d68081d3b1f36efae3}
+
+\item 
+int {\bfseries numlevels}\hypertarget{classmdBRIEFextractor_ac80b0ccd907ca35f5096e707836eb499}{}\label{classmdBRIEFextractor_ac80b0ccd907ca35f5096e707836eb499}
+
+\item 
+int {\bfseries edge\+Threshold}\hypertarget{classmdBRIEFextractor_a4bf058ab2585da8d2fb4df9e1871bafb}{}\label{classmdBRIEFextractor_a4bf058ab2585da8d2fb4df9e1871bafb}
+
+\item 
+int {\bfseries first\+Level}\hypertarget{classmdBRIEFextractor_a92f484d3841fe88adc9f3f280377b53f}{}\label{classmdBRIEFextractor_a92f484d3841fe88adc9f3f280377b53f}
+
+\item 
+int {\bfseries desc\+Size}\hypertarget{classmdBRIEFextractor_a07096c62f2e2ba12966e92ddd455abdf}{}\label{classmdBRIEFextractor_a07096c62f2e2ba12966e92ddd455abdf}
+
+\item 
+int {\bfseries score\+Type}\hypertarget{classmdBRIEFextractor_a321a33a3ddc6037f61858c20cb10904f}{}\label{classmdBRIEFextractor_a321a33a3ddc6037f61858c20cb10904f}
+
+\item 
+int {\bfseries patch\+Size}\hypertarget{classmdBRIEFextractor_ad6b2cffb3a69691c306a20951a68e04a}{}\label{classmdBRIEFextractor_ad6b2cffb3a69691c306a20951a68e04a}
+
+\item 
+int {\bfseries fast\+Threshold}\hypertarget{classmdBRIEFextractor_a860fb0c609bd868175eb6a9704a0f644}{}\label{classmdBRIEFextractor_a860fb0c609bd868175eb6a9704a0f644}
+
+\item 
+bool {\bfseries use\+Agast}\hypertarget{classmdBRIEFextractor_a13804fd6cd95184e935c36fcea3bf19e}{}\label{classmdBRIEFextractor_a13804fd6cd95184e935c36fcea3bf19e}
+
+\item 
+int {\bfseries fast\+Agast\+Type}\hypertarget{classmdBRIEFextractor_affeccac13fe4a4981116a6d84f0759c3}{}\label{classmdBRIEFextractor_affeccac13fe4a4981116a6d84f0759c3}
+
+\item 
+bool {\bfseries learn\+Masks}\hypertarget{classmdBRIEFextractor_a2d879fa10c9b7798d47403d835890bb5}{}\label{classmdBRIEFextractor_a2d879fa10c9b7798d47403d835890bb5}
+
+\item 
+int {\bfseries half\+\_\+patch\+\_\+size}\hypertarget{classmdBRIEFextractor_a987a1f7a9beea23fe5eb3e6b731e70a2}{}\label{classmdBRIEFextractor_a987a1f7a9beea23fe5eb3e6b731e70a2}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Features\+Per\+Level}\hypertarget{classmdBRIEFextractor_a25af3a314c66c461e893c9ade0a19d03}{}\label{classmdBRIEFextractor_a25af3a314c66c461e893c9ade0a19d03}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries umax}\hypertarget{classmdBRIEFextractor_aa491ccf730f1f2f9e69c800cb10f4f70}{}\label{classmdBRIEFextractor_aa491ccf730f1f2f9e69c800cb10f4f70}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Scale\+Factor}\hypertarget{classmdBRIEFextractor_a090e0df687a8e2ee205c79cad9add39b}{}\label{classmdBRIEFextractor_a090e0df687a8e2ee205c79cad9add39b}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Inv\+Scale\+Factor}\hypertarget{classmdBRIEFextractor_af8987cf35f38bc905262d2d8fc9619c0}{}\label{classmdBRIEFextractor_af8987cf35f38bc905262d2d8fc9619c0}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Image\+Pyramid}\hypertarget{classmdBRIEFextractor_ab1b14557a72b264db8da1298042acf95}{}\label{classmdBRIEFextractor_ab1b14557a72b264db8da1298042acf95}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Mask\+Pyramid}\hypertarget{classmdBRIEFextractor_a8973c00c2a0f709ade7ea3f0cfc86a6f}{}\label{classmdBRIEFextractor_a8973c00c2a0f709ade7ea3f0cfc86a6f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/md\+B\+R\+I\+E\+Fextractor.\+h\end{DoxyCompactItemize}

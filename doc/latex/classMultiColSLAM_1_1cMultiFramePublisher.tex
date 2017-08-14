@@ -1,0 +1,82 @@
+\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Multi\+Frame\+Publisher Class Reference}
+\label{classMultiColSLAM_1_1cMultiFramePublisher}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Frame\+Publisher@{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Frame\+Publisher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Multi\+Frame\+Publisher} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_ac16afbd71dae5e5bc522172a6410ff05}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_ac16afbd71dae5e5bc522172a6410ff05}
+
+\item 
+void {\bfseries Update} (\hyperlink{classMultiColSLAM_1_1cTracking}{c\+Tracking} $\ast$p\+Tracker)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a26be26e719ad3a0c9f3cc8ce57472697}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a26be26e719ad3a0c9f3cc8ce57472697}
+
+\item 
+void {\bfseries Set\+Map} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a191f96bea32794aaba353aaa0475e2f4}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a191f96bea32794aaba353aaa0475e2f4}
+
+\item 
+void {\bfseries Set\+M\+CS} (\hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} $\ast$cam\+Sys)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_af1fd066730bf71525b7d491dee0113c8}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_af1fd066730bf71525b7d491dee0113c8}
+
+\item 
+void {\bfseries Draw\+Multi\+Frame} (std\+::vector$<$ cv\+::\+Mat $>$ \&imgs)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a0417eb7f78ff9b1629302ae90978d5d5}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a0417eb7f78ff9b1629302ae90978d5d5}
+
+\item 
+bool {\bfseries is\+Map\+Updated} ()\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a450064eb16f1c7c8253255fe2fb9cc7a}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a450064eb16f1c7c8253255fe2fb9cc7a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Draw\+Text\+Info} (cv\+::\+Mat \&im, int n\+State, cv\+::\+Mat \&im\+Text)\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a63cd7662080adaf1fb4ebe91e5ade331}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a63cd7662080adaf1fb4ebe91e5ade331}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries m\+Images}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a28beee284b7723acf249d09b781a45f5}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a28beee284b7723acf249d09b781a45f5}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries mv\+Current\+Keys}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a7dd2889f1b07a79bfdd78e0fe58aa5d6}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a7dd2889f1b07a79bfdd78e0fe58aa5d6}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mvb\+Outliers}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_ad3e23e39ecd8e10ef1ed4c66bee95a3d}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_ad3e23e39ecd8e10ef1ed4c66bee95a3d}
+
+\item 
+std\+::unordered\+\_\+map$<$ size\+\_\+t, int $>$ {\bfseries keyp\+\_\+to\+\_\+cam}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_afbcf57c4ee086b09be900e97b56e87ad}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_afbcf57c4ee086b09be900e97b56e87ad}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Matched\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a22e3cd7b65a9d74aa3d27826f9b18fe3}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a22e3cd7b65a9d74aa3d27826f9b18fe3}
+
+\item 
+int {\bfseries mn\+Tracked}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a8ba9eb482c2c6fdd6776ac08c9d01428}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a8ba9eb482c2c6fdd6776ac08c9d01428}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries mv\+Ini\+Keys}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a82f49693385219a4a0738fc4d91e55ad}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a82f49693385219a4a0738fc4d91e55ad}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mv\+Ini\+Matches}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a6a2ac0786eaa69ce4363ed8167f42a39}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a6a2ac0786eaa69ce4363ed8167f42a39}
+
+\item 
+int {\bfseries nr\+Cams}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_ad2a55b25b5798f597954d9a09db0c49b}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_ad2a55b25b5798f597954d9a09db0c49b}
+
+\item 
+int {\bfseries m\+State}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a0f923017935bb5e0fc2a5de0c26860de}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a0f923017935bb5e0fc2a5de0c26860de}
+
+\item 
+bool {\bfseries mb\+Updated}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a9c6a831abba382f266b8592eba9043cf}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a9c6a831abba382f266b8592eba9043cf}
+
+\item 
+bool {\bfseries mcs\+Set}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a3556d37c3f91f85112676e94609ae9b6}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a3556d37c3f91f85112676e94609ae9b6}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a44dbdb4e8bbfb894bb88d1cee05e97f5}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a44dbdb4e8bbfb894bb88d1cee05e97f5}
+
+\item 
+int {\bfseries cnt\+Write}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a41f62c9f553a2ea46df7223c15444539}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a41f62c9f553a2ea46df7223c15444539}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex}\hypertarget{classMultiColSLAM_1_1cMultiFramePublisher_a496042c62127f9e88cdca06664bc50cb}{}\label{classMultiColSLAM_1_1cMultiFramePublisher_a496042c62127f9e88cdca06664bc50cb}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Multi\+Frame\+Publisher.\+h\end{DoxyCompactItemize}

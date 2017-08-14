@@ -1,0 +1,219 @@
+\section*{Multi\+Col-\/\+S\+L\+AM}
+
+{\bfseries Author}\+: \href{http://www.ipf.kit.edu/english/staff_urban_steffen.php}{\tt Steffen Urban} (urbste at googlemail.\+com).
+
+Multi\+Col-\/\+S\+L\+AM is a multi-\/fisheye camera S\+L\+AM system. We adapt the S\+L\+AM system proposed in \href{https://github.com/raulmur/ORB_SLAM}{\tt O\+R\+B-\/\+S\+L\+AM} and \href{https://github.com/raulmur/ORB_SLAM2}{\tt O\+R\+B-\/\+S\+L\+A\+M2} and extend it for the use with fisheye and multi-\/fisheye camera systems.
+
+\subsubsection*{News}
+
+
+\begin{DoxyItemize}
+\item 25/10/2016 added paper\+: \href{https://arxiv.org/abs/1610.07336}{\tt Paper}
+\item See a video here\+: \href{https://youtu.be/ggZqsiePUq8}{\tt V\+I\+D\+EO}
+\end{DoxyItemize}
+
+The novel methods and concepts included in this new version are\+:
+
+
+\begin{DoxyItemize}
+\item Multi\+Keyframes
+\item Generic camera model (Scaramuzza\textquotesingle{}s polynomial model).
+\item Multi\+Col -\/ a generic method for bundle adjustment for multi-\/camera systems.
+\item a hyper graph (g2o) formulation of Multi\+Col
+\item d\+B\+R\+I\+EF and md\+B\+R\+I\+EF a distorted and a online learned, masked version of B\+R\+I\+EF.
+\item Multi-\/camera loop closing
+\item minimal (non)-\/central absolute pose estimation (3 pts) instead of E\+PnP which is non-\/minimal (6 pts)
+\end{DoxyItemize}
+
+In terms of performance the following things were modified\+:
+\begin{DoxyItemize}
+\item exchanged all tranformations and vectors from cv\+::\+Mat to cv\+::\+Matx and cv\+::\+Vec
+\item changed matrix access (descriptors, images) from .at to .ptr()
+\item set terminate criteria for bundle adjustment and pose estimation using g2o\+::\+Sparse\+Optimizer\+Terminate\+Action
+\end{DoxyItemize}
+
+A {\bfseries paper} of the proposed S\+L\+AM system will follow. Here some short descriptions on how the multi-\/camera integration works.
+
+The Multi\+Col model is explained extensively in the paper given below. Here we briefly recapitulate the content\+: The Multi\+Col model is given by\+: 
+
+the indices are object point {\bfseries i}, observed at time {\bfseries t}, in camera {\bfseries c}. The camera projection is given by  and we chose a general projection function, making this model applicable to a varity of prevalent (central) cameras, like perspective, fisheye and omnidirectional.
+
+For a single camera, we could omit the matrix M\+\_\+t. This yields the classic collinearity equations. Latter is depicted in the following figure. Each observation m\textquotesingle{} has two indices, i.\+e. {\bfseries t} and {\bfseries i}. 
+
+To handle multi-\/camera systems, the body frame is introduced, i.\+e. a frame that describes the motion of the multi-\/camera rig\+: 
+
+If we are optimizing the exterior orientation of our multi-\/camera system, we are actually looking for an estimate of matrix M\+\_\+t. Now each observation has three indices.
+
+The graphical representation of Multi\+Col can be realized in a hyper-\/graph and g2o can be used to optimize vertices of this graph\+: 
+
+\section*{1. Related Publications\+:}
+
+\{Urban\+Multi\+Col\+S\+L\+A\+M16, Title=\{\{Multi\+Col-\/\+S\+L\+AM\} -\/ A Modular Real-\/\+Time Multi-\/\+Camera S\+L\+AM System\}, Author=\{Urban, Steffen and Hinz, Stefan\}, Journal=\{ar\+Xiv preprint ar\+Xiv\+:1610.\+07336\}, Year=\{2016\} \} \{Urban\+Multi\+Col2016, Title = \{\{Multi\+Col Bundle Adjustment\+: A Generic Method for Pose Estimation, Simultaneous Self-\/\+Calibration and Reconstruction for Arbitrary Multi-\/\+Camera Systems\}\}, Author = \{Urban, Steffen and Wursthorn, Sven and Leitloff, Jens and Hinz, Stefan\}, Journal = International Journal of Computer Vision, Year = \{2016\}, Pages = \{1--19\} \} \{urban2015improved, Title = \{\{Improved Wide-\/\+Angle, Fisheye and Omnidirectional Camera Calibration\}\}, Author = \{Urban, Steffen and Leitloff, Jens and Hinz, Stefan\}, Journal = \{I\+S\+P\+RS Journal of Photogrammetry and Remote Sensing\}, Year = \{2015\}, Pages = \{72--79\}, Volume = \{108\}, Publisher = \{Elsevier\}, \}
+
+\section*{2. Requirements}
+
+
+\begin{DoxyItemize}
+\item C++11 compiler
+\item As the accuracy and speed of the S\+L\+AM system also depend on the hardware, we advice you to run the system on a strong C\+PU. We mainly tested the system using a laptop with i7-\/3630\+QM @2.\+4\+G\+Hz and 16 GB of R\+AM running Win 7 x64. So anything above that should be fine.
+\end{DoxyItemize}
+
+\section*{3. Camera calibration}
+
+We use a rather generic camera model, and thus Multi\+Col-\/\+S\+L\+AM should work with any prevalent central camera. To calibrate your cameras follow the instructions on \href{https://github.com/urbste/ImprovedOcamCalib}{\tt link}. The systems expects a calibration file with the following structure\+: \begin{DoxyVerb}# Camera Parameters. Adjust them!
+# Camera calibration parameters camera back
+Camera.Iw: 754
+Camera.Ih: 480
+
+# hyperparameters
+Camera.nrpol: 5
+Camera.nrinvpol: 12
+
+# forward polynomial f(\rho)
+Camera.a0: -209.200757992065
+Camera.a1: 0.0 
+Camera.a2: 0.00213741670953883
+Camera.a3: -4.2203617319086e-06
+Camera.a4: 1.77146086919594e-08
+
+# backward polynomial rho(\theta)
+Camera.pol0: 293.667187375663
+.... and the rest pol1-pol10
+Camera.pol11: 0.810799620714366
+
+# affine matrix
+Camera.c: 0.999626131079017
+Camera.d: -0.0034775192597376
+Camera.e: 0.00385134991673147
+
+# principal point
+Camera.u0: 392.219508388648
+Camera.v0: 243.494438476351
+\end{DoxyVerb}
+
+
+You can find example files in ./\+Examples/\+Lafida
+
+\section*{4. Multi-\/camera calibration}
+
+You can find example files in ./\+Examples/\+Lafida T\+O\+DO
+
+\section*{5.\+Dependencies\+:}
+
+\subsection*{Pangolin}
+
+For visualization. Get the instructions here\+: \href{https://github.com/stevenlovegrove/Pangolin}{\tt Pangolin}
+
+\subsection*{Open\+CV 3}
+
+Required is at least {\bfseries Open\+CV 3.\+0}. The library can be found at\+: \href{https://github.com/opencv/opencv}{\tt Open\+CV}.
+
+\subsection*{Eigen 3}
+
+Required by g2o. Version 3.\+2.\+9 is included in the ./\+Third\+Party folder. Other version can be found at \href{http://eigen.tuxfamily.org/index.php?title=Main_Page}{\tt Eigen}.
+
+\subsection*{Open\+GV}
+
+Open\+GV can be found at\+: \href{https://github.com/laurentkneip/opengv}{\tt Open\+GV}. It is also included in the ./\+Third\+Party folder. We use Open\+GV for re-\/localization (G\+P3P) and relative orientation estimation during initialization (Stewenius).
+
+\subsection*{D\+Bo\+W2 and g2o}
+
+As O\+R\+B-\/\+S\+L\+A\+M2 we use modified versions of D\+Bo\+W2 and g2o for place recognition and optimization respectively. Both are included in the ./\+Third\+Party folder. The original versions can be found here\+: \href{https://github.com/dorian3d/DBoW2}{\tt D\+Bo\+W2}, \href{https://github.com/RainerKuemmerle/g2o}{\tt g2o}.
+
+\section*{6. Build Multi\+Col-\/\+S\+L\+AM\+:}
+
+\subsection*{Ubuntu\+:}
+
+This is tested with Ubuntu 16.\+04. Before you build Multi\+Col-\/\+S\+L\+AM, you have to build and install Open\+CV and Pangolin. This can for example be done by running the following\+:
+
+\paragraph*{Build Pangolin\+:}
+
+\begin{DoxyVerb}sudo apt-get install libglew-dev cmake
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+mkdir build
+cd build
+cmake -DCPP11_NO_BOOST=1 ..
+make -j
+\end{DoxyVerb}
+
+
+\paragraph*{Build Open\+CV 3.\+1}
+
+This is just a suggestion on how to build Open\+CV 3.\+1. There a plenty of options. Also some packages might be optional. \begin{DoxyVerb}sudo apt-get install libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+git clone https://github.com/Itseez/opencv.git
+cd opencv
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_CUDA=OFF ..
+make -j
+sudo make install
+\end{DoxyVerb}
+ this will take some time...
+
+\paragraph*{Build Multi\+Col-\/\+S\+L\+AM}
+
+git clone \href{https://github.com/urbste/MultiCol-SLAM.git}{\tt https\+://github.\+com/urbste/\+Multi\+Col-\/\+S\+L\+A\+M.\+git} Multi\+Col-\/\+S\+L\+AM cd Multi\+Col-\/\+S\+L\+AM chmod +x build.\+sh ./build.sh
+
+for the rest run the build.\+sh This will create a library and an executable {\bfseries multi\+\_\+col\+\_\+slam\+\_\+lafida}, that you can run as shown in 7. below.
+
+\subsection*{Windows\+:}
+
+This description assumes that you are familiar with building libraries using cmake and Visual Studio. Required is at least Visual Studio 2013. The first step is to build {\bfseries Pangolin}.
+\begin{DoxyItemize}
+\item Download or clone \href{https://github.com/stevenlovegrove/Pangolin}{\tt Pangolin}.
+\item Run cmake to create a VS project in \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+P\+A\+N\+G\+O\+L\+IN\$/build.
+\item You can add options if you like, but the most basic set of options is sufficient for Multi\+Col-\/\+S\+L\+AM and should build without issues.
+\item Open build/\+Pangolin.\+sln switch to Release and build the solution (A\+L\+L\+\_\+\+B\+U\+I\+LD)
+\end{DoxyItemize}
+
+Next build {\bfseries Open\+CV 3.\+1}.
+\begin{DoxyItemize}
+\item Download or clone \href{https://github.com/opencv/opencv}{\tt Open\+CV 3.\+1}.
+\item Run cmake to create a VS project in \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+Open\+CV\$/build.
+\item You might want to switch of building the C\+U\+DA libraries as this takes a long time
+\item Open \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+Open\+CV\$/build/\+Open\+CV.sln switch to Release and build the solution. Open folder C\+Make\+Targets. Right click on I\+N\+S\+T\+A\+LL and select build.
+\end{DoxyItemize}
+
+Now download or clone Multi\+Col-\/\+S\+L\+AM. Next build D\+Bo\+W2\+:
+\begin{DoxyItemize}
+\item Run cmake to create a VS project in \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/\+D\+Bo\+W2/build
+\item If you get configuration errors, you likely did not set the Open\+C\+V\+\_\+\+D\+IR
+\item Set this path to \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+Open\+CV\$/build/install and run Generate
+\item \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/\+D\+Bo\+W2/build/\+D\+Bo\+W2.sln, switch to Release and build the solution
+\end{DoxyItemize}
+
+Next build g2o\+:
+\begin{DoxyItemize}
+\item Run cmake to create a VS project in \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/g2o/build
+\item If you get any errors, you might want to set the E\+I\+G\+E\+N3\+\_\+\+I\+N\+C\+L\+U\+D\+E\+\_\+\+D\+IR. Either you set it to your own version of Eigen or use the version that is provided in the Third\+Party folder \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/\+Eigen.
+\item Hit Generate and you will get the solution g2o.\+sln. Open it, select Release and build the solution.
+\end{DoxyItemize}
+
+In a last step, we will build Open\+GV. Unfortunately this takes quite some time under Windows (hours).
+\begin{DoxyItemize}
+\item Run cmake to create a VS project in \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/\+Open\+G\+V/build
+\item Open \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/\+Third\+Party/\+Open\+G\+V/build/\+Open\+GV.sln switch to Release and build the solution
+\end{DoxyItemize}
+
+Finally, we can build Multi\+Col-\/\+S\+L\+AM\+:
+\begin{DoxyItemize}
+\item Run cmake to create a VS project in \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/build
+\item If you get any errors\+:
+\item Set Open\+C\+V\+\_\+\+D\+IR\+: \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+Open\+CV\$/build/install
+\item Set Pangolin\+\_\+\+D\+IR\+: \$\+P\+A\+T\+H\+\_\+\+T\+O\+\_\+\+P\+A\+N\+G\+O\+L\+IN\$/build/src
+\item Open \$\+Multi\+Col-\/\+S\+L\+A\+M\+\_\+\+P\+A\+TH\$/build/\+Multi\+Col-\/\+S\+L\+AM.sln and build the solution (A\+L\+L\+\_\+\+B\+U\+I\+LD)
+\end{DoxyItemize}
+
+\section*{7. Run examples}
+
+By now you should have compiled all libraries and Multi\+Col-\/\+S\+L\+AM. If everthing went well, you will find an executable in the folder ./\+Examples/\+Lafida/\+Release if you are running Windows and ./
+
+\subsection*{\href{http://www.ipf.kit.edu/lafida.php}{\tt Lafida}}
+
+First download the indoor dynamic dataset\+: \href{http://www2.ipf.kit.edu/~pcv2016/downloads/indoor_dynamic.zip}{\tt dataset} Then extract the folder, e.\+g. to the folder \begin{DoxyVerb}$HOME$/Downloads/IndoorDynamic
+\end{DoxyVerb}
+
+
+The executable {\bfseries multi\+\_\+col\+\_\+slam\+\_\+lafida} expects 4 paths. The first is the path to the vocabulary file. The second is the path to the settings file. The third is the path to the calibration files. The fourth is the path to the images. In our example, we could run Multi\+Col-\/\+S\+L\+AM\+: \begin{DoxyVerb}./Examples/Lafida/multi_col_slam_lafida ./Examples/small_orb_omni_voc_9_6.yml  ./Examples/Lafida/Slam_Settings_indoor1.yaml ./Examples/Lafida/ $HOME$/Downloads/IndoorDynamic\end{DoxyVerb}
+ 

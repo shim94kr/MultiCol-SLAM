@@ -1,0 +1,229 @@
+\hypertarget{classMultiColSLAM_1_1cMapPoint}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Map\+Point Class Reference}
+\label{classMultiColSLAM_1_1cMapPoint}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Map\+Point@{Multi\+Col\+S\+L\+A\+M\+::c\+Map\+Point}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Map\+Point} (const cv\+::\+Vec3d \&Pos, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+Ref\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cMapPoint_a4f9a13bb03be00a998f8f234411dff06}{}\label{classMultiColSLAM_1_1cMapPoint_a4f9a13bb03be00a998f8f234411dff06}
+
+\item 
+void {\bfseries Set\+World\+Pos} (const cv\+::\+Vec3d \&Pos)\hypertarget{classMultiColSLAM_1_1cMapPoint_a47006ca0d6803c37bf28ba18357c85d3}{}\label{classMultiColSLAM_1_1cMapPoint_a47006ca0d6803c37bf28ba18357c85d3}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+World\+Pos} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a8b4f0f1df117cef39059307ee7b2d1b6}{}\label{classMultiColSLAM_1_1cMapPoint_a8b4f0f1df117cef39059307ee7b2d1b6}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+Normal} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a6b0bbcd7560701d599510209b499f005}{}\label{classMultiColSLAM_1_1cMapPoint_a6b0bbcd7560701d599510209b499f005}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries Get\+Reference\+Key\+Frame} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_ac3573f2d0babad7877e2be2749bf2f52}{}\label{classMultiColSLAM_1_1cMapPoint_ac3573f2d0babad7877e2be2749bf2f52}
+
+\item 
+std\+::map$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, std\+::vector$<$ size\+\_\+t $>$ $>$ {\bfseries Get\+Observations} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a8d8be86b4a76a648f1a0310a2639919c}{}\label{classMultiColSLAM_1_1cMapPoint_a8d8be86b4a76a648f1a0310a2639919c}
+
+\item 
+int {\bfseries Observations} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a05fed41d71bf8d37d4c7df7bad3847ff}{}\label{classMultiColSLAM_1_1cMapPoint_a05fed41d71bf8d37d4c7df7bad3847ff}
+
+\item 
+int {\bfseries Total\+Nr\+Observations} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a21b08bf8f6e9a8b8d23785c3753edee2}{}\label{classMultiColSLAM_1_1cMapPoint_a21b08bf8f6e9a8b8d23785c3753edee2}
+
+\item 
+void {\bfseries Add\+Observation} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, const size\+\_\+t \&idx)\hypertarget{classMultiColSLAM_1_1cMapPoint_a0a9257b2c9160932bce07dd197e6c689}{}\label{classMultiColSLAM_1_1cMapPoint_a0a9257b2c9160932bce07dd197e6c689}
+
+\item 
+void {\bfseries Erase\+Observation} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, const size\+\_\+t \&idx)\hypertarget{classMultiColSLAM_1_1cMapPoint_a643edc73b2e5b022952572086da211b7}{}\label{classMultiColSLAM_1_1cMapPoint_a643edc73b2e5b022952572086da211b7}
+
+\item 
+void {\bfseries Erase\+All\+Observations} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMapPoint_aaa87f52cb969cb98444f78b13afd34d9}{}\label{classMultiColSLAM_1_1cMapPoint_aaa87f52cb969cb98444f78b13afd34d9}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries Get\+Index\+In\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMapPoint_a27867b8673bcb8abad20ae18b0b31b20}{}\label{classMultiColSLAM_1_1cMapPoint_a27867b8673bcb8abad20ae18b0b31b20}
+
+\item 
+bool {\bfseries Is\+In\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMapPoint_a8f95a7ecd79c17f64ab772749eae1e6c}{}\label{classMultiColSLAM_1_1cMapPoint_a8f95a7ecd79c17f64ab772749eae1e6c}
+
+\item 
+void {\bfseries Set\+Bad\+Flag} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_aa6682353979a077c0c1c4d3b6dd6c870}{}\label{classMultiColSLAM_1_1cMapPoint_aa6682353979a077c0c1c4d3b6dd6c870}
+
+\item 
+void {\bfseries Set\+Scaled\+Flag} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a9362b1df45a15da916906f9b16ab7e94}{}\label{classMultiColSLAM_1_1cMapPoint_a9362b1df45a15da916906f9b16ab7e94}
+
+\item 
+bool {\bfseries is\+Scaled} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a5e25b640143f76cdf11db03c0e7c2490}{}\label{classMultiColSLAM_1_1cMapPoint_a5e25b640143f76cdf11db03c0e7c2490}
+
+\item 
+bool {\bfseries is\+Bad} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a692d972bb230c686c2dd3612b29df533}{}\label{classMultiColSLAM_1_1cMapPoint_a692d972bb230c686c2dd3612b29df533}
+
+\item 
+void {\bfseries Replace} (\hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP)\hypertarget{classMultiColSLAM_1_1cMapPoint_a907424cc2c7af196ad3388417e8278bb}{}\label{classMultiColSLAM_1_1cMapPoint_a907424cc2c7af196ad3388417e8278bb}
+
+\item 
+void {\bfseries Increase\+Visible} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a18cbb8806118b3ab68f413141af27400}{}\label{classMultiColSLAM_1_1cMapPoint_a18cbb8806118b3ab68f413141af27400}
+
+\item 
+void {\bfseries Increase\+Found} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a1d65530b9cecb51bc24e689b318738a5}{}\label{classMultiColSLAM_1_1cMapPoint_a1d65530b9cecb51bc24e689b318738a5}
+
+\item 
+void {\bfseries Increase\+Visible} (const int \&val)\hypertarget{classMultiColSLAM_1_1cMapPoint_aba0f6db5e85122080398f9c436d950c6}{}\label{classMultiColSLAM_1_1cMapPoint_aba0f6db5e85122080398f9c436d950c6}
+
+\item 
+void {\bfseries Increase\+Found} (const int \&val)\hypertarget{classMultiColSLAM_1_1cMapPoint_aa2b578566309b5d8a2dcdf6519402f07}{}\label{classMultiColSLAM_1_1cMapPoint_aa2b578566309b5d8a2dcdf6519402f07}
+
+\item 
+double {\bfseries Get\+Found\+Ratio} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a8e22e30b5598283c0514eb33490f1b00}{}\label{classMultiColSLAM_1_1cMapPoint_a8e22e30b5598283c0514eb33490f1b00}
+
+\item 
+void {\bfseries Compute\+Distinctive\+Descriptors} (bool having\+Masks=false)\hypertarget{classMultiColSLAM_1_1cMapPoint_a11f38fa3463e52d099cf4462bd0dd4bc}{}\label{classMultiColSLAM_1_1cMapPoint_a11f38fa3463e52d099cf4462bd0dd4bc}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptor} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_ab8ce1dc8d9e409909a79e31adeedf227}{}\label{classMultiColSLAM_1_1cMapPoint_ab8ce1dc8d9e409909a79e31adeedf227}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Current\+Descriptor} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a84cffa1f67ffed3decfee49165aced24}{}\label{classMultiColSLAM_1_1cMapPoint_a84cffa1f67ffed3decfee49165aced24}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptor\+Mask} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_ad9b2d06bf8d53337a286b876beceaae7}{}\label{classMultiColSLAM_1_1cMapPoint_ad9b2d06bf8d53337a286b876beceaae7}
+
+\item 
+const uint64\+\_\+t $\ast$ {\bfseries Get\+Descriptor\+Ptr} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a8bfc992a5d2ca65817899ee27630670f}{}\label{classMultiColSLAM_1_1cMapPoint_a8bfc992a5d2ca65817899ee27630670f}
+
+\item 
+const uint64\+\_\+t $\ast$ {\bfseries Get\+Descriptor\+Mask\+Ptr} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a359a4f713ac4ba9fd0ace237b31e77c8}{}\label{classMultiColSLAM_1_1cMapPoint_a359a4f713ac4ba9fd0ace237b31e77c8}
+
+\item 
+const uint64\+\_\+t $\ast$ {\bfseries Get\+Current\+Descriptor\+Ptr} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a3ffced99451fbefcd29b296933130f71}{}\label{classMultiColSLAM_1_1cMapPoint_a3ffced99451fbefcd29b296933130f71}
+
+\item 
+void {\bfseries Update\+Current\+Descriptor} (cv\+::\+Mat \&curr\+Desc)\hypertarget{classMultiColSLAM_1_1cMapPoint_a4b4e7bdd297059cd3d2f5026994f6c38}{}\label{classMultiColSLAM_1_1cMapPoint_a4b4e7bdd297059cd3d2f5026994f6c38}
+
+\item 
+void {\bfseries Update\+Normal\+And\+Depth} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a3ac8cd1186d82d1c293403cebffdb60a}{}\label{classMultiColSLAM_1_1cMapPoint_a3ac8cd1186d82d1c293403cebffdb60a}
+
+\item 
+double {\bfseries Get\+Min\+Distance\+Invariance} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_a3c9c74cdd1ab20d9f53138bfb93910bf}{}\label{classMultiColSLAM_1_1cMapPoint_a3c9c74cdd1ab20d9f53138bfb93910bf}
+
+\item 
+double {\bfseries Get\+Max\+Distance\+Invariance} ()\hypertarget{classMultiColSLAM_1_1cMapPoint_ab7c67b2ef281e69ff469385b37eb20cd}{}\label{classMultiColSLAM_1_1cMapPoint_ab7c67b2ef281e69ff469385b37eb20cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long unsigned int {\bfseries mn\+Id}\hypertarget{classMultiColSLAM_1_1cMapPoint_aa8edb89ae453d2925e1db86d8d554c1b}{}\label{classMultiColSLAM_1_1cMapPoint_aa8edb89ae453d2925e1db86d8d554c1b}
+
+\item 
+long int {\bfseries mn\+First\+K\+Fid}\hypertarget{classMultiColSLAM_1_1cMapPoint_a1ecff0c1e481fae14ec4da9d31785a68}{}\label{classMultiColSLAM_1_1cMapPoint_a1ecff0c1e481fae14ec4da9d31785a68}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries m\+Track\+ProjX}\hypertarget{classMultiColSLAM_1_1cMapPoint_abc33374bf06ce7896c78b277d14caf70}{}\label{classMultiColSLAM_1_1cMapPoint_abc33374bf06ce7896c78b277d14caf70}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries m\+Track\+ProjY}\hypertarget{classMultiColSLAM_1_1cMapPoint_af50664f11197701f8d755db9af26407e}{}\label{classMultiColSLAM_1_1cMapPoint_af50664f11197701f8d755db9af26407e}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mb\+Track\+In\+View}\hypertarget{classMultiColSLAM_1_1cMapPoint_abaed43da98f6a7705ee0358acaf61583}{}\label{classMultiColSLAM_1_1cMapPoint_abaed43da98f6a7705ee0358acaf61583}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Track\+Scale\+Level}\hypertarget{classMultiColSLAM_1_1cMapPoint_a70d26f1f6537846ed89d32bad009ce59}{}\label{classMultiColSLAM_1_1cMapPoint_a70d26f1f6537846ed89d32bad009ce59}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries m\+Track\+View\+Cos}\hypertarget{classMultiColSLAM_1_1cMapPoint_a6cf5eff2855a3c3cdc29404b85028632}{}\label{classMultiColSLAM_1_1cMapPoint_a6cf5eff2855a3c3cdc29404b85028632}
+
+\item 
+long unsigned int {\bfseries mn\+Track\+Reference\+For\+Frame}\hypertarget{classMultiColSLAM_1_1cMapPoint_a29c7970184168b3d6981a0be8ca2935e}{}\label{classMultiColSLAM_1_1cMapPoint_a29c7970184168b3d6981a0be8ca2935e}
+
+\item 
+long unsigned int {\bfseries mn\+Last\+Frame\+Seen}\hypertarget{classMultiColSLAM_1_1cMapPoint_a0fc82afa28d1bbf9e9feaef66fb6fea7}{}\label{classMultiColSLAM_1_1cMapPoint_a0fc82afa28d1bbf9e9feaef66fb6fea7}
+
+\item 
+long unsigned int {\bfseries mn\+B\+A\+Local\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMapPoint_a5ce1a4fd7d1f5b95170f690347c24a80}{}\label{classMultiColSLAM_1_1cMapPoint_a5ce1a4fd7d1f5b95170f690347c24a80}
+
+\item 
+long unsigned int {\bfseries mn\+Fuse\+Candidate\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMapPoint_a49801293d50bdccdc6cdb1b9ce18c658}{}\label{classMultiColSLAM_1_1cMapPoint_a49801293d50bdccdc6cdb1b9ce18c658}
+
+\item 
+long unsigned int {\bfseries mn\+Loop\+Point\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMapPoint_ae6af450367608b3240bcf10891541e22}{}\label{classMultiColSLAM_1_1cMapPoint_ae6af450367608b3240bcf10891541e22}
+
+\item 
+long unsigned int {\bfseries mn\+Corrected\+By\+KF}\hypertarget{classMultiColSLAM_1_1cMapPoint_adc53d87ca7ed29123cf1de3c0331ae69}{}\label{classMultiColSLAM_1_1cMapPoint_adc53d87ca7ed29123cf1de3c0331ae69}
+
+\item 
+long unsigned int {\bfseries mn\+Corrected\+Reference}\hypertarget{classMultiColSLAM_1_1cMapPoint_a860db83a8e61450960df54ddbcd6b950}{}\label{classMultiColSLAM_1_1cMapPoint_a860db83a8e61450960df54ddbcd6b950}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static long unsigned int {\bfseries n\+Next\+Id}\hypertarget{classMultiColSLAM_1_1cMapPoint_a6768e191b600bc8d57aa7d9048073488}{}\label{classMultiColSLAM_1_1cMapPoint_a6768e191b600bc8d57aa7d9048073488}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Vec3d {\bfseries m\+World\+Pos}\hypertarget{classMultiColSLAM_1_1cMapPoint_ae8339597c43ad219c4f673164ad835ca}{}\label{classMultiColSLAM_1_1cMapPoint_ae8339597c43ad219c4f673164ad835ca}
+
+\item 
+cv\+::\+Vec3d {\bfseries m\+Model\+Pos}\hypertarget{classMultiColSLAM_1_1cMapPoint_a357e0120e4d0a169ae959298b2ee8087}{}\label{classMultiColSLAM_1_1cMapPoint_a357e0120e4d0a169ae959298b2ee8087}
+
+\item 
+std\+::map$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, std\+::vector$<$ size\+\_\+t $>$ $>$ {\bfseries m\+Observations}\hypertarget{classMultiColSLAM_1_1cMapPoint_afaaf3f0c15ee926da086fd478a086402}{}\label{classMultiColSLAM_1_1cMapPoint_afaaf3f0c15ee926da086fd478a086402}
+
+\item 
+cv\+::\+Vec3d {\bfseries m\+Normal\+Vector}\hypertarget{classMultiColSLAM_1_1cMapPoint_a6f48fff8508ccced478b3541f4e2fb4d}{}\label{classMultiColSLAM_1_1cMapPoint_a6f48fff8508ccced478b3541f4e2fb4d}
+
+\item 
+cv\+::\+Mat {\bfseries m\+Descriptor}\hypertarget{classMultiColSLAM_1_1cMapPoint_a99d56c0c703f06db18841639c3cdbe17}{}\label{classMultiColSLAM_1_1cMapPoint_a99d56c0c703f06db18841639c3cdbe17}
+
+\item 
+cv\+::\+Mat {\bfseries m\+Current\+Descriptor}\hypertarget{classMultiColSLAM_1_1cMapPoint_a38b2c3cbb2511e3d27c5e7e641a08b99}{}\label{classMultiColSLAM_1_1cMapPoint_a38b2c3cbb2511e3d27c5e7e641a08b99}
+
+\item 
+cv\+::\+Mat {\bfseries m\+Descriptor\+Mask}\hypertarget{classMultiColSLAM_1_1cMapPoint_a3ca35916d28a0b5dff6de852d9525688}{}\label{classMultiColSLAM_1_1cMapPoint_a3ca35916d28a0b5dff6de852d9525688}
+
+\item 
+double {\bfseries mean\+Pt\+Error}\hypertarget{classMultiColSLAM_1_1cMapPoint_adf8230900e3fc0a908e7f8db0aacd84f}{}\label{classMultiColSLAM_1_1cMapPoint_adf8230900e3fc0a908e7f8db0aacd84f}
+
+\item 
+double {\bfseries sigmaX}\hypertarget{classMultiColSLAM_1_1cMapPoint_a47a8f0194d29ed2c8534c35d214784e9}{}\label{classMultiColSLAM_1_1cMapPoint_a47a8f0194d29ed2c8534c35d214784e9}
+
+\item 
+double {\bfseries sigmaY}\hypertarget{classMultiColSLAM_1_1cMapPoint_a95ab0d6463e5eb95cafd6185afda88bc}{}\label{classMultiColSLAM_1_1cMapPoint_a95ab0d6463e5eb95cafd6185afda88bc}
+
+\item 
+double {\bfseries sigmaZ}\hypertarget{classMultiColSLAM_1_1cMapPoint_a992d17f8a1a34de20c3dfe071aa38324}{}\label{classMultiColSLAM_1_1cMapPoint_a992d17f8a1a34de20c3dfe071aa38324}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Ref\+KF}\hypertarget{classMultiColSLAM_1_1cMapPoint_a006726f5ad4048826651c604651ef2f5}{}\label{classMultiColSLAM_1_1cMapPoint_a006726f5ad4048826651c604651ef2f5}
+
+\item 
+int {\bfseries mn\+Visible}\hypertarget{classMultiColSLAM_1_1cMapPoint_a9b0182fb195b3ca68800b66be6eeb9b6}{}\label{classMultiColSLAM_1_1cMapPoint_a9b0182fb195b3ca68800b66be6eeb9b6}
+
+\item 
+int {\bfseries mn\+Found}\hypertarget{classMultiColSLAM_1_1cMapPoint_ab9156bf57bd49e7c1da27055d7495f0e}{}\label{classMultiColSLAM_1_1cMapPoint_ab9156bf57bd49e7c1da27055d7495f0e}
+
+\item 
+bool {\bfseries mb\+Bad}\hypertarget{classMultiColSLAM_1_1cMapPoint_a7b4780baad8d52ae7e493795579ca1b9}{}\label{classMultiColSLAM_1_1cMapPoint_a7b4780baad8d52ae7e493795579ca1b9}
+
+\item 
+bool {\bfseries scaled}\hypertarget{classMultiColSLAM_1_1cMapPoint_ae745f9c886ad46ff8dc6bda79514a80b}{}\label{classMultiColSLAM_1_1cMapPoint_ae745f9c886ad46ff8dc6bda79514a80b}
+
+\item 
+double {\bfseries mf\+Min\+Distance}\hypertarget{classMultiColSLAM_1_1cMapPoint_a3e69a624c51686e18fead7a4edbef035}{}\label{classMultiColSLAM_1_1cMapPoint_a3e69a624c51686e18fead7a4edbef035}
+
+\item 
+double {\bfseries mf\+Max\+Distance}\hypertarget{classMultiColSLAM_1_1cMapPoint_aedeadbac99775a38b381df6236b0bfa1}{}\label{classMultiColSLAM_1_1cMapPoint_aedeadbac99775a38b381df6236b0bfa1}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cMapPoint_ac9c0c48ce6171c75335c80552e7f8b85}{}\label{classMultiColSLAM_1_1cMapPoint_ac9c0c48ce6171c75335c80552e7f8b85}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Pos}\hypertarget{classMultiColSLAM_1_1cMapPoint_afe0f24da04e47271be92300d2ae43f42}{}\label{classMultiColSLAM_1_1cMapPoint_afe0f24da04e47271be92300d2ae43f42}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Features}\hypertarget{classMultiColSLAM_1_1cMapPoint_a551dd797d0cd78a6b9a8ac02a6d1bf4a}{}\label{classMultiColSLAM_1_1cMapPoint_a551dd797d0cd78a6b9a8ac02a6d1bf4a}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Map\+Point.\+h\end{DoxyCompactItemize}

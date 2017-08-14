@@ -1,0 +1,61 @@
+\hypertarget{classMultiColSLAM_1_1cMapPublisher}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Map\+Publisher Class Reference}
+\label{classMultiColSLAM_1_1cMapPublisher}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Map\+Publisher@{Multi\+Col\+S\+L\+A\+M\+::c\+Map\+Publisher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Map\+Publisher} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, const string \&str\+Setting\+Path)\hypertarget{classMultiColSLAM_1_1cMapPublisher_af8c18b7f1f5fc061399e7ae0ac1f24e3}{}\label{classMultiColSLAM_1_1cMapPublisher_af8c18b7f1f5fc061399e7ae0ac1f24e3}
+
+\item 
+void {\bfseries Publish\+Map\+Points} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_a4b0740b326e09680caa616a52ef02295}{}\label{classMultiColSLAM_1_1cMapPublisher_a4b0740b326e09680caa616a52ef02295}
+
+\item 
+void {\bfseries Publish\+Multi\+Key\+Frames} (const bool b\+Draw\+KF=true, const bool b\+Draw\+Graph=true)\hypertarget{classMultiColSLAM_1_1cMapPublisher_a14d5e09d38485cb393ee25c7deef5583}{}\label{classMultiColSLAM_1_1cMapPublisher_a14d5e09d38485cb393ee25c7deef5583}
+
+\item 
+void {\bfseries Publish\+Current\+Camera} (const pangolin\+::\+Open\+Gl\+Matrix \&Tcw)\hypertarget{classMultiColSLAM_1_1cMapPublisher_af7475f673f106d034392bd70a9dba885}{}\label{classMultiColSLAM_1_1cMapPublisher_af7475f673f106d034392bd70a9dba885}
+
+\item 
+void {\bfseries Get\+Current\+Open\+G\+L\+M\+C\+S\+Pose} (pangolin\+::\+Open\+Gl\+Matrix \&\+\_\+\+Tcw)\hypertarget{classMultiColSLAM_1_1cMapPublisher_a7b1b6fab4bfbe2d632456c054942000b}{}\label{classMultiColSLAM_1_1cMapPublisher_a7b1b6fab4bfbe2d632456c054942000b}
+
+\item 
+void {\bfseries Set\+Current\+Camera\+Pose} (const cv\+::\+Matx44d Tcw)\hypertarget{classMultiColSLAM_1_1cMapPublisher_a5842836951b1a5e724962376cb6ff3df}{}\label{classMultiColSLAM_1_1cMapPublisher_a5842836951b1a5e724962376cb6ff3df}
+
+\item 
+void {\bfseries Set\+M\+CS} (const std\+::vector$<$ cv\+::\+Matx44d $>$ M\+\_\+c\+\_\+s)\hypertarget{classMultiColSLAM_1_1cMapPublisher_afc5535e79e8df23da397bee4f67bce58}{}\label{classMultiColSLAM_1_1cMapPublisher_afc5535e79e8df23da397bee4f67bce58}
+
+\item 
+void {\bfseries Set\+Finish} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_a22951ebc491cde2577a53dfb7f963633}{}\label{classMultiColSLAM_1_1cMapPublisher_a22951ebc491cde2577a53dfb7f963633}
+
+\item 
+void {\bfseries Request\+Finish} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_aecee53884855f3682b34c463bad83bf7}{}\label{classMultiColSLAM_1_1cMapPublisher_aecee53884855f3682b34c463bad83bf7}
+
+\item 
+bool {\bfseries Check\+Finish} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_afaec0b563b6d15c9da6e376e37c51beb}{}\label{classMultiColSLAM_1_1cMapPublisher_afaec0b563b6d15c9da6e376e37c51beb}
+
+\item 
+bool {\bfseries is\+Finished} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_afaec25a0b20dcfef5200d5bf60df1ae2}{}\label{classMultiColSLAM_1_1cMapPublisher_afaec25a0b20dcfef5200d5bf60df1ae2}
+
+\item 
+void {\bfseries Request\+Stop} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_a167d2efa70eb345381ffaf325e417496}{}\label{classMultiColSLAM_1_1cMapPublisher_a167d2efa70eb345381ffaf325e417496}
+
+\item 
+bool {\bfseries is\+Stopped} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_a3b7afcdca71d1d495b3b03c660279805}{}\label{classMultiColSLAM_1_1cMapPublisher_a3b7afcdca71d1d495b3b03c660279805}
+
+\item 
+void {\bfseries Release} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_abd0a7081152790a02797dc22e4625730}{}\label{classMultiColSLAM_1_1cMapPublisher_abd0a7081152790a02797dc22e4625730}
+
+\item 
+bool {\bfseries Stop} ()\hypertarget{classMultiColSLAM_1_1cMapPublisher_acff2e9b01cc77a3e44655c348cfbe377}{}\label{classMultiColSLAM_1_1cMapPublisher_acff2e9b01cc77a3e44655c348cfbe377}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cMapPublisher_acb5127b43391b1be4b703eb18c980f66}{}\label{classMultiColSLAM_1_1cMapPublisher_acb5127b43391b1be4b703eb18c980f66}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Map\+Publisher.\+h\end{DoxyCompactItemize}

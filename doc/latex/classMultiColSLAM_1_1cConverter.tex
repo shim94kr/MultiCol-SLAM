@@ -1,0 +1,76 @@
+\hypertarget{classMultiColSLAM_1_1cConverter}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Converter Class Reference}
+\label{classMultiColSLAM_1_1cConverter}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Converter@{Multi\+Col\+S\+L\+A\+M\+::c\+Converter}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries to\+Descriptor\+Vector} (const cv\+::\+Mat \&Descriptors)\hypertarget{classMultiColSLAM_1_1cConverter_aed35bfe5af479cdf6f51076a75c35cad}{}\label{classMultiColSLAM_1_1cConverter_aed35bfe5af479cdf6f51076a75c35cad}
+
+\item 
+static std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries to\+Descriptor\+Vector} (const std\+::vector$<$ cv\+::\+Mat $>$ \&Descriptors)\hypertarget{classMultiColSLAM_1_1cConverter_a7eb4230e5c2f8d90c7f8605ff53dae9f}{}\label{classMultiColSLAM_1_1cConverter_a7eb4230e5c2f8d90c7f8605ff53dae9f}
+
+\item 
+static g2o\+::\+S\+E3\+Quat {\bfseries to\+S\+E3\+Quat} (const cv\+::\+Matx44d \&hom\+CV)\hypertarget{classMultiColSLAM_1_1cConverter_a5034944e7a9528d8ae88ccf8b5f06807}{}\label{classMultiColSLAM_1_1cConverter_a5034944e7a9528d8ae88ccf8b5f06807}
+
+\item 
+static cv\+::\+Matx44d {\bfseries to\+Cv\+Mat} (const g2o\+::\+S\+E3\+Quat \&S\+E3)\hypertarget{classMultiColSLAM_1_1cConverter_a8275572db49611d569c350bb8c0076fb}{}\label{classMultiColSLAM_1_1cConverter_a8275572db49611d569c350bb8c0076fb}
+
+\item 
+static cv\+::\+Matx44d {\bfseries to\+Cv\+Mat} (const g2o\+::\+Sim3 \&Sim3)\hypertarget{classMultiColSLAM_1_1cConverter_adb00accfb0db5901eab1faad46822a10}{}\label{classMultiColSLAM_1_1cConverter_adb00accfb0db5901eab1faad46822a10}
+
+\item 
+static cv\+::\+Matx44d {\bfseries to\+Cv\+Mat} (const Eigen\+::\+Matrix$<$ double, 4, 4 $>$ \&m)\hypertarget{classMultiColSLAM_1_1cConverter_af698d2f378ba040226897dfb65bef347}{}\label{classMultiColSLAM_1_1cConverter_af698d2f378ba040226897dfb65bef347}
+
+\item 
+static cv\+::\+Matx33d {\bfseries to\+Cv\+Mat} (const Eigen\+::\+Matrix3d \&m)\hypertarget{classMultiColSLAM_1_1cConverter_a8e8676c3f22e7704bcb994260cb0394b}{}\label{classMultiColSLAM_1_1cConverter_a8e8676c3f22e7704bcb994260cb0394b}
+
+\item 
+static cv\+::\+Vec3d {\bfseries to\+Cv\+Vec3d} (const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&m)\hypertarget{classMultiColSLAM_1_1cConverter_ac3e40e4e3b1e3910d87b8aacb9057cd8}{}\label{classMultiColSLAM_1_1cConverter_ac3e40e4e3b1e3910d87b8aacb9057cd8}
+
+\item 
+static cv\+::\+Matx44d {\bfseries to\+Cv\+S\+E3} (const Eigen\+::\+Matrix$<$ double, 3, 3 $>$ \&R, const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&t)\hypertarget{classMultiColSLAM_1_1cConverter_a6726554af7a5f6e63146e79cac53735b}{}\label{classMultiColSLAM_1_1cConverter_a6726554af7a5f6e63146e79cac53735b}
+
+\item 
+static cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries ogv2ocv} (const Eigen\+::\+Matrix$<$ double, 3, 4 $>$ \&ogv\+\_\+mat)\hypertarget{classMultiColSLAM_1_1cConverter_a649a5eb43fb99bdef381fc45b923ce0b}{}\label{classMultiColSLAM_1_1cConverter_a649a5eb43fb99bdef381fc45b923ce0b}
+
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 1 $>$ {\bfseries to\+Vector3d} (const cv\+::\+Vec4d \&cv\+Vector)\hypertarget{classMultiColSLAM_1_1cConverter_afe889d2faf26bb70e0b0b12e093fa1f2}{}\label{classMultiColSLAM_1_1cConverter_afe889d2faf26bb70e0b0b12e093fa1f2}
+
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 1 $>$ {\bfseries to\+Vector3d} (const cv\+::\+Vec3d \&cv\+Vector)\hypertarget{classMultiColSLAM_1_1cConverter_a841fb403b7e98e0957dd8cae0bd448c7}{}\label{classMultiColSLAM_1_1cConverter_a841fb403b7e98e0957dd8cae0bd448c7}
+
+\item 
+static Eigen\+::\+Matrix$<$ double, 2, 1 $>$ {\bfseries to\+Vector2d} (const cv\+::\+Vec2d \&cv\+Vector)\hypertarget{classMultiColSLAM_1_1cConverter_adf4a1e7bf272c4cb65c5a6bb08d060c3}{}\label{classMultiColSLAM_1_1cConverter_adf4a1e7bf272c4cb65c5a6bb08d060c3}
+
+\item 
+static Eigen\+::\+Matrix$<$ double, 3, 3 $>$ {\bfseries to\+Matrix3d} (const cv\+::\+Matx33d \&cv\+Mat3)\hypertarget{classMultiColSLAM_1_1cConverter_a4c3a9a7c708673beb7a972dedcc57057}{}\label{classMultiColSLAM_1_1cConverter_a4c3a9a7c708673beb7a972dedcc57057}
+
+\item 
+static std\+::vector$<$ double $>$ {\bfseries to\+Quaternion} (const cv\+::\+Matx33d \&M)\hypertarget{classMultiColSLAM_1_1cConverter_a51b7cf50aa5b5852ffc88e45516a39db}{}\label{classMultiColSLAM_1_1cConverter_a51b7cf50aa5b5852ffc88e45516a39db}
+
+\item 
+static cv\+::\+Matx33d {\bfseries Hom2R} (const cv\+::\+Matx44d \&hom\+CV)\hypertarget{classMultiColSLAM_1_1cConverter_a269e0ca56c713de6efc272dec66ddb81}{}\label{classMultiColSLAM_1_1cConverter_a269e0ca56c713de6efc272dec66ddb81}
+
+\item 
+static cv\+::\+Vec3d {\bfseries Hom2T} (const cv\+::\+Matx44d \&hom\+CV)\hypertarget{classMultiColSLAM_1_1cConverter_ac49492df8b6e355512d56dbfbdfd7fe5}{}\label{classMultiColSLAM_1_1cConverter_ac49492df8b6e355512d56dbfbdfd7fe5}
+
+\item 
+static cv\+::\+Matx44d {\bfseries Rt2\+Hom} (const cv\+::\+Matx33d \&R, const cv\+::\+Vec3d \&t)\hypertarget{classMultiColSLAM_1_1cConverter_ab91651922aefa9d4a1e9483a2a3ec847}{}\label{classMultiColSLAM_1_1cConverter_ab91651922aefa9d4a1e9483a2a3ec847}
+
+\item 
+static cv\+::\+Vec4d {\bfseries to\+Vec4d} (const cv\+::\+Vec3d \&in)\hypertarget{classMultiColSLAM_1_1cConverter_ae4a4f2225f6f45e319224552691ef9b2}{}\label{classMultiColSLAM_1_1cConverter_ae4a4f2225f6f45e319224552691ef9b2}
+
+\item 
+static cv\+::\+Vec4d {\bfseries to\+Vec4d} (const Eigen\+::\+Matrix$<$ double, 3, 1 $>$ \&in)\hypertarget{classMultiColSLAM_1_1cConverter_a8d8d1671427c65c72f9a97260026aa6a}{}\label{classMultiColSLAM_1_1cConverter_a8d8d1671427c65c72f9a97260026aa6a}
+
+\item 
+static cv\+::\+Mat {\bfseries to\+Mat} (const cv\+::\+Matx44d \&matx44d)\hypertarget{classMultiColSLAM_1_1cConverter_a5fa2f3455615b98dc370ea6d56a869c3}{}\label{classMultiColSLAM_1_1cConverter_a5fa2f3455615b98dc370ea6d56a869c3}
+
+\item 
+static cv\+::\+Matx44d {\bfseries inv\+Mat} (const cv\+::\+Matx44d \&M)\hypertarget{classMultiColSLAM_1_1cConverter_a8fe4b4998e2b2141b00ab7163ed1adcb}{}\label{classMultiColSLAM_1_1cConverter_a8fe4b4998e2b2141b00ab7163ed1adcb}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Converter.\+h\end{DoxyCompactItemize}

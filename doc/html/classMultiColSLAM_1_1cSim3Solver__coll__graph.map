@@ -1,0 +1,6 @@
+<map id="MultiColSLAM::cSim3Solver" name="MultiColSLAM::cSim3Solver">
+<area shape="rect" id="node2" href="$classMultiColSLAM_1_1cMultiCamSys__.html" title="MultiColSLAM::cMultiCamSys_" alt="" coords="5,13,212,39"/>
+<area shape="rect" id="node3" href="$classMultiColSLAM_1_1cMultiKeyFrame.html" title="MultiColSLAM::cMultiKeyFrame" alt="" coords="232,109,441,136"/>
+<area shape="rect" id="node4" href="$classMultiColSLAM_1_1cMultiKeyFrameDatabase.html" title="MultiColSLAM::cMultiKeyFrame\lDatabase" alt="" coords="236,5,445,47"/>
+<area shape="rect" id="node5" href="$classMultiColSLAM_1_1cMap.html" title="MultiColSLAM::cMap" alt="" coords="470,13,617,39"/>
+</map>

@@ -1,0 +1,315 @@
+\hypertarget{classMultiColSLAM_1_1cTracking}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Tracking Class Reference}
+\label{classMultiColSLAM_1_1cTracking}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Tracking@{Multi\+Col\+S\+L\+A\+M\+::c\+Tracking}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries e\+Tracking\+State} \{ \\*
+{\bfseries S\+Y\+S\+T\+E\+M\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+DY} = -\/1, 
+{\bfseries N\+O\+\_\+\+I\+M\+A\+G\+E\+S\+\_\+\+Y\+ET} = 0, 
+{\bfseries N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED} = 1, 
+{\bfseries I\+N\+I\+T\+I\+A\+L\+I\+Z\+I\+NG} = 2, 
+\\*
+{\bfseries W\+O\+R\+K\+I\+NG} = 3, 
+{\bfseries L\+O\+ST} = 4
+ \}\hypertarget{classMultiColSLAM_1_1cTracking_af17fe51353d4e2f93c93c49bde4b4b52}{}\label{classMultiColSLAM_1_1cTracking_af17fe51353d4e2f93c93c49bde4b4b52}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Tracking} (\hyperlink{classMultiColSLAM_1_1cSystem}{c\+System} $\ast$p\+Sys, O\+R\+B\+Vocabulary $\ast$p\+Voc, \hyperlink{classMultiColSLAM_1_1cMultiFramePublisher}{c\+Multi\+Frame\+Publisher} $\ast$p\+Frame\+Publisher, \hyperlink{classMultiColSLAM_1_1cMapPublisher}{c\+Map\+Publisher} $\ast$p\+Map\+Publisher, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$p\+K\+F\+DB, \hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} cam\+System, std\+::string settings\+Path\+\_\+)\hypertarget{classMultiColSLAM_1_1cTracking_acdba5cbd4cbc0c12cf323cd39b941d49}{}\label{classMultiColSLAM_1_1cTracking_acdba5cbd4cbc0c12cf323cd39b941d49}
+
+\item 
+void {\bfseries Set\+Local\+Mapper} (\hyperlink{classMultiColSLAM_1_1cLocalMapping}{c\+Local\+Mapping} $\ast$p\+Local\+Mapper)\hypertarget{classMultiColSLAM_1_1cTracking_a8a57448143c0bc20808fa5ae61c32cdf}{}\label{classMultiColSLAM_1_1cTracking_a8a57448143c0bc20808fa5ae61c32cdf}
+
+\item 
+void {\bfseries Set\+Loop\+Closing} (\hyperlink{classMultiColSLAM_1_1cLoopClosing}{c\+Loop\+Closing} $\ast$p\+Loop\+Closing)\hypertarget{classMultiColSLAM_1_1cTracking_a69b3621570bc04268c76eff4168d80bd}{}\label{classMultiColSLAM_1_1cTracking_a69b3621570bc04268c76eff4168d80bd}
+
+\item 
+void {\bfseries Set\+Key\+Frame\+Database} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$p\+K\+F\+DB)\hypertarget{classMultiColSLAM_1_1cTracking_a577332161e4379bf97a117a1147e2e4e}{}\label{classMultiColSLAM_1_1cTracking_a577332161e4379bf97a117a1147e2e4e}
+
+\item 
+void {\bfseries Set\+Viewer} (\hyperlink{classMultiColSLAM_1_1cViewer}{c\+Viewer} $\ast$p\+Viewer)\hypertarget{classMultiColSLAM_1_1cTracking_a1a5c06c53cb38037a1e0cf037c2d3530}{}\label{classMultiColSLAM_1_1cTracking_a1a5c06c53cb38037a1e0cf037c2d3530}
+
+\item 
+cv\+::\+Matx44d {\bfseries Grab\+Image\+Set} (const std\+::vector$<$ cv\+::\+Mat $>$ \&img\+Set, const double \&timestamp)\hypertarget{classMultiColSLAM_1_1cTracking_af0e2d0648e87a8aa3fbacb79bce768c7}{}\label{classMultiColSLAM_1_1cTracking_af0e2d0648e87a8aa3fbacb79bce768c7}
+
+\item 
+void {\bfseries Force\+Relocalisation} ()\hypertarget{classMultiColSLAM_1_1cTracking_ace1b2fbba75a2300e95c4056fdfea993}{}\label{classMultiColSLAM_1_1cTracking_ace1b2fbba75a2300e95c4056fdfea993}
+
+\item 
+void {\bfseries Check\+Reset\+By\+Publishers} ()\hypertarget{classMultiColSLAM_1_1cTracking_a1412662fd5681d0336ca9678e4f42aa0}{}\label{classMultiColSLAM_1_1cTracking_a1412662fd5681d0336ca9678e4f42aa0}
+
+\item 
+std\+::vector$<$ cv\+::\+Matx61d $>$ {\bfseries Get\+All\+Poses} ()\hypertarget{classMultiColSLAM_1_1cTracking_a34aa67bae1cb99a3f0d8f6151b8b5251}{}\label{classMultiColSLAM_1_1cTracking_a34aa67bae1cb99a3f0d8f6151b8b5251}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries Get\+All\+Poses\+Bool} ()\hypertarget{classMultiColSLAM_1_1cTracking_a13f7649209c7ec2bc36b0e6fb8927a06}{}\label{classMultiColSLAM_1_1cTracking_a13f7649209c7ec2bc36b0e6fb8927a06}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries Get\+Nr\+Tracked\+Pts} ()\hypertarget{classMultiColSLAM_1_1cTracking_af6ccddcf6865d1ce46102e8c4714ef40}{}\label{classMultiColSLAM_1_1cTracking_af6ccddcf6865d1ce46102e8c4714ef40}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries Get\+Inlier\+Ratio} ()\hypertarget{classMultiColSLAM_1_1cTracking_ab0190bc33f14381ce240338b7bc22e36}{}\label{classMultiColSLAM_1_1cTracking_ab0190bc33f14381ce240338b7bc22e36}
+
+\item 
+bool {\bfseries Check\+Finished} ()\hypertarget{classMultiColSLAM_1_1cTracking_a3503fdfb3a04d0e5e5fe004fd41eb392}{}\label{classMultiColSLAM_1_1cTracking_a3503fdfb3a04d0e5e5fe004fd41eb392}
+
+\item 
+void {\bfseries Reset} ()\hypertarget{classMultiColSLAM_1_1cTracking_a92b9fcf123246f35c8a004ddff2befe3}{}\label{classMultiColSLAM_1_1cTracking_a92b9fcf123246f35c8a004ddff2befe3}
+
+\item 
+int {\bfseries Get\+Nr\+Cams} ()\hypertarget{classMultiColSLAM_1_1cTracking_a9e97848f6978a1771b3810b23a2fa826}{}\label{classMultiColSLAM_1_1cTracking_a9e97848f6978a1771b3810b23a2fa826}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+e\+Tracking\+State {\bfseries m\+State}\hypertarget{classMultiColSLAM_1_1cTracking_a629542bc9c26abf1fee9e7b09a4d7ae5}{}\label{classMultiColSLAM_1_1cTracking_a629542bc9c26abf1fee9e7b09a4d7ae5}
+
+\item 
+e\+Tracking\+State {\bfseries m\+Last\+Processed\+State}\hypertarget{classMultiColSLAM_1_1cTracking_a20a1d17e6b4b8d4d909fc0f729cf5f17}{}\label{classMultiColSLAM_1_1cTracking_a20a1d17e6b4b8d4d909fc0f729cf5f17}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} {\bfseries m\+Current\+Frame}\hypertarget{classMultiColSLAM_1_1cTracking_a4a3df7e47f227f62902269993d98d985}{}\label{classMultiColSLAM_1_1cTracking_a4a3df7e47f227f62902269993d98d985}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mv\+Ini\+Last\+Matches}\hypertarget{classMultiColSLAM_1_1cTracking_a5f87204631832c352613acbc1378c5a4}{}\label{classMultiColSLAM_1_1cTracking_a5f87204631832c352613acbc1378c5a4}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mv\+Ini\+Matches}\hypertarget{classMultiColSLAM_1_1cTracking_a3d2fa711b01d884d8e725851cba63d3b}{}\label{classMultiColSLAM_1_1cTracking_a3d2fa711b01d884d8e725851cba63d3b}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec2d $>$ {\bfseries mvb\+Prev\+Matched}\hypertarget{classMultiColSLAM_1_1cTracking_a79f14228c95eee96eca79b225545d522}{}\label{classMultiColSLAM_1_1cTracking_a79f14228c95eee96eca79b225545d522}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries mv\+Ini\+P3D}\hypertarget{classMultiColSLAM_1_1cTracking_af9c04026ee74a90941907d86c2094342}{}\label{classMultiColSLAM_1_1cTracking_af9c04026ee74a90941907d86c2094342}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} {\bfseries m\+Initial\+Frame}\hypertarget{classMultiColSLAM_1_1cTracking_acb36066360b6f3c1c24cc9981da75529}{}\label{classMultiColSLAM_1_1cTracking_acb36066360b6f3c1c24cc9981da75529}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries timing\+Feature\+Extraction}\hypertarget{classMultiColSLAM_1_1cTracking_a2dfaa86e37ed98c844c0b63e49fcb2a6}{}\label{classMultiColSLAM_1_1cTracking_a2dfaa86e37ed98c844c0b63e49fcb2a6}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries timing\+Track\+Local\+Map}\hypertarget{classMultiColSLAM_1_1cTracking_a4e7c665b49cd418f9c9de731fea8afca}{}\label{classMultiColSLAM_1_1cTracking_a4e7c665b49cd418f9c9de731fea8afca}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries timing\+Inital\+Pose\+Est}\hypertarget{classMultiColSLAM_1_1cTracking_a4deaf7c25ab2e99e06b1b82bed214608}{}\label{classMultiColSLAM_1_1cTracking_a4deaf7c25ab2e99e06b1b82bed214608}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Track} ()\hypertarget{classMultiColSLAM_1_1cTracking_abbe8f401a1a021925bd62e9d0ff07a7b}{}\label{classMultiColSLAM_1_1cTracking_abbe8f401a1a021925bd62e9d0ff07a7b}
+
+\item 
+void {\bfseries First\+Initialization} ()\hypertarget{classMultiColSLAM_1_1cTracking_a065b985168f37eea2c3bbf4d03cf7f24}{}\label{classMultiColSLAM_1_1cTracking_a065b985168f37eea2c3bbf4d03cf7f24}
+
+\item 
+void {\bfseries Initialize} ()\hypertarget{classMultiColSLAM_1_1cTracking_aa5257c7830b4cb4b7e4a51a05add7193}{}\label{classMultiColSLAM_1_1cTracking_aa5257c7830b4cb4b7e4a51a05add7193}
+
+\item 
+void {\bfseries Create\+Initial\+Map} (cv\+::\+Matx33d \&Rcw, cv\+::\+Vec3d \&tcw, int leading\+Cam)\hypertarget{classMultiColSLAM_1_1cTracking_a752926822de4043e948b9a927c3f5d9a}{}\label{classMultiColSLAM_1_1cTracking_a752926822de4043e948b9a927c3f5d9a}
+
+\item 
+bool {\bfseries Track\+Previous\+Frame} ()\hypertarget{classMultiColSLAM_1_1cTracking_a526495a5c5623bfab152392bb895cb15}{}\label{classMultiColSLAM_1_1cTracking_a526495a5c5623bfab152392bb895cb15}
+
+\item 
+bool {\bfseries Track\+With\+Motion\+Model} ()\hypertarget{classMultiColSLAM_1_1cTracking_adc09389c63cef2c9c0e29decf81c0927}{}\label{classMultiColSLAM_1_1cTracking_adc09389c63cef2c9c0e29decf81c0927}
+
+\item 
+bool {\bfseries Relocalisation\+Requested} ()\hypertarget{classMultiColSLAM_1_1cTracking_ab54f1d6d18f1a6bf7970c8745b370cb5}{}\label{classMultiColSLAM_1_1cTracking_ab54f1d6d18f1a6bf7970c8745b370cb5}
+
+\item 
+bool {\bfseries Relocalisation} ()\hypertarget{classMultiColSLAM_1_1cTracking_a75d66da2b7802160f008e9d957ad7664}{}\label{classMultiColSLAM_1_1cTracking_a75d66da2b7802160f008e9d957ad7664}
+
+\item 
+void {\bfseries Update\+Reference} ()\hypertarget{classMultiColSLAM_1_1cTracking_a59b44e1fd48d0a41efcda1f97e5a2358}{}\label{classMultiColSLAM_1_1cTracking_a59b44e1fd48d0a41efcda1f97e5a2358}
+
+\item 
+void {\bfseries Update\+Reference\+Points} ()\hypertarget{classMultiColSLAM_1_1cTracking_a608584eacc91eec47adbfb12f26811c3}{}\label{classMultiColSLAM_1_1cTracking_a608584eacc91eec47adbfb12f26811c3}
+
+\item 
+void {\bfseries Update\+Reference\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cTracking_a08d22bf28b47676c9b977786949e73d0}{}\label{classMultiColSLAM_1_1cTracking_a08d22bf28b47676c9b977786949e73d0}
+
+\item 
+bool {\bfseries Track\+Local\+Map} ()\hypertarget{classMultiColSLAM_1_1cTracking_afbffb490ecdda9f2aa72381c1e2516c0}{}\label{classMultiColSLAM_1_1cTracking_afbffb490ecdda9f2aa72381c1e2516c0}
+
+\item 
+int {\bfseries Search\+Reference\+Points\+In\+Frustum} ()\hypertarget{classMultiColSLAM_1_1cTracking_a1c0c57d076caa94f674a967d2b76f74e}{}\label{classMultiColSLAM_1_1cTracking_a1c0c57d076caa94f674a967d2b76f74e}
+
+\item 
+bool {\bfseries Need\+New\+Key\+Frame} ()\hypertarget{classMultiColSLAM_1_1cTracking_a0e0512f0cc08f1747fb1de1bea3917f2}{}\label{classMultiColSLAM_1_1cTracking_a0e0512f0cc08f1747fb1de1bea3917f2}
+
+\item 
+void {\bfseries Create\+New\+Key\+Frame} ()\hypertarget{classMultiColSLAM_1_1cTracking_ae912208900d2ab83b66b2666c1f11959}{}\label{classMultiColSLAM_1_1cTracking_ae912208900d2ab83b66b2666c1f11959}
+
+\item 
+void {\bfseries Count\+Number\+Tracked\+Points\+Per\+Cam} ()\hypertarget{classMultiColSLAM_1_1cTracking_ae11f5a86b84d8083fbf02a29d204d5e0}{}\label{classMultiColSLAM_1_1cTracking_ae11f5a86b84d8083fbf02a29d204d5e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ {\bfseries image\+Paths}\hypertarget{classMultiColSLAM_1_1cTracking_a0fba31f00a49e1e843390d844c3177c0}{}\label{classMultiColSLAM_1_1cTracking_a0fba31f00a49e1e843390d844c3177c0}
+
+\item 
+int {\bfseries nr\+Images2\+Track}\hypertarget{classMultiColSLAM_1_1cTracking_a69cbd301b745115cda11877f5b8ccd51}{}\label{classMultiColSLAM_1_1cTracking_a69cbd301b745115cda11877f5b8ccd51}
+
+\item 
+std\+::string {\bfseries img\+Path}\hypertarget{classMultiColSLAM_1_1cTracking_a2fd8655984d8792f9094143d95f3d0d2}{}\label{classMultiColSLAM_1_1cTracking_a2fd8655984d8792f9094143d95f3d0d2}
+
+\item 
+int {\bfseries img\+Counter}\hypertarget{classMultiColSLAM_1_1cTracking_a14ec4741c1784ae0032fdd592491c03f}{}\label{classMultiColSLAM_1_1cTracking_a14ec4741c1784ae0032fdd592491c03f}
+
+\item 
+bool {\bfseries finished}\hypertarget{classMultiColSLAM_1_1cTracking_a23c35dd952b9f99af75329fb415e021b}{}\label{classMultiColSLAM_1_1cTracking_a23c35dd952b9f99af75329fb415e021b}
+
+\item 
+bool {\bfseries grab}\hypertarget{classMultiColSLAM_1_1cTracking_afbf82f34a153a16110b61223dc39b775}{}\label{classMultiColSLAM_1_1cTracking_afbf82f34a153a16110b61223dc39b775}
+
+\item 
+int {\bfseries number\+Cameras}\hypertarget{classMultiColSLAM_1_1cTracking_a471d927065f696f4cd6e4a0cf3fe29c8}{}\label{classMultiColSLAM_1_1cTracking_a471d927065f696f4cd6e4a0cf3fe29c8}
+
+\item 
+cv\+::\+Matx44d {\bfseries init\+Pose}\hypertarget{classMultiColSLAM_1_1cTracking_a610d1706cfa6ed73afb0556d7a90368c}{}\label{classMultiColSLAM_1_1cTracking_a610d1706cfa6ed73afb0556d7a90368c}
+
+\item 
+double {\bfseries cur\+Baseline2\+M\+KF}\hypertarget{classMultiColSLAM_1_1cTracking_a38c6486f94550c6a066abf4c867dda40}{}\label{classMultiColSLAM_1_1cTracking_a38c6486f94550c6a066abf4c867dda40}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries nb\+Tracked\+Pts\+In\+Cam}\hypertarget{classMultiColSLAM_1_1cTracking_a423549a4bb922e4e1e8b9c8023375409}{}\label{classMultiColSLAM_1_1cTracking_a423549a4bb922e4e1e8b9c8023375409}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries nb\+Tracked\+Ratios}\hypertarget{classMultiColSLAM_1_1cTracking_ab3b413af38741b025a9af20902e08afd}{}\label{classMultiColSLAM_1_1cTracking_ab3b413af38741b025a9af20902e08afd}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cLocalMapping}{c\+Local\+Mapping} $\ast$ {\bfseries mp\+Local\+Mapper}\hypertarget{classMultiColSLAM_1_1cTracking_a29459e945e963ce560bc61320adcfc47}{}\label{classMultiColSLAM_1_1cTracking_a29459e945e963ce560bc61320adcfc47}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cLoopClosing}{c\+Loop\+Closing} $\ast$ {\bfseries mp\+Loop\+Closing}\hypertarget{classMultiColSLAM_1_1cTracking_a351f9df81c239f285fce51226fe5d958}{}\label{classMultiColSLAM_1_1cTracking_a351f9df81c239f285fce51226fe5d958}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cSystem}{c\+System} $\ast$ {\bfseries mp\+System}\hypertarget{classMultiColSLAM_1_1cTracking_a901c7e0127ba86072ae4ff70923d12d0}{}\label{classMultiColSLAM_1_1cTracking_a901c7e0127ba86072ae4ff70923d12d0}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1mdBRIEFextractorOct}{md\+B\+R\+I\+E\+Fextractor\+Oct} $\ast$ $>$ {\bfseries mp\+\_\+md\+B\+R\+I\+E\+F\+\_\+extractor\+Oct}\hypertarget{classMultiColSLAM_1_1cTracking_a70d9dc822e50e71defaa247b66734e79}{}\label{classMultiColSLAM_1_1cTracking_a70d9dc822e50e71defaa247b66734e79}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1mdBRIEFextractorOct}{md\+B\+R\+I\+E\+Fextractor\+Oct} $\ast$ $>$ {\bfseries mp\+\_\+md\+B\+R\+I\+E\+F\+\_\+init\+\_\+extractor\+Oct}\hypertarget{classMultiColSLAM_1_1cTracking_ac7abfb0447e423c677eb7b6a6289b6e4}{}\label{classMultiColSLAM_1_1cTracking_ac7abfb0447e423c677eb7b6a6289b6e4}
+
+\item 
+O\+R\+B\+Vocabulary $\ast$ {\bfseries mp\+O\+R\+B\+Vocabulary}\hypertarget{classMultiColSLAM_1_1cTracking_a4266ae2d793064fbcef8289d7787b9bd}{}\label{classMultiColSLAM_1_1cTracking_a4266ae2d793064fbcef8289d7787b9bd}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$ {\bfseries mp\+Key\+Frame\+DB}\hypertarget{classMultiColSLAM_1_1cTracking_a5643064d75e65f7adb525e6698dd0a46}{}\label{classMultiColSLAM_1_1cTracking_a5643064d75e65f7adb525e6698dd0a46}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiInitializer}{c\+Multi\+Initializer} $\ast$ {\bfseries mp\+Initializer}\hypertarget{classMultiColSLAM_1_1cTracking_a4fccd05b92e2c3ca93e20b5394185c5d}{}\label{classMultiColSLAM_1_1cTracking_a4fccd05b92e2c3ca93e20b5394185c5d}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Reference\+KF}\hypertarget{classMultiColSLAM_1_1cTracking_a035eaea4efc760a2ebdda592a5666e8f}{}\label{classMultiColSLAM_1_1cTracking_a035eaea4efc760a2ebdda592a5666e8f}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries mvp\+Local\+Key\+Frames}\hypertarget{classMultiColSLAM_1_1cTracking_a3d9d929a0f993280520b9d1dff7ad5e8}{}\label{classMultiColSLAM_1_1cTracking_a3d9d929a0f993280520b9d1dff7ad5e8}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mvp\+Local\+Key\+Frames\+Cov\+Weights}\hypertarget{classMultiColSLAM_1_1cTracking_a65d7538700bb5bcae00d7bf209172c4a}{}\label{classMultiColSLAM_1_1cTracking_a65d7538700bb5bcae00d7bf209172c4a}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mvp\+Local\+Key\+Frames\+Distance2\+Frame}\hypertarget{classMultiColSLAM_1_1cTracking_acaa333324cc84a3bb1297b96dc9965af}{}\label{classMultiColSLAM_1_1cTracking_acaa333324cc84a3bb1297b96dc9965af}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Local\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cTracking_a4d3a7d86ece70934ef1144eab56c1e69}{}\label{classMultiColSLAM_1_1cTracking_a4d3a7d86ece70934ef1144eab56c1e69}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiFramePublisher}{c\+Multi\+Frame\+Publisher} $\ast$ {\bfseries mp\+Frame\+Publisher}\hypertarget{classMultiColSLAM_1_1cTracking_abe9d95db143745a6b12663c7fe5e8ee1}{}\label{classMultiColSLAM_1_1cTracking_abe9d95db143745a6b12663c7fe5e8ee1}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMapPublisher}{c\+Map\+Publisher} $\ast$ {\bfseries mp\+Map\+Publisher}\hypertarget{classMultiColSLAM_1_1cTracking_a862f9a7d09933d06d681ec810290d209}{}\label{classMultiColSLAM_1_1cTracking_a862f9a7d09933d06d681ec810290d209}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cViewer}{c\+Viewer} $\ast$ {\bfseries mp\+Viewer}\hypertarget{classMultiColSLAM_1_1cTracking_acda1853004c95807a72424d9295dd0be}{}\label{classMultiColSLAM_1_1cTracking_acda1853004c95807a72424d9295dd0be}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cTracking_ab27806a1adf12a4acb6fd25800717b6b}{}\label{classMultiColSLAM_1_1cTracking_ab27806a1adf12a4acb6fd25800717b6b}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} {\bfseries cam\+System}\hypertarget{classMultiColSLAM_1_1cTracking_aaf3ea6459a227167203af67f4b7a87ac}{}\label{classMultiColSLAM_1_1cTracking_aaf3ea6459a227167203af67f4b7a87ac}
+
+\item 
+int {\bfseries m\+Min\+Frames}\hypertarget{classMultiColSLAM_1_1cTracking_a45709bba7ad103ee2160acb07d9f253f}{}\label{classMultiColSLAM_1_1cTracking_a45709bba7ad103ee2160acb07d9f253f}
+
+\item 
+int {\bfseries m\+Max\+Frames}\hypertarget{classMultiColSLAM_1_1cTracking_ab393a9ba5af80719afc9e2625b642131}{}\label{classMultiColSLAM_1_1cTracking_ab393a9ba5af80719afc9e2625b642131}
+
+\item 
+int {\bfseries mn\+Matches\+Inliers}\hypertarget{classMultiColSLAM_1_1cTracking_aa01e64f2fb8e4e01c6c9ca22afbba961}{}\label{classMultiColSLAM_1_1cTracking_aa01e64f2fb8e4e01c6c9ca22afbba961}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Last\+Key\+Frame}\hypertarget{classMultiColSLAM_1_1cTracking_a8ea23ebb417c88515f69c1cdf8aeba8b}{}\label{classMultiColSLAM_1_1cTracking_a8ea23ebb417c88515f69c1cdf8aeba8b}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} {\bfseries m\+Last\+Frame}\hypertarget{classMultiColSLAM_1_1cTracking_a282c8e28482f566a7d2f0f876020acd1}{}\label{classMultiColSLAM_1_1cTracking_a282c8e28482f566a7d2f0f876020acd1}
+
+\item 
+unsigned int {\bfseries mn\+Last\+Key\+Frame\+Id}\hypertarget{classMultiColSLAM_1_1cTracking_ac23fc227f6aaaec31e71c0b90a791309}{}\label{classMultiColSLAM_1_1cTracking_ac23fc227f6aaaec31e71c0b90a791309}
+
+\item 
+unsigned int {\bfseries mn\+Last\+Reloc\+Frame\+Id}\hypertarget{classMultiColSLAM_1_1cTracking_a399674e16f0e3068194e02d1370123ea}{}\label{classMultiColSLAM_1_1cTracking_a399674e16f0e3068194e02d1370123ea}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Track}\hypertarget{classMultiColSLAM_1_1cTracking_a8b6efe760e0a9e776d497f39b672a226}{}\label{classMultiColSLAM_1_1cTracking_a8b6efe760e0a9e776d497f39b672a226}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Force\+Relocalisation}\hypertarget{classMultiColSLAM_1_1cTracking_a8b855a40d440b3e1ad0cd268f59fc914}{}\label{classMultiColSLAM_1_1cTracking_a8b855a40d440b3e1ad0cd268f59fc914}
+
+\item 
+bool {\bfseries mb\+Publisher\+Stopped}\hypertarget{classMultiColSLAM_1_1cTracking_a85602429ff6381e0583cc6f3d8d292ea}{}\label{classMultiColSLAM_1_1cTracking_a85602429ff6381e0583cc6f3d8d292ea}
+
+\item 
+bool {\bfseries mb\+Reseting}\hypertarget{classMultiColSLAM_1_1cTracking_ac6fb87ff73dbb644309d4bce646ede94}{}\label{classMultiColSLAM_1_1cTracking_ac6fb87ff73dbb644309d4bce646ede94}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Reset}\hypertarget{classMultiColSLAM_1_1cTracking_a3f7af8dfeec5b4b3eea33a130538633a}{}\label{classMultiColSLAM_1_1cTracking_a3f7af8dfeec5b4b3eea33a130538633a}
+
+\item 
+bool {\bfseries mb\+Force\+Relocalisation}\hypertarget{classMultiColSLAM_1_1cTracking_a642ed0bbb83f660b0486770b529bc403}{}\label{classMultiColSLAM_1_1cTracking_a642ed0bbb83f660b0486770b529bc403}
+
+\item 
+bool {\bfseries mb\+Motion\+Model}\hypertarget{classMultiColSLAM_1_1cTracking_a036d286252fb743c45d37d1682c4baaa}{}\label{classMultiColSLAM_1_1cTracking_a036d286252fb743c45d37d1682c4baaa}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+Velocity}\hypertarget{classMultiColSLAM_1_1cTracking_a3b63d629de8516d7dd5a47ee54e50dbb}{}\label{classMultiColSLAM_1_1cTracking_a3b63d629de8516d7dd5a47ee54e50dbb}
+
+\item 
+bool {\bfseries mb\+R\+GB}\hypertarget{classMultiColSLAM_1_1cTracking_a8c3df4348e78241b439f811370de8a28}{}\label{classMultiColSLAM_1_1cTracking_a8c3df4348e78241b439f811370de8a28}
+
+\item 
+string {\bfseries settings\+Path}\hypertarget{classMultiColSLAM_1_1cTracking_a7399a1830f6fef66802eae6ae1f8622d}{}\label{classMultiColSLAM_1_1cTracking_a7399a1830f6fef66802eae6ae1f8622d}
+
+\item 
+std\+::vector$<$ cv\+::\+Matx61d $>$ {\bfseries all\+Poses}\hypertarget{classMultiColSLAM_1_1cTracking_ae372e3a255b75d2b32924881316d2937}{}\label{classMultiColSLAM_1_1cTracking_ae372e3a255b75d2b32924881316d2937}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries all\+Poses\+Bool}\hypertarget{classMultiColSLAM_1_1cTracking_a502795260ba28f588dd997a4e484da87}{}\label{classMultiColSLAM_1_1cTracking_a502795260ba28f588dd997a4e484da87}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries nr\+Tracked\+Pts}\hypertarget{classMultiColSLAM_1_1cTracking_a8ebb082ee3aaba8fbe4b774509940590}{}\label{classMultiColSLAM_1_1cTracking_a8ebb082ee3aaba8fbe4b774509940590}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries inlier\+Ratio}\hypertarget{classMultiColSLAM_1_1cTracking_a1c1c2e2590671cf31a988e64ec40388e}{}\label{classMultiColSLAM_1_1cTracking_a1c1c2e2590671cf31a988e64ec40388e}
+
+\item 
+bool {\bfseries use\+\_\+md\+B\+R\+I\+EF}\hypertarget{classMultiColSLAM_1_1cTracking_a15b19b7c0a5fc13b18b88bad22c44bf5}{}\label{classMultiColSLAM_1_1cTracking_a15b19b7c0a5fc13b18b88bad22c44bf5}
+
+\item 
+bool {\bfseries loop\+And\+Mapper\+Set}\hypertarget{classMultiColSLAM_1_1cTracking_a553dda2d3ff91cf91b62d5d94c029729}{}\label{classMultiColSLAM_1_1cTracking_a553dda2d3ff91cf91b62d5d94c029729}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Tracking.\+h\end{DoxyCompactItemize}

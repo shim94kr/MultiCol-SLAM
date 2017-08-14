@@ -1,0 +1,157 @@
+\hypertarget{classMultiColSLAM_1_1cLoopClosing}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Loop\+Closing Class Reference}
+\label{classMultiColSLAM_1_1cLoopClosing}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Loop\+Closing@{Multi\+Col\+S\+L\+A\+M\+::c\+Loop\+Closing}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$, int $>$ {\bfseries Consistent\+Group}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a2c74b62c4857235a72b61ea1bd13ab25}{}\label{classMultiColSLAM_1_1cLoopClosing_a2c74b62c4857235a72b61ea1bd13ab25}
+
+\item 
+typedef std\+::map$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, g2o\+::\+Sim3, std\+::less$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$, Eigen\+::aligned\+\_\+allocator$<$ std\+::pair$<$ const \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, g2o\+::\+Sim3 $>$ $>$ $>$ {\bfseries Key\+Frame\+And\+Pose}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a503aa7572fabfe4062abfbc6ab7c0cba}{}\label{classMultiColSLAM_1_1cLoopClosing_a503aa7572fabfe4062abfbc6ab7c0cba}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Loop\+Closing} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$p\+DB, O\+R\+B\+Vocabulary $\ast$p\+Voc)\hypertarget{classMultiColSLAM_1_1cLoopClosing_accd03768ad4ab64aa3b81ffebaf1b6bf}{}\label{classMultiColSLAM_1_1cLoopClosing_accd03768ad4ab64aa3b81ffebaf1b6bf}
+
+\item 
+void {\bfseries Set\+Tracker} (\hyperlink{classMultiColSLAM_1_1cTracking}{c\+Tracking} $\ast$p\+Tracker)\hypertarget{classMultiColSLAM_1_1cLoopClosing_a11d4d6c476daf56399f4df4eef4dfb07}{}\label{classMultiColSLAM_1_1cLoopClosing_a11d4d6c476daf56399f4df4eef4dfb07}
+
+\item 
+void {\bfseries Set\+Local\+Mapper} (\hyperlink{classMultiColSLAM_1_1cLocalMapping}{c\+Local\+Mapping} $\ast$p\+Local\+Mapper)\hypertarget{classMultiColSLAM_1_1cLoopClosing_ad1f76334f64d563487d7d399aaa5124c}{}\label{classMultiColSLAM_1_1cLoopClosing_ad1f76334f64d563487d7d399aaa5124c}
+
+\item 
+void {\bfseries Run} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_ac103f8196d97e398f5e6ac6d8ab3408b}{}\label{classMultiColSLAM_1_1cLoopClosing_ac103f8196d97e398f5e6ac6d8ab3408b}
+
+\item 
+void {\bfseries Insert\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cLoopClosing_a6a5b7fa0901432c9d5c1d0b3a55e4f54}{}\label{classMultiColSLAM_1_1cLoopClosing_a6a5b7fa0901432c9d5c1d0b3a55e4f54}
+
+\item 
+void {\bfseries Request\+Reset} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a751fbb2d6b528c0207549b0dab66a7ba}{}\label{classMultiColSLAM_1_1cLoopClosing_a751fbb2d6b528c0207549b0dab66a7ba}
+
+\item 
+void {\bfseries Set\+Matcher\+Properties} (int \+\_\+desc\+Dim, bool \+\_\+having\+Masks)\hypertarget{classMultiColSLAM_1_1cLoopClosing_ae0093c52ea52cb0f6b05f87df8421a16}{}\label{classMultiColSLAM_1_1cLoopClosing_ae0093c52ea52cb0f6b05f87df8421a16}
+
+\item 
+void {\bfseries Request\+Finish} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a2023f618fddb9ac0cd2ead612b055300}{}\label{classMultiColSLAM_1_1cLoopClosing_a2023f618fddb9ac0cd2ead612b055300}
+
+\item 
+bool {\bfseries is\+Finished} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a91ad8352d315ba5ca557044f6adfbfc9}{}\label{classMultiColSLAM_1_1cLoopClosing_a91ad8352d315ba5ca557044f6adfbfc9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Check\+New\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a27462546075eee91b3912413d5ef59c6}{}\label{classMultiColSLAM_1_1cLoopClosing_a27462546075eee91b3912413d5ef59c6}
+
+\item 
+bool {\bfseries Detect\+Loop} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_aa017e121385348085329365d5e969549}{}\label{classMultiColSLAM_1_1cLoopClosing_aa017e121385348085329365d5e969549}
+
+\item 
+bool {\bfseries Compute\+Sim3} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a07fa34266f18f2ffddcac296b6b07019}{}\label{classMultiColSLAM_1_1cLoopClosing_a07fa34266f18f2ffddcac296b6b07019}
+
+\item 
+void {\bfseries Search\+And\+Fuse} (Key\+Frame\+And\+Pose \&Corrected\+Poses\+Map)\hypertarget{classMultiColSLAM_1_1cLoopClosing_a4c7659cd3af95902ae1e562d684036f1}{}\label{classMultiColSLAM_1_1cLoopClosing_a4c7659cd3af95902ae1e562d684036f1}
+
+\item 
+void {\bfseries Correct\+Loop} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a86d0e8a183b656d53ef1858beb646f05}{}\label{classMultiColSLAM_1_1cLoopClosing_a86d0e8a183b656d53ef1858beb646f05}
+
+\item 
+void {\bfseries Reset\+If\+Requested} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_ab235bfb750ee12259599752d6b415e3f}{}\label{classMultiColSLAM_1_1cLoopClosing_ab235bfb750ee12259599752d6b415e3f}
+
+\item 
+bool {\bfseries Check\+Finish} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a3fe134aaa297ebfe4a1d2383a80426cf}{}\label{classMultiColSLAM_1_1cLoopClosing_a3fe134aaa297ebfe4a1d2383a80426cf}
+
+\item 
+void {\bfseries Set\+Finish} ()\hypertarget{classMultiColSLAM_1_1cLoopClosing_a310c0f0fa7313c1aa1255eb5548ba018}{}\label{classMultiColSLAM_1_1cLoopClosing_a310c0f0fa7313c1aa1255eb5548ba018}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries mb\+Reset\+Requested}\hypertarget{classMultiColSLAM_1_1cLoopClosing_aad4f84e9cc94275599abbb85b201cdcd}{}\label{classMultiColSLAM_1_1cLoopClosing_aad4f84e9cc94275599abbb85b201cdcd}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Reset}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a7f6aa9827a2677131d49f0b12354fe08}{}\label{classMultiColSLAM_1_1cLoopClosing_a7f6aa9827a2677131d49f0b12354fe08}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a8b54ae9766f27efad122bff75ab49db9}{}\label{classMultiColSLAM_1_1cLoopClosing_a8b54ae9766f27efad122bff75ab49db9}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cTracking}{c\+Tracking} $\ast$ {\bfseries mp\+Tracker}\hypertarget{classMultiColSLAM_1_1cLoopClosing_adb7f8a2c7367ecc86fa51d9604a100be}{}\label{classMultiColSLAM_1_1cLoopClosing_adb7f8a2c7367ecc86fa51d9604a100be}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$ {\bfseries mp\+Key\+Frame\+DB}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a48680fc015f9586c201361e598598079}{}\label{classMultiColSLAM_1_1cLoopClosing_a48680fc015f9586c201361e598598079}
+
+\item 
+O\+R\+B\+Vocabulary $\ast$ {\bfseries mp\+O\+R\+B\+Vocabulary}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a2cd2bd997fa413d570e7f064a2a41561}{}\label{classMultiColSLAM_1_1cLoopClosing_a2cd2bd997fa413d570e7f064a2a41561}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cLocalMapping}{c\+Local\+Mapping} $\ast$ {\bfseries mp\+Local\+Mapper}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a6c0115fd9b65cffb7b9cb3cd60c439e1}{}\label{classMultiColSLAM_1_1cLoopClosing_a6c0115fd9b65cffb7b9cb3cd60c439e1}
+
+\item 
+std\+::list$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries mlp\+Loop\+Key\+Frame\+Queue}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ae65d1e446bd2e5bdde7a7b559cc6b54f}{}\label{classMultiColSLAM_1_1cLoopClosing_ae65d1e446bd2e5bdde7a7b559cc6b54f}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Loop\+Queue}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a2c0f3b18245445cda7eda5068a739b72}{}\label{classMultiColSLAM_1_1cLoopClosing_a2c0f3b18245445cda7eda5068a739b72}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mvf\+Level\+Sigma\+Square}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a06f565a9ae0557fb26c75ad48a1649be}{}\label{classMultiColSLAM_1_1cLoopClosing_a06f565a9ae0557fb26c75ad48a1649be}
+
+\item 
+double {\bfseries mn\+Covisibility\+Consistency\+Th}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a31517885e314b741bafc419a304b2120}{}\label{classMultiColSLAM_1_1cLoopClosing_a31517885e314b741bafc419a304b2120}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Current\+KF}\hypertarget{classMultiColSLAM_1_1cLoopClosing_adfd7b1885f2a9b3329f59b339140ff18}{}\label{classMultiColSLAM_1_1cLoopClosing_adfd7b1885f2a9b3329f59b339140ff18}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Matched\+KF}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ae514544e393d600037452cf7ac18ecb3}{}\label{classMultiColSLAM_1_1cLoopClosing_ae514544e393d600037452cf7ac18ecb3}
+
+\item 
+std\+::vector$<$ Consistent\+Group $>$ {\bfseries mv\+Consistent\+Groups}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ad84bb0012e845bc00960eeea04620a37}{}\label{classMultiColSLAM_1_1cLoopClosing_ad84bb0012e845bc00960eeea04620a37}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries mvp\+Enough\+Consistent\+Candidates}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a519a7e0df6d45d3254c440f09f1595bc}{}\label{classMultiColSLAM_1_1cLoopClosing_a519a7e0df6d45d3254c440f09f1595bc}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries mvp\+Current\+Connected\+K\+Fs}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a4c92a4af364a52929089d7705c7d840c}{}\label{classMultiColSLAM_1_1cLoopClosing_a4c92a4af364a52929089d7705c7d840c}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Current\+Matched\+Points}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ab539472f12a69a208521a04b06fd4518}{}\label{classMultiColSLAM_1_1cLoopClosing_ab539472f12a69a208521a04b06fd4518}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Loop\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cLoopClosing_aec46eb0127336b953a1f96d42b4bec7e}{}\label{classMultiColSLAM_1_1cLoopClosing_aec46eb0127336b953a1f96d42b4bec7e}
+
+\item 
+cv\+::\+Matx44d {\bfseries m\+Scw}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a7eeb3b2933d3bc35509e39264dec314f}{}\label{classMultiColSLAM_1_1cLoopClosing_a7eeb3b2933d3bc35509e39264dec314f}
+
+\item 
+g2o\+::\+Sim3 {\bfseries mg2o\+Scw}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a6ffa1ebb6ac500551538b3b36fe3fdf8}{}\label{classMultiColSLAM_1_1cLoopClosing_a6ffa1ebb6ac500551538b3b36fe3fdf8}
+
+\item 
+double {\bfseries m\+Scale\+\_\+cw}\hypertarget{classMultiColSLAM_1_1cLoopClosing_aa3a0a6c8f526645a6dbb82ea8511f116}{}\label{classMultiColSLAM_1_1cLoopClosing_aa3a0a6c8f526645a6dbb82ea8511f116}
+
+\item 
+long unsigned int {\bfseries m\+Last\+Loop\+K\+Fid}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a9546442617703f79f7b5acaae0a589a0}{}\label{classMultiColSLAM_1_1cLoopClosing_a9546442617703f79f7b5acaae0a589a0}
+
+\item 
+int {\bfseries desc\+Dim}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ae5e505c376f7cba08bd301a0a8b08281}{}\label{classMultiColSLAM_1_1cLoopClosing_ae5e505c376f7cba08bd301a0a8b08281}
+
+\item 
+bool {\bfseries having\+Masks}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a35e90a600f9a40e684bcd18e2d2f9457}{}\label{classMultiColSLAM_1_1cLoopClosing_a35e90a600f9a40e684bcd18e2d2f9457}
+
+\item 
+bool {\bfseries mb\+Finish\+Requested}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a602fe527bf94a357722553d93e136f7d}{}\label{classMultiColSLAM_1_1cLoopClosing_a602fe527bf94a357722553d93e136f7d}
+
+\item 
+bool {\bfseries mb\+Finished}\hypertarget{classMultiColSLAM_1_1cLoopClosing_a8398cc72be69bb599da8ed71a92ea491}{}\label{classMultiColSLAM_1_1cLoopClosing_a8398cc72be69bb599da8ed71a92ea491}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Finish}\hypertarget{classMultiColSLAM_1_1cLoopClosing_ad77240c8ed43c27d3533555ca2b4a4e8}{}\label{classMultiColSLAM_1_1cLoopClosing_ad77240c8ed43c27d3533555ca2b4a4e8}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Loop\+Closing.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{classMultiColSLAM_1_1cMap}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Map Class Reference}
+\label{classMultiColSLAM_1_1cMap}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Map@{Multi\+Col\+S\+L\+A\+M\+::c\+Map}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMap_a2b6fb1278b0cd9ebfee9153851643751}{}\label{classMultiColSLAM_1_1cMap_a2b6fb1278b0cd9ebfee9153851643751}
+
+\item 
+void {\bfseries Add\+Map\+Point} (\hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP)\hypertarget{classMultiColSLAM_1_1cMap_a00d43618bbccb50f69b961c4bc5b677c}{}\label{classMultiColSLAM_1_1cMap_a00d43618bbccb50f69b961c4bc5b677c}
+
+\item 
+void {\bfseries Erase\+Map\+Point} (\hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP)\hypertarget{classMultiColSLAM_1_1cMap_a50e2d7d2ecf86a86691dfa30784d21f9}{}\label{classMultiColSLAM_1_1cMap_a50e2d7d2ecf86a86691dfa30784d21f9}
+
+\item 
+void {\bfseries Erase\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMap_ad2de0ad3e6be303599f42433446bee2a}{}\label{classMultiColSLAM_1_1cMap_ad2de0ad3e6be303599f42433446bee2a}
+
+\item 
+void {\bfseries Set\+Current\+Camera\+Pose} (cv\+::\+Mat Tcw)\hypertarget{classMultiColSLAM_1_1cMap_aa61504cc2f31ba945d37b2fe57f99d00}{}\label{classMultiColSLAM_1_1cMap_aa61504cc2f31ba945d37b2fe57f99d00}
+
+\item 
+void {\bfseries Set\+Reference\+Key\+Frames} (const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ \&vp\+K\+Fs)\hypertarget{classMultiColSLAM_1_1cMap_a8cd75c02932276c55e7193b073ea6bb9}{}\label{classMultiColSLAM_1_1cMap_a8cd75c02932276c55e7193b073ea6bb9}
+
+\item 
+void {\bfseries Set\+Reference\+Map\+Points} (const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+M\+Ps)\hypertarget{classMultiColSLAM_1_1cMap_af596714d8cd4bddb3e50c62507f41475}{}\label{classMultiColSLAM_1_1cMap_af596714d8cd4bddb3e50c62507f41475}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+All\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cMap_ac0270cf762b6d74c7890ab34f27d6ff9}{}\label{classMultiColSLAM_1_1cMap_ac0270cf762b6d74c7890ab34f27d6ff9}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries Get\+All\+Map\+Points} ()\hypertarget{classMultiColSLAM_1_1cMap_a9d81b28dc19dd8a90d369c70681c62d6}{}\label{classMultiColSLAM_1_1cMap_a9d81b28dc19dd8a90d369c70681c62d6}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Reference\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cMap_ac6f18d0fc9ec7f693f21090af5a4cb20}{}\label{classMultiColSLAM_1_1cMap_ac6f18d0fc9ec7f693f21090af5a4cb20}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries Get\+Reference\+Map\+Points} ()\hypertarget{classMultiColSLAM_1_1cMap_ad4f5ecb66699d432276079c494b90c34}{}\label{classMultiColSLAM_1_1cMap_ad4f5ecb66699d432276079c494b90c34}
+
+\item 
+void {\bfseries Get\+Model\+Points} (std\+::vector$<$ cv\+::\+Vec3d $>$ \&model\+Pts, std\+::vector$<$ cv\+::\+Vec3d $>$ \&model\+Companion\+Pts)\hypertarget{classMultiColSLAM_1_1cMap_a2777c7281c7e5e834e444183250001dd}{}\label{classMultiColSLAM_1_1cMap_a2777c7281c7e5e834e444183250001dd}
+
+\item 
+void {\bfseries Set\+Model\+Points} (const std\+::vector$<$ cv\+::\+Vec3d $>$ \&\+\_\+model\+Pts, const std\+::vector$<$ cv\+::\+Vec3d $>$ \&\+\_\+model\+Companion\+Pts)\hypertarget{classMultiColSLAM_1_1cMap_ac4d6e9a79ac3790896ca6f0c153d5a5b}{}\label{classMultiColSLAM_1_1cMap_ac4d6e9a79ac3790896ca6f0c153d5a5b}
+
+\item 
+int {\bfseries Map\+Points\+In\+Map} ()\hypertarget{classMultiColSLAM_1_1cMap_a6a2d3d6bee6c2bc6c9ac955577f59933}{}\label{classMultiColSLAM_1_1cMap_a6a2d3d6bee6c2bc6c9ac955577f59933}
+
+\item 
+int {\bfseries Key\+Frames\+In\+Map} ()\hypertarget{classMultiColSLAM_1_1cMap_ae0f57627fb9cd0e704fe0e3d339760d0}{}\label{classMultiColSLAM_1_1cMap_ae0f57627fb9cd0e704fe0e3d339760d0}
+
+\item 
+void {\bfseries Set\+Flag\+After\+BA} ()\hypertarget{classMultiColSLAM_1_1cMap_a91fa3bc3f1a588aa55a7ce06311a1c2b}{}\label{classMultiColSLAM_1_1cMap_a91fa3bc3f1a588aa55a7ce06311a1c2b}
+
+\item 
+bool {\bfseries is\+Map\+Updated} ()\hypertarget{classMultiColSLAM_1_1cMap_ab50d136b7d1281f785fece26c93b39c8}{}\label{classMultiColSLAM_1_1cMap_ab50d136b7d1281f785fece26c93b39c8}
+
+\item 
+void {\bfseries Reset\+Updated} ()\hypertarget{classMultiColSLAM_1_1cMap_ae932a5227da8b026b857249649ebe2e1}{}\label{classMultiColSLAM_1_1cMap_ae932a5227da8b026b857249649ebe2e1}
+
+\item 
+unsigned int {\bfseries Get\+Max\+K\+Fid} ()\hypertarget{classMultiColSLAM_1_1cMap_a7a1ec6fcca1b9953da375bae108b802b}{}\label{classMultiColSLAM_1_1cMap_a7a1ec6fcca1b9953da375bae108b802b}
+
+\item 
+void {\bfseries clear} ()\hypertarget{classMultiColSLAM_1_1cMap_ae00bc74b5d1048f53696a22ef054f3be}{}\label{classMultiColSLAM_1_1cMap_ae00bc74b5d1048f53696a22ef054f3be}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries msp\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cMap_a75bbbc0d281fdb7a41a513cef84831d8}{}\label{classMultiColSLAM_1_1cMap_a75bbbc0d281fdb7a41a513cef84831d8}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries msp\+Key\+Frames}\hypertarget{classMultiColSLAM_1_1cMap_a93606334a8888795659cb65019090de2}{}\label{classMultiColSLAM_1_1cMap_a93606334a8888795659cb65019090de2}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Reference\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cMap_a30df225c0cf201cc4dc145b2cd3f353e}{}\label{classMultiColSLAM_1_1cMap_a30df225c0cf201cc4dc145b2cd3f353e}
+
+\item 
+unsigned int {\bfseries mn\+Max\+K\+Fid}\hypertarget{classMultiColSLAM_1_1cMap_a7d1366b988b6d71be613c8b5839afca0}{}\label{classMultiColSLAM_1_1cMap_a7d1366b988b6d71be613c8b5839afca0}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Map}\hypertarget{classMultiColSLAM_1_1cMap_ad8a88057b75a349163599a5f97e27343}{}\label{classMultiColSLAM_1_1cMap_ad8a88057b75a349163599a5f97e27343}
+
+\item 
+bool {\bfseries mb\+Map\+Updated}\hypertarget{classMultiColSLAM_1_1cMap_a06e0fff4858a9ab51bb6260205ecfa72}{}\label{classMultiColSLAM_1_1cMap_a06e0fff4858a9ab51bb6260205ecfa72}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Map.\+h\end{DoxyCompactItemize}

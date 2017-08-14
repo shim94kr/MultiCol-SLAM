@@ -1,0 +1,454 @@
+\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Multi\+Key\+Frame Class Reference}
+\label{classMultiColSLAM_1_1cMultiKeyFrame}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Key\+Frame@{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Key\+Frame}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Multi\+Key\+Frame} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$p\+K\+F\+DB)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abf8a1aaf639f652a3ae497286c62ae02}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abf8a1aaf639f652a3ae497286c62ae02}
+
+\item 
+void {\bfseries Set\+Pose} (const cv\+::\+Matx33d \&Rcw, const cv\+::\+Vec3d \&tcw)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a590b95612532d4d987876716f2b9e79d}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a590b95612532d4d987876716f2b9e79d}
+
+\item 
+void {\bfseries Set\+Pose} (const cv\+::\+Matx44d \&Tcw)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5fca1cb5acc6d30d1522a2f5d5d88002}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5fca1cb5acc6d30d1522a2f5d5d88002}
+
+\item 
+void {\bfseries Set\+Pose} (const cv\+::\+Matx61d \&Tcw\+\_\+min\+\_\+)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0dc7e6c9420751bc76110471113bddae}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0dc7e6c9420751bc76110471113bddae}
+
+\item 
+cv\+::\+Matx44d {\bfseries Get\+Pose} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa2d23171b24baa6fd816dc0723b6b664}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa2d23171b24baa6fd816dc0723b6b664}
+
+\item 
+cv\+::\+Matx44d {\bfseries Get\+Pose\+Inverse} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4844cdf390745655a8357c566a0a2c60}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4844cdf390745655a8357c566a0a2c60}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+Camera\+Center} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a52d0d5f776be032f4363bc8904bb4594}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a52d0d5f776be032f4363bc8904bb4594}
+
+\item 
+cv\+::\+Matx33d {\bfseries Get\+Rotation} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_adcc8c83719bc45befd9a251354754b38}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_adcc8c83719bc45befd9a251354754b38}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+Translation} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a054bb1cbe785a223e5863a870740c71a}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a054bb1cbe785a223e5863a870740c71a}
+
+\item 
+void {\bfseries Compute\+BoW} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ac40cf01918bc7c73ec7224738a6c3dc2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ac40cf01918bc7c73ec7224738a6c3dc2}
+
+\item 
+D\+Bo\+W2\+::\+Feature\+Vector {\bfseries Get\+Feature\+Vector} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a359c5ec6b8c05747bab0fd822471b157}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a359c5ec6b8c05747bab0fd822471b157}
+
+\item 
+D\+Bo\+W2\+::\+Feature\+Vector {\bfseries Get\+Feature\+Vector} (int \&c)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a535b2e313e46140841cc427f9257626a}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a535b2e313e46140841cc427f9257626a}
+
+\item 
+D\+Bo\+W2\+::\+Bow\+Vector {\bfseries Get\+Bow\+Vector} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aaaded0e46bd0f80977dbf4b7eda9c83b}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aaaded0e46bd0f80977dbf4b7eda9c83b}
+
+\item 
+D\+Bo\+W2\+::\+Bow\+Vector {\bfseries Get\+Bow\+Vector} (int \&c)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a9bb17488bc5f12615af67cb30d7db5a3}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a9bb17488bc5f12615af67cb30d7db5a3}
+
+\item 
+void {\bfseries Add\+Connection} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, const int \&weight)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a050437956340e21914b3dbea3f5fbb86}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a050437956340e21914b3dbea3f5fbb86}
+
+\item 
+void {\bfseries Erase\+Connection} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_af24a02f8718683276af1d08dceff3ba0}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_af24a02f8718683276af1d08dceff3ba0}
+
+\item 
+void {\bfseries Update\+Connections} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a8b468d98f7e5eaf1b6d1ed23d82f7550}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a8b468d98f7e5eaf1b6d1ed23d82f7550}
+
+\item 
+void {\bfseries Update\+Best\+Covisibles} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a7e8be04b50f3972f16278ae5e69be13c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a7e8be04b50f3972f16278ae5e69be13c}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Connected\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a98bb50a395b13972fee7483eb428f7c7}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a98bb50a395b13972fee7483eb428f7c7}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Vector\+Covisible\+Key\+Frames} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abb15651bcb2f8ea2b5a37d92b3b8cd56}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abb15651bcb2f8ea2b5a37d92b3b8cd56}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Best\+Covisibility\+Key\+Frames} (const int \&N)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aca2e8582f01b60bebcfb21dabd358889}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aca2e8582f01b60bebcfb21dabd358889}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Covisibles\+By\+Weight} (const int \&w)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5e22f9516ec2c78db002b56b88c73b80}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5e22f9516ec2c78db002b56b88c73b80}
+
+\item 
+int {\bfseries Get\+Weight} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5007a6c129aa970256493b2574a5ca49}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5007a6c129aa970256493b2574a5ca49}
+
+\item 
+void {\bfseries Add\+Child} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0c5a0f133247f22a6f69f79d23d452d4}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0c5a0f133247f22a6f69f79d23d452d4}
+
+\item 
+void {\bfseries Erase\+Child} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4130dad9ed7598a296c5f430ad14a431}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4130dad9ed7598a296c5f430ad14a431}
+
+\item 
+void {\bfseries Change\+Parent} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_addeb9e0d1dfb356c255bab82c6f18620}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_addeb9e0d1dfb356c255bab82c6f18620}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Childs} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a7bdfd22e4e5a0e48845fa6256c506897}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a7bdfd22e4e5a0e48845fa6256c506897}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries Get\+Parent} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a249354018b2c539f20d2b0c87c3115ba}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a249354018b2c539f20d2b0c87c3115ba}
+
+\item 
+bool {\bfseries has\+Child} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_adfd11435d39645c878b69795ad9927e2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_adfd11435d39645c878b69795ad9927e2}
+
+\item 
+void {\bfseries Add\+Loop\+Edge} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a7a1ed932aa052b9c2e0354a057a02587}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a7a1ed932aa052b9c2e0354a057a02587}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Get\+Loop\+Edges} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_adfe6d7a9f8a4238d0938ddc16c3ff0d2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_adfe6d7a9f8a4238d0938ddc16c3ff0d2}
+
+\item 
+void {\bfseries Add\+Map\+Point} (\hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP, const size\+\_\+t \&idx)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a960929e1797ccc1bf0487cd2f4ceb933}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a960929e1797ccc1bf0487cd2f4ceb933}
+
+\item 
+void {\bfseries Erase\+Map\+Point\+Match} (const size\+\_\+t \&idx)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_af9c6cdf0bd2998f5e8aa076678dc8ce5}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_af9c6cdf0bd2998f5e8aa076678dc8ce5}
+
+\item 
+void {\bfseries Replace\+Map\+Point\+Match} (const size\+\_\+t \&idx, \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ac338f39a3c0840ad26baba9435c8a407}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ac338f39a3c0840ad26baba9435c8a407}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries Get\+Map\+Points} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6b519372f60093b06839adcbb4547aaf}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6b519372f60093b06839adcbb4547aaf}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries Get\+Map\+Point\+Matches} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aabfb52ce955eee5664955ef296d1896d}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aabfb52ce955eee5664955ef296d1896d}
+
+\item 
+int {\bfseries Tracked\+Map\+Points} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a029148c90cb994997f9177cb4032d1f4}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a029148c90cb994997f9177cb4032d1f4}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ {\bfseries Get\+Map\+Point} (const size\+\_\+t \&idx)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ade9d96290b8329d95d5fcbac8d5217b5}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ade9d96290b8329d95d5fcbac8d5217b5}
+
+\item 
+cv\+::\+Key\+Point {\bfseries Get\+Key\+Point} (const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa2a240859890704e7f49415eb74b2f0e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa2a240859890704e7f49415eb74b2f0e}
+
+\item 
+cv\+::\+Vec3d {\bfseries Get\+Key\+Point\+Ray} (const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ada605837a00ba06dac34d7fcbe98fcd2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ada605837a00ba06dac34d7fcbe98fcd2}
+
+\item 
+int {\bfseries Get\+Key\+Point\+Scale\+Level} (const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a96f62ff22c908e7714f10bb901b24e9f}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a96f62ff22c908e7714f10bb901b24e9f}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries Get\+Key\+Points} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a90964e10f09fde155609e006f6484bb3}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a90964e10f09fde155609e006f6484bb3}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries Get\+Key\+Points\+Rays} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa0ddc6d342cf3057f83871b6d111014c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa0ddc6d342cf3057f83871b6d111014c}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptor} (const int \&cam, const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a55512e3e630a9842a451ddb899fa112c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a55512e3e630a9842a451ddb899fa112c}
+
+\item 
+const uint64\+\_\+t $\ast$ {\bfseries Get\+Descriptor\+Row\+Ptr} (const int \&cam, const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa78e1e92223271e6125ff7285428f71e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa78e1e92223271e6125ff7285428f71e}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries Get\+All\+Descriptors} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a2ec6fae136bec1382848396ec45f9e89}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a2ec6fae136bec1382848396ec45f9e89}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries Get\+All\+Descriptor\+Masks} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a37041eddfdadd268c122e1d4c0d73462}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a37041eddfdadd268c122e1d4c0d73462}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptors} (int c) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae01aef70cf0c582b6311b06fa82f3707}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae01aef70cf0c582b6311b06fa82f3707}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptor\+Mask} (const int \&cam, const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0c3c067e7c7604bd74a2a69a1e96494e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0c3c067e7c7604bd74a2a69a1e96494e}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Descriptors\+Masks} (int c) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a3f8343792a42e1ccae6a14c7830ded90}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a3f8343792a42e1ccae6a14c7830ded90}
+
+\item 
+const uint64\+\_\+t $\ast$ {\bfseries Get\+Descriptor\+Mask\+Row\+Ptr} (const int \&cam, const size\+\_\+t \&idx) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a83a6f8b3180002075a8031fa62bc70a6}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a83a6f8b3180002075a8031fa62bc70a6}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries Get\+Features\+In\+Area} (const int \&cam, const double \&x, const double \&y, const double \&r) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4e89cd4a1150614138e1ae3ccdd93fab}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4e89cd4a1150614138e1ae3ccdd93fab}
+
+\item 
+cv\+::\+Mat {\bfseries Get\+Image} (const int \&cam)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a729bbcd132e5bd8019731f58bf82f288}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a729bbcd132e5bd8019731f58bf82f288}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries Get\+All\+Images} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a67b03e9c613009ebaeb3f14ade6a9570}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a67b03e9c613009ebaeb3f14ade6a9570}
+
+\item 
+bool {\bfseries Is\+In\+Image} (const int \&cam, const double \&x, const double \&y) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4cfd0e5fe31d7b187e836ff3b8b3443f}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4cfd0e5fe31d7b187e836ff3b8b3443f}
+
+\item 
+void {\bfseries Set\+Not\+Erase} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4348959bf4a1bb794a3551125330e211}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4348959bf4a1bb794a3551125330e211}
+
+\item 
+void {\bfseries Set\+Erase} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6fb5d261ec99a0017d318888415aa014}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6fb5d261ec99a0017d318888415aa014}
+
+\item 
+void {\bfseries Set\+Bad\+Flag} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a98eacb6660fdf85f823949bb32afd4b1}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a98eacb6660fdf85f823949bb32afd4b1}
+
+\item 
+bool {\bfseries is\+Bad} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abd7ab99844525e3b3502ab581dd1d033}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abd7ab99844525e3b3502ab581dd1d033}
+
+\item 
+double {\bfseries Get\+Scale\+Factor} (int n\+Level=1) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae4e32f41b5ef387ad62436a0e6ca23aa}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae4e32f41b5ef387ad62436a0e6ca23aa}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries Get\+Scale\+Factors} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0bfe04017b3cbc3e3e5c7447ffad158e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0bfe04017b3cbc3e3e5c7447ffad158e}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries Get\+Vector\+Scale\+Sigma2} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a50f155af48e2ca6aeaccde0ddfdf9896}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a50f155af48e2ca6aeaccde0ddfdf9896}
+
+\item 
+double {\bfseries Get\+Sigma2} (int n\+Level=1) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_afec4720f66e436149e239f8c9551a6cc}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_afec4720f66e436149e239f8c9551a6cc}
+
+\item 
+double {\bfseries Get\+Inv\+Sigma2} (int n\+Level=1) const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a1f54a19c6af5349b16b781bf5eb0a2ef}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a1f54a19c6af5349b16b781bf5eb0a2ef}
+
+\item 
+int {\bfseries Get\+Scale\+Levels} () const \hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a1cd00e543e76b437d0082d5b1d77c994}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a1cd00e543e76b437d0082d5b1d77c994}
+
+\item 
+double {\bfseries Compute\+Scene\+Median\+Depth} (int q=2)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ab9b5f467af463cc3b6e46d116740137d}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ab9b5f467af463cc3b6e46d116740137d}
+
+\item 
+size\+\_\+t {\bfseries Get\+Valid\+Map\+Point\+Cnt} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abff684d381c08bb348b0934e3ec03316}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abff684d381c08bb348b0934e3ec03316}
+
+\item 
+size\+\_\+t {\bfseries Get\+Nr\+Keypoints\+In\+Frame} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a8f78399e955741cd020e82d7d93d85c9}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a8f78399e955741cd020e82d7d93d85c9}
+
+\item 
+bool {\bfseries Having\+Masks} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a978aae90bff85ee214c50a0c8648958c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a978aae90bff85ee214c50a0c8648958c}
+
+\item 
+int {\bfseries Desc\+Dims} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0bb855d449471de29af35c092e533869}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0bb855d449471de29af35c092e533869}
+
+\item 
+bool {\bfseries Is\+Reference} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a7bd965c52820494980e24f4af74d17d2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a7bd965c52820494980e24f4af74d17d2}
+
+\item 
+void {\bfseries Set\+Reference} (const bool ref)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4a86ad71d8187ceb383a7dc8d6905fdc}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4a86ad71d8187ceb383a7dc8d6905fdc}
+
+\item 
+bool {\bfseries Is\+Loop\+Candidate} ()\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aef4dabc6fa3dd59d7382e59ce8399cc0}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aef4dabc6fa3dd59d7382e59ce8399cc0}
+
+\item 
+void {\bfseries Set\+Loop\+Candidate} (const bool ref)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a8b0ad7dd25873b4fc5195f721eedfa76}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a8b0ad7dd25873b4fc5195f721eedfa76}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool {\bfseries weight\+Comp} (int a, int b)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aaeb50e33e2817180ad5217bdbb75f583}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aaeb50e33e2817180ad5217bdbb75f583}
+
+\item 
+static bool {\bfseries l\+Id} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2)\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a8ff8909f990679cee4dab6126a1ba5e8}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a8ff8909f990679cee4dab6126a1ba5e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long unsigned int {\bfseries mn\+Id}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ab5a8354760bcd604c95421c250668ffd}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ab5a8354760bcd604c95421c250668ffd}
+
+\item 
+long unsigned int {\bfseries mn\+Frame\+Id}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a80c44e1dc61f0586eeae056472352227}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a80c44e1dc61f0586eeae056472352227}
+
+\item 
+double {\bfseries m\+Time\+Stamp}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6e6b63f7b262db5ed5604a88823e5a38}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6e6b63f7b262db5ed5604a88823e5a38}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Grid\+Cols}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa74ed995d88e5f5603946fcd7fa3c8ef}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa74ed995d88e5f5603946fcd7fa3c8ef}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Grid\+Rows}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a39b2f133b4e2dc991b9796d13a2118a3}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a39b2f133b4e2dc991b9796d13a2118a3}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mf\+Grid\+Element\+Width\+Inv}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_acf423a36a5f40b2f5f097fb3fd3dca9c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_acf423a36a5f40b2f5f097fb3fd3dca9c}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mf\+Grid\+Element\+Height\+Inv}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae1958d9a3878cb2f8d65a04078ed94a2}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae1958d9a3878cb2f8d65a04078ed94a2}
+
+\item 
+long unsigned int {\bfseries mn\+Track\+Reference\+For\+Frame}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6aa112103788744e1e4eae640eb23993}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6aa112103788744e1e4eae640eb23993}
+
+\item 
+long unsigned int {\bfseries mn\+Fuse\+Target\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a84686cabd63f9035a800b8fef7d9bf0e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a84686cabd63f9035a800b8fef7d9bf0e}
+
+\item 
+long unsigned int {\bfseries mn\+B\+A\+Local\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a9f25c2cfdfd3980bfca525852f05ce35}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a9f25c2cfdfd3980bfca525852f05ce35}
+
+\item 
+long unsigned int {\bfseries mn\+B\+A\+Fixed\+For\+KF}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ac7b33f34fb1cc9d523269c0d415df3d9}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ac7b33f34fb1cc9d523269c0d415df3d9}
+
+\item 
+long unsigned int {\bfseries mn\+Loop\+Query}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a07bf0ef4cb681acf3586bda6490b4a8d}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a07bf0ef4cb681acf3586bda6490b4a8d}
+
+\item 
+int {\bfseries mn\+Loop\+Words}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a3ad4a346b76434c24f649402a8bf80ee}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a3ad4a346b76434c24f649402a8bf80ee}
+
+\item 
+double {\bfseries m\+Loop\+Score}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a7891d3d11c5f83455b35eda1a0070859}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a7891d3d11c5f83455b35eda1a0070859}
+
+\item 
+long unsigned int {\bfseries mn\+Reloc\+Query}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a543cb363a86a44a66059c29467880813}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a543cb363a86a44a66059c29467880813}
+
+\item 
+int {\bfseries mn\+Reloc\+Words}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aed70c2cfc663f8c4b740d215324c8a97}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aed70c2cfc663f8c4b740d215324c8a97}
+
+\item 
+double {\bfseries m\+Reloc\+Score}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a8d4834cd71596fff3a7a503c9ca775f8}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a8d4834cd71596fff3a7a503c9ca775f8}
+
+\item 
+D\+Bo\+W2\+::\+Bow\+Vector {\bfseries m\+Bow\+Vec}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae322275b18a373a3574bc0b60a6cec55}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae322275b18a373a3574bc0b60a6cec55}
+
+\item 
+std\+::vector$<$ D\+Bo\+W2\+::\+Bow\+Vector $>$ {\bfseries m\+Bow\+Vecs}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6d3b9ea74c0c728cc39a00746f58abfe}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6d3b9ea74c0c728cc39a00746f58abfe}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} {\bfseries cam\+System}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a131524c0e6cc751f0c4b07e02d1b9eb4}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a131524c0e6cc751f0c4b07e02d1b9eb4}
+
+\item 
+std\+::unordered\+\_\+map$<$ size\+\_\+t, int $>$ {\bfseries keypoint\+\_\+to\+\_\+cam}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_afd89847345b824aee88b90e2535a2e77}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_afd89847345b824aee88b90e2535a2e77}
+
+\item 
+std\+::unordered\+\_\+map$<$ size\+\_\+t, int $>$ {\bfseries cont\+\_\+idx\+\_\+to\+\_\+local\+\_\+cam\+\_\+idx}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5bce4f86411c4f6a5438783b5b4be66c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5bce4f86411c4f6a5438783b5b4be66c}
+
+\item 
+int {\bfseries image\+Id}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ad48abead49cbc8b6e6d3cc7beb4edd1f}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ad48abead49cbc8b6e6d3cc7beb4edd1f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static long unsigned int {\bfseries n\+Next\+Id}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae4be2cb9a707857eca57741c22c44124}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae4be2cb9a707857eca57741c22c44124}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries md\+B\+R\+I\+EF}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abbcd9dc5e37c31e2cbe54264fddc0a8c}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abbcd9dc5e37c31e2cbe54264fddc0a8c}
+
+\item 
+bool {\bfseries masks\+Learned}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a75c37e73a517411b4c7b43748b29e7c0}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a75c37e73a517411b4c7b43748b29e7c0}
+
+\item 
+int {\bfseries desc\+Dimension}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a340a76c2f5b95bec157e3a0f14d2a78e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a340a76c2f5b95bec157e3a0f14d2a78e}
+
+\item 
+bool {\bfseries Iam\+The\+Reference}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a6952199dd92e2ee398236d230c9d901f}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a6952199dd92e2ee398236d230c9d901f}
+
+\item 
+bool {\bfseries Iam\+Loop\+Candidate}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aed9c8bcbc94c852f931d7b05cb05f0d5}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aed9c8bcbc94c852f931d7b05cb05f0d5}
+
+\item 
+bool {\bfseries having\+Edge\+Measurements}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a27cdc31d1e8391a66746c7ff99cbde72}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a27cdc31d1e8391a66746c7ff99cbde72}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries images}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a0430b51235be0a779be4fb245f9ac9c6}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a0430b51235be0a779be4fb245f9ac9c6}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+MinX}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae9e124afad5a3f5bf0847154fdc83d18}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae9e124afad5a3f5bf0847154fdc83d18}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+MinY}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a2b0bb5a14fcaf4987ffb5d63d9f95b59}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a2b0bb5a14fcaf4987ffb5d63d9f95b59}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+MaxX}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aecdf8c0c96cdfdcf730d5d85a8c0816b}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aecdf8c0c96cdfdcf730d5d85a8c0816b}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+MaxY}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a2c018a34409eb643718e992dd122a0fb}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a2c018a34409eb643718e992dd122a0fb}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries mv\+Keys}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a15f168c197842aa08a9f1e16738fa454}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a15f168c197842aa08a9f1e16738fa454}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries mv\+Keys\+Rays}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a68cdbc14ca1c6aca04eddcb973b257f0}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a68cdbc14ca1c6aca04eddcb973b257f0}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries m\+Descriptors}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae4b0ae966028d440eee0a3db76dd2633}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae4b0ae966028d440eee0a3db76dd2633}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries m\+Descriptor\+Masks}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa808351fda7d76b0483455f2ab10388e}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa808351fda7d76b0483455f2ab10388e}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa1b233d10d5d73c17ae83b84a17e087b}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa1b233d10d5d73c17ae83b84a17e087b}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrameDatabase}{c\+Multi\+Key\+Frame\+Database} $\ast$ {\bfseries mp\+Key\+Frame\+DB}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a53c3f11c00ba051a9983c97c4474e515}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a53c3f11c00ba051a9983c97c4474e515}
+
+\item 
+O\+R\+B\+Vocabulary $\ast$ {\bfseries mp\+O\+R\+Bvocabulary}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a929a0d70f93a2cba5d509fdefc037685}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a929a0d70f93a2cba5d509fdefc037685}
+
+\item 
+D\+Bo\+W2\+::\+Feature\+Vector {\bfseries m\+Feat\+Vec}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5aeb07e9c7a50d418587eefa8ba9d103}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5aeb07e9c7a50d418587eefa8ba9d103}
+
+\item 
+std\+::vector$<$ D\+Bo\+W2\+::\+Feature\+Vector $>$ {\bfseries m\+Feat\+Vecs}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a9de04c2fa55e6b6ff2dc26b0ffdffb38}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a9de04c2fa55e6b6ff2dc26b0ffdffb38}
+
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::size\+\_\+t $>$ $>$ $>$ $>$ {\bfseries m\+Grids}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a23877b30db6777106c47ac74eb80c0fd}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a23877b30db6777106c47ac74eb80c0fd}
+
+\item 
+std\+::map$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, int $>$ {\bfseries m\+Connected\+Key\+Frame\+Weights}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a3d83dcebee9a6027bc48a900a7a4595b}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a3d83dcebee9a6027bc48a900a7a4595b}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries mvp\+Ordered\+Connected\+Key\+Frames}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ac34d012b5cb31754ee32061ebabc85a0}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ac34d012b5cb31754ee32061ebabc85a0}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mv\+Ordered\+Weights}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ae16c46fb46f4c3d2f66c7d8b213ac315}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ae16c46fb46f4c3d2f66c7d8b213ac315}
+
+\item 
+bool {\bfseries mb\+First\+Connection}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ac6a1de20903430699ed2428960879794}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ac6a1de20903430699ed2428960879794}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Parent}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aabf55dcc84d8491d3e93d8ef4f0bf24a}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aabf55dcc84d8491d3e93d8ef4f0bf24a}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries msp\+Childrens}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa7dbc8d589a134af195d6ec4d590ae84}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa7dbc8d589a134af195d6ec4d590ae84}
+
+\item 
+std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries msp\+Loop\+Edges}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a63fefed16eadd1d817c9051dc293aa37}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a63fefed16eadd1d817c9051dc293aa37}
+
+\item 
+bool {\bfseries mb\+Not\+Erase}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a067af8f91c7d962f867358bf494038fa}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a067af8f91c7d962f867358bf494038fa}
+
+\item 
+bool {\bfseries mb\+To\+Be\+Erased}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_abb2dd3bd56d5879bed9867137c56fa69}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_abb2dd3bd56d5879bed9867137c56fa69}
+
+\item 
+bool {\bfseries mb\+Bad}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a9dfd043ea469be57d1e998a59ba00ec5}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a9dfd043ea469be57d1e998a59ba00ec5}
+
+\item 
+int {\bfseries mn\+Scale\+Levels}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a28044b77e6085de2e63b7222c2012c99}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a28044b77e6085de2e63b7222c2012c99}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Scale\+Factors}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a2383e3654f7e411ec78954cbb58e9fb1}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a2383e3654f7e411ec78954cbb58e9fb1}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Level\+Sigma2}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa81118b3fa16e8e58184fc852aa882aa}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa81118b3fa16e8e58184fc852aa882aa}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Inv\+Level\+Sigma2}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_af23deb69ff3326ac27604860bc75fe1a}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_af23deb69ff3326ac27604860bc75fe1a}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$ {\bfseries mp\+Map}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a2f9eeb3c126b9d3414ebaa3fe2f2aaf6}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a2f9eeb3c126b9d3414ebaa3fe2f2aaf6}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Pose}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ab1a3d1018970918898ae1723ce8df974}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ab1a3d1018970918898ae1723ce8df974}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Connections}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a738f6d55547b533c3b55d03998306347}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a738f6d55547b533c3b55d03998306347}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Features}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a5c53a53ee7c2ba8ed7365072de496556}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a5c53a53ee7c2ba8ed7365072de496556}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Image}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aafc2dcb33cbe43e26c021580162a85be}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aafc2dcb33cbe43e26c021580162a85be}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Rendered\+Images}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_af33a3d8e4e0bd99d7627eabf93643e63}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_af33a3d8e4e0bd99d7627eabf93643e63}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Edge\+Images}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_aa17b8e6b45158a55e176e8174369b685}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_aa17b8e6b45158a55e176e8174369b685}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Model\+Pts}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_a4e5e7f6858d2595ebd22c72f991df9a5}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_a4e5e7f6858d2595ebd22c72f991df9a5}
+
+\item 
+std\+::mutex {\bfseries m\+Mutex\+Properties}\hypertarget{classMultiColSLAM_1_1cMultiKeyFrame_ab6d17a0ccd3fb8076b9194cbb6ddf382}{}\label{classMultiColSLAM_1_1cMultiKeyFrame_ab6d17a0ccd3fb8076b9194cbb6ddf382}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Multi\+Key\+Frame.\+h\end{DoxyCompactItemize}

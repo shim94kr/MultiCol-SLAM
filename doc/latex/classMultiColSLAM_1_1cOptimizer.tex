@@ -1,0 +1,61 @@
+\hypertarget{classMultiColSLAM_1_1cOptimizer}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Optimizer Class Reference}
+\label{classMultiColSLAM_1_1cOptimizer}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Optimizer@{Multi\+Col\+S\+L\+A\+M\+::c\+Optimizer}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Bundle\+Adjustment} (const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ \&vp\+KF, const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+MP, bool pose\+Only, int n\+Iterations=5, bool $\ast$pb\+Stop\+Flag=N\+U\+LL)\hypertarget{classMultiColSLAM_1_1cOptimizer_ac36a5a15e6976776dffbf02251fb6314}{}\label{classMultiColSLAM_1_1cOptimizer_ac36a5a15e6976776dffbf02251fb6314}
+
+\item 
+static void {\bfseries Global\+Bundle\+Adjustment} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, bool pose\+Only=false, int n\+Iterations=5, bool $\ast$pb\+Stop\+Flag=N\+U\+LL)\hypertarget{classMultiColSLAM_1_1cOptimizer_a2cfb2425d60d80fa23e7a38a370840d3}{}\label{classMultiColSLAM_1_1cOptimizer_a2cfb2425d60d80fa23e7a38a370840d3}
+
+\item 
+static std\+::list$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Local\+Bundle\+Adjustment} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, int nr\+Iters=10, bool get\+Cov\+Mats=false, bool $\ast$pb\+Stop\+Flag=N\+U\+LL)\hypertarget{classMultiColSLAM_1_1cOptimizer_ab9d0a69c33c68b087b4acbaf883b6728}{}\label{classMultiColSLAM_1_1cOptimizer_ab9d0a69c33c68b087b4acbaf883b6728}
+
+\item 
+static int {\bfseries Pose\+Optimization} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} $\ast$p\+Frame, double \&inliers, const double \&huber\+Multiplier=2)\hypertarget{classMultiColSLAM_1_1cOptimizer_a84b4f65e120c8bb608a0be69cfbf6467}{}\label{classMultiColSLAM_1_1cOptimizer_a84b4f65e120c8bb608a0be69cfbf6467}
+
+\item 
+static bool {\bfseries Structure\+Only} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$\&vp\+MP, vector$<$ pair$<$ int, cv\+::\+Vec2d $>$ $>$ \&obs, const double \&repr\+Err)\hypertarget{classMultiColSLAM_1_1cOptimizer_a2120e0f9e7985b43d87d799c2881d4ed}{}\label{classMultiColSLAM_1_1cOptimizer_a2120e0f9e7985b43d87d799c2881d4ed}
+
+\item 
+static void {\bfseries Optimize\+Essential\+Graph} (\hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+Loop\+M\+KF, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+Cur\+M\+KF, g2o\+::\+Sim3 \&Scurw, const c\+Loop\+Closing\+::\+Key\+Frame\+And\+Pose \&Non\+Corrected\+Sim3, const c\+Loop\+Closing\+::\+Key\+Frame\+And\+Pose \&Corrected\+Sim3, const std\+::map$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$, std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ $>$ \&Loop\+Connections)\hypertarget{classMultiColSLAM_1_1cOptimizer_af484d774331b0d6b9ae54806859d74b8}{}\label{classMultiColSLAM_1_1cOptimizer_af484d774331b0d6b9ae54806859d74b8}
+
+\item 
+static int {\bfseries Optimize\+Sim3} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Matches1, g2o\+::\+Sim3 \&g2o\+S12)\hypertarget{classMultiColSLAM_1_1cOptimizer_abe048cef90fc1d79a0e64f8c46a1b8f1}{}\label{classMultiColSLAM_1_1cOptimizer_abe048cef90fc1d79a0e64f8c46a1b8f1}
+
+\item 
+static std\+::list$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ {\bfseries Motion\+Only\+BA} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cOptimizer_ac3e00c4a77b3e687aa2c1b908c18d3c7}{}\label{classMultiColSLAM_1_1cOptimizer_ac3e00c4a77b3e687aa2c1b908c18d3c7}
+
+\item 
+static int {\bfseries Structure\+Only\+BA} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cOptimizer_a37c799d77d9e982f8b6d5658ad4c09f3}{}\label{classMultiColSLAM_1_1cOptimizer_a37c799d77d9e982f8b6d5658ad4c09f3}
+
+\item 
+static int {\bfseries Adjust\+M\+K\+F2\+Model} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cOptimizer_ac5d007defc2e4a8114c17b9db077baf0}{}\label{classMultiColSLAM_1_1cOptimizer_ac5d007defc2e4a8114c17b9db077baf0}
+
+\item 
+static int {\bfseries Adjust\+Frame2\+Model} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} $\ast$frame, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cOptimizer_ab633c7578a569114014a77959b1371e5}{}\label{classMultiColSLAM_1_1cOptimizer_ab633c7578a569114014a77959b1371e5}
+
+\item 
+static int {\bfseries Calibrate\+M\+K\+Son\+Model} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMap}{c\+Map} $\ast$p\+Map)\hypertarget{classMultiColSLAM_1_1cOptimizer_ae5e63dcfbdacfae44d69c13227c51d08}{}\label{classMultiColSLAM_1_1cOptimizer_ae5e63dcfbdacfae44d69c13227c51d08}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double {\bfseries std\+Recon}\hypertarget{classMultiColSLAM_1_1cOptimizer_afbd9d530896f4784a62dbe5035785172}{}\label{classMultiColSLAM_1_1cOptimizer_afbd9d530896f4784a62dbe5035785172}
+
+\item 
+static double {\bfseries std\+Pose}\hypertarget{classMultiColSLAM_1_1cOptimizer_af021f8dbb3d87728c3a0df8252f260cf}{}\label{classMultiColSLAM_1_1cOptimizer_af021f8dbb3d87728c3a0df8252f260cf}
+
+\item 
+static double {\bfseries std\+Sim}\hypertarget{classMultiColSLAM_1_1cOptimizer_a62e456f086574eb7feaff4d3ad510caf}{}\label{classMultiColSLAM_1_1cOptimizer_a62e456f086574eb7feaff4d3ad510caf}
+
+\item 
+static double {\bfseries std\+Model}\hypertarget{classMultiColSLAM_1_1cOptimizer_ae897a55d0f0f9703077d67276cb50af0}{}\label{classMultiColSLAM_1_1cOptimizer_ae897a55d0f0f9703077d67276cb50af0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Optimizer.\+h\end{DoxyCompactItemize}

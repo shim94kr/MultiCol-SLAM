@@ -1,0 +1,166 @@
+\hypertarget{classMultiColSLAM_1_1cMultiFrame}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+Multi\+Frame Class Reference}
+\label{classMultiColSLAM_1_1cMultiFrame}\index{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Frame@{Multi\+Col\+S\+L\+A\+M\+::c\+Multi\+Frame}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+Multi\+Frame} (const \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&frame)\hypertarget{classMultiColSLAM_1_1cMultiFrame_a6ea7676dfe9ef9766bdabb4946ac5ffe}{}\label{classMultiColSLAM_1_1cMultiFrame_a6ea7676dfe9ef9766bdabb4946ac5ffe}
+
+\item 
+{\bfseries c\+Multi\+Frame} (const std\+::vector$<$ cv\+::\+Mat $>$ \&images\+\_\+, const double \&time\+Stamp, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1mdBRIEFextractorOct}{md\+B\+R\+I\+E\+Fextractor\+Oct} $\ast$ $>$ extractor, O\+R\+B\+Vocabulary $\ast$voc, \hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} \&cam\+System\+\_\+, int img\+Cnt)\hypertarget{classMultiColSLAM_1_1cMultiFrame_a908671e3d160f1981727a6404515e51e}{}\label{classMultiColSLAM_1_1cMultiFrame_a908671e3d160f1981727a6404515e51e}
+
+\item 
+void {\bfseries Compute\+BoW} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_a450f2e34479ad04c25092f4600f88c3e}{}\label{classMultiColSLAM_1_1cMultiFrame_a450f2e34479ad04c25092f4600f88c3e}
+
+\item 
+void {\bfseries Update\+Pose\+Matrices} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_ac18ad79d06a81f31144932efe7059a2a}{}\label{classMultiColSLAM_1_1cMultiFrame_ac18ad79d06a81f31144932efe7059a2a}
+
+\item 
+bool {\bfseries is\+In\+Frustum} (int cam, \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$p\+MP, double viewing\+Cos\+Limit)\hypertarget{classMultiColSLAM_1_1cMultiFrame_ad1a799adc5252d170af60346052bcd5d}{}\label{classMultiColSLAM_1_1cMultiFrame_ad1a799adc5252d170af60346052bcd5d}
+
+\item 
+bool {\bfseries Pos\+In\+Grid} (const int \&cam, cv\+::\+Key\+Point \&kp, int \&posX, int \&posY)\hypertarget{classMultiColSLAM_1_1cMultiFrame_a1620ec42263c7f56fd6930288777d83d}{}\label{classMultiColSLAM_1_1cMultiFrame_a1620ec42263c7f56fd6930288777d83d}
+
+\item 
+std\+::vector$<$ size\+\_\+t $>$ {\bfseries Get\+Features\+In\+Area} (const int \&cam, const double \&x, const double \&y, const double \&r, const int min\+Level=-\/1, const int max\+Level=-\/1) const \hypertarget{classMultiColSLAM_1_1cMultiFrame_a6e108ed4d3cc3410768977f2d8b79f1c}{}\label{classMultiColSLAM_1_1cMultiFrame_a6e108ed4d3cc3410768977f2d8b79f1c}
+
+\item 
+cv\+::\+Matx$<$ double, 4, 4 $>$ {\bfseries Get\+Pose} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_a8e951c3eac1c85c5aced5d87797de9c9}{}\label{classMultiColSLAM_1_1cMultiFrame_a8e951c3eac1c85c5aced5d87797de9c9}
+
+\item 
+cv\+::\+Matx$<$ double, 6, 1 $>$ {\bfseries Get\+Pose\+Min} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_a42a217979b1bf791a35855fb7a3e0718}{}\label{classMultiColSLAM_1_1cMultiFrame_a42a217979b1bf791a35855fb7a3e0718}
+
+\item 
+void {\bfseries Set\+Pose} (cv\+::\+Matx44d \&T)\hypertarget{classMultiColSLAM_1_1cMultiFrame_aa515f96d4a8e3da69ebb8e38ca13eb5d}{}\label{classMultiColSLAM_1_1cMultiFrame_aa515f96d4a8e3da69ebb8e38ca13eb5d}
+
+\item 
+void {\bfseries Set\+Pose\+Min} (cv\+::\+Matx61d \&Tmin)\hypertarget{classMultiColSLAM_1_1cMultiFrame_a9b111a8f9a80581ee104325174d4a0e7}{}\label{classMultiColSLAM_1_1cMultiFrame_a9b111a8f9a80581ee104325174d4a0e7}
+
+\item 
+bool {\bfseries Having\+Masks} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_a9a4db34757927f8c3eeb7f327da1694a}{}\label{classMultiColSLAM_1_1cMultiFrame_a9a4db34757927f8c3eeb7f327da1694a}
+
+\item 
+int {\bfseries Desc\+Dims} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_a48fe0b66e5b29cb0e3cba6f8e5ab243d}{}\label{classMultiColSLAM_1_1cMultiFrame_a48fe0b66e5b29cb0e3cba6f8e5ab243d}
+
+\item 
+int {\bfseries Doing\+\_\+md\+B\+R\+I\+EF} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_ac4f81bfd62bf28f9689174f7410e9a8b}{}\label{classMultiColSLAM_1_1cMultiFrame_ac4f81bfd62bf28f9689174f7410e9a8b}
+
+\item 
+int {\bfseries Get\+Img\+Cnt} ()\hypertarget{classMultiColSLAM_1_1cMultiFrame_addb2b7203fe4a875ab91b9f18117e1b9}{}\label{classMultiColSLAM_1_1cMultiFrame_addb2b7203fe4a875ab91b9f18117e1b9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O\+R\+B\+Vocabulary $\ast$ {\bfseries mp\+O\+R\+Bvocabulary}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ac5c8d432c45ee464be9bccefb0dca5cc}{}\label{classMultiColSLAM_1_1cMultiFrame_ac5c8d432c45ee464be9bccefb0dca5cc}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1mdBRIEFextractorOct}{md\+B\+R\+I\+E\+Fextractor\+Oct} $\ast$ $>$ {\bfseries mp\+\_\+md\+B\+R\+I\+E\+F\+\_\+extractor\+Oct}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a2c46aafe197d7fb31e0b6156dae174bc}{}\label{classMultiColSLAM_1_1cMultiFrame_a2c46aafe197d7fb31e0b6156dae174bc}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries images}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a69a65d29d42e95b76de8bec74fcbd9f7}{}\label{classMultiColSLAM_1_1cMultiFrame_a69a65d29d42e95b76de8bec74fcbd9f7}
+
+\item 
+double {\bfseries m\+Time\+Stamp}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a8ed84dc9027c7e2c6656aa38783346f2}{}\label{classMultiColSLAM_1_1cMultiFrame_a8ed84dc9027c7e2c6656aa38783346f2}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiCamSys__}{c\+Multi\+Cam\+Sys\+\_\+} {\bfseries cam\+System}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a8a008b755201a3b9f558138edd7fb4e9}{}\label{classMultiColSLAM_1_1cMultiFrame_a8a008b755201a3b9f558138edd7fb4e9}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries N}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ac9af706463d890b82fbf9ab09c0af0ca}{}\label{classMultiColSLAM_1_1cMultiFrame_ac9af706463d890b82fbf9ab09c0af0ca}
+
+\item 
+size\+\_\+t {\bfseries totalN}\hypertarget{classMultiColSLAM_1_1cMultiFrame_adcdde7766f469bab2916615cc1b9d7ec}{}\label{classMultiColSLAM_1_1cMultiFrame_adcdde7766f469bab2916615cc1b9d7ec}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries mv\+Keys}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a6c8f3364dd006dd897a842bfd0d87d76}{}\label{classMultiColSLAM_1_1cMultiFrame_a6c8f3364dd006dd897a842bfd0d87d76}
+
+\item 
+std\+::vector$<$ cv\+::\+Vec3d $>$ {\bfseries mv\+Keys\+Rays}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a072c7eab9c98f21b72c400f3cbada847}{}\label{classMultiColSLAM_1_1cMultiFrame_a072c7eab9c98f21b72c400f3cbada847}
+
+\item 
+D\+Bo\+W2\+::\+Bow\+Vector {\bfseries m\+Bow\+Vec}\hypertarget{classMultiColSLAM_1_1cMultiFrame_afe8f0002d5163887dd944749d6480f19}{}\label{classMultiColSLAM_1_1cMultiFrame_afe8f0002d5163887dd944749d6480f19}
+
+\item 
+std\+::vector$<$ D\+Bo\+W2\+::\+Bow\+Vector $>$ {\bfseries m\+Bow\+Vecs}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a37f25ed21a0361abfe9b035ce4c163fc}{}\label{classMultiColSLAM_1_1cMultiFrame_a37f25ed21a0361abfe9b035ce4c163fc}
+
+\item 
+D\+Bo\+W2\+::\+Feature\+Vector {\bfseries m\+Feat\+Vec}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a0be0cf724125191eb769e135e8771702}{}\label{classMultiColSLAM_1_1cMultiFrame_a0be0cf724125191eb769e135e8771702}
+
+\item 
+std\+::vector$<$ D\+Bo\+W2\+::\+Feature\+Vector $>$ {\bfseries m\+Feat\+Vecs}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a7cc10ef82d7b22f396e4d8d1d46e4fea}{}\label{classMultiColSLAM_1_1cMultiFrame_a7cc10ef82d7b22f396e4d8d1d46e4fea}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries m\+Descriptors}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a9867e78f3eefb02e22f95ed7dfe377e4}{}\label{classMultiColSLAM_1_1cMultiFrame_a9867e78f3eefb02e22f95ed7dfe377e4}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries m\+Descriptor\+Masks}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a96c3578b8e654b0a2608b6e328dff221}{}\label{classMultiColSLAM_1_1cMultiFrame_a96c3578b8e654b0a2608b6e328dff221}
+
+\item 
+std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ {\bfseries mvp\+Map\+Points}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a3c1a7b323d8ece720adf20d63724c212}{}\label{classMultiColSLAM_1_1cMultiFrame_a3c1a7b323d8ece720adf20d63724c212}
+
+\item 
+std\+::vector$<$ bool $>$ {\bfseries mvb\+Outlier}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ab70de42d91400947e6a591004d846365}{}\label{classMultiColSLAM_1_1cMultiFrame_ab70de42d91400947e6a591004d846365}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mf\+Grid\+Element\+Width\+Inv}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a309c0181a04323c1b1a4aae7cb507551}{}\label{classMultiColSLAM_1_1cMultiFrame_a309c0181a04323c1b1a4aae7cb507551}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mf\+Grid\+Element\+Height\+Inv}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a4d4a68a7c54e5db5dfd57888d949fc8f}{}\label{classMultiColSLAM_1_1cMultiFrame_a4d4a68a7c54e5db5dfd57888d949fc8f}
+
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ std\+::size\+\_\+t $>$ $>$ $>$ $>$ {\bfseries m\+Grids}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ace3a3ae8bc5a4e057175da26d756336a}{}\label{classMultiColSLAM_1_1cMultiFrame_ace3a3ae8bc5a4e057175da26d756336a}
+
+\item 
+long unsigned int {\bfseries mn\+Id}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a06614a7fc08870329309c96397041484}{}\label{classMultiColSLAM_1_1cMultiFrame_a06614a7fc08870329309c96397041484}
+
+\item 
+\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ {\bfseries mp\+Reference\+KF}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a1b91d5712736f5007722352b829c57ef}{}\label{classMultiColSLAM_1_1cMultiFrame_a1b91d5712736f5007722352b829c57ef}
+
+\item 
+int {\bfseries mn\+Scale\+Levels}\hypertarget{classMultiColSLAM_1_1cMultiFrame_afc3a90e6d6187ffc9074aea01de9a43f}{}\label{classMultiColSLAM_1_1cMultiFrame_afc3a90e6d6187ffc9074aea01de9a43f}
+
+\item 
+double {\bfseries mf\+Scale\+Factor}\hypertarget{classMultiColSLAM_1_1cMultiFrame_aa675a61319327fec482df9c27bedd926}{}\label{classMultiColSLAM_1_1cMultiFrame_aa675a61319327fec482df9c27bedd926}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Scale\+Factors}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a511d335e55baba101d5f1ae81f5788d2}{}\label{classMultiColSLAM_1_1cMultiFrame_a511d335e55baba101d5f1ae81f5788d2}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Level\+Sigma2}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a91abff96f10c7c8ec5ca0d44bd32a3d6}{}\label{classMultiColSLAM_1_1cMultiFrame_a91abff96f10c7c8ec5ca0d44bd32a3d6}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Inv\+Level\+Sigma2}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a0efae885316c74805aff13ad2917cdb3}{}\label{classMultiColSLAM_1_1cMultiFrame_a0efae885316c74805aff13ad2917cdb3}
+
+\item 
+std\+::unordered\+\_\+map$<$ size\+\_\+t, int $>$ {\bfseries keypoint\+\_\+to\+\_\+cam}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a85c085e693b121de5c242570b51f59bc}{}\label{classMultiColSLAM_1_1cMultiFrame_a85c085e693b121de5c242570b51f59bc}
+
+\item 
+std\+::unordered\+\_\+map$<$ size\+\_\+t, int $>$ {\bfseries cont\+\_\+idx\+\_\+to\+\_\+local\+\_\+cam\+\_\+idx}\hypertarget{classMultiColSLAM_1_1cMultiFrame_acb5b3e37472d3c7151e6aea56cba76ab}{}\label{classMultiColSLAM_1_1cMultiFrame_acb5b3e37472d3c7151e6aea56cba76ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static long unsigned int {\bfseries n\+Next\+Id}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ad0edf8142af98311b46457444c76aed6}{}\label{classMultiColSLAM_1_1cMultiFrame_ad0edf8142af98311b46457444c76aed6}
+
+\item 
+static std\+::vector$<$ int $>$ {\bfseries mn\+MinX}\hypertarget{classMultiColSLAM_1_1cMultiFrame_ae6f0d6114f23f30ede6b39e729bb906a}{}\label{classMultiColSLAM_1_1cMultiFrame_ae6f0d6114f23f30ede6b39e729bb906a}
+
+\item 
+static std\+::vector$<$ int $>$ {\bfseries mn\+MaxX}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a7c2ba9302fbfc0d92c1c16fc7209dd16}{}\label{classMultiColSLAM_1_1cMultiFrame_a7c2ba9302fbfc0d92c1c16fc7209dd16}
+
+\item 
+static std\+::vector$<$ int $>$ {\bfseries mn\+MinY}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a63ff12a293a5224cef941d5564217e4d}{}\label{classMultiColSLAM_1_1cMultiFrame_a63ff12a293a5224cef941d5564217e4d}
+
+\item 
+static std\+::vector$<$ int $>$ {\bfseries mn\+MaxY}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a2fba246c7c1925af5b35a5b8d27c7f8f}{}\label{classMultiColSLAM_1_1cMultiFrame_a2fba246c7c1925af5b35a5b8d27c7f8f}
+
+\item 
+static bool {\bfseries mb\+Initial\+Computations}\hypertarget{classMultiColSLAM_1_1cMultiFrame_a4be8a054e55e4859208f2aa217b5ea27}{}\label{classMultiColSLAM_1_1cMultiFrame_a4be8a054e55e4859208f2aa217b5ea27}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+Multi\+Frame.\+h\end{DoxyCompactItemize}

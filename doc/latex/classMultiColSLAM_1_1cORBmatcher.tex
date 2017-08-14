@@ -1,0 +1,109 @@
+\hypertarget{classMultiColSLAM_1_1cORBmatcher}{}\section{Multi\+Col\+S\+L\+AM\+:\+:c\+O\+R\+Bmatcher Class Reference}
+\label{classMultiColSLAM_1_1cORBmatcher}\index{Multi\+Col\+S\+L\+A\+M\+::c\+O\+R\+Bmatcher@{Multi\+Col\+S\+L\+A\+M\+::c\+O\+R\+Bmatcher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries c\+O\+R\+Bmatcher} (double nnratio=0.\+6, bool check\+Ori=true, const int feat\+Dim=32, bool having\+Masks\+\_\+=false)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a0fcf09c0eb5594d049363c710316b58f}{}\label{classMultiColSLAM_1_1cORBmatcher_a0fcf09c0eb5594d049363c710316b58f}
+
+\item 
+int {\bfseries Search\+By\+Projection} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F, const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Points, const double th=3)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a778ce7c887b93ee81a1f7200aec9c106}{}\label{classMultiColSLAM_1_1cORBmatcher_a778ce7c887b93ee81a1f7200aec9c106}
+
+\item 
+int {\bfseries Search\+By\+Projection} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&Current\+Frame, const \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&Last\+Frame, double th)\hypertarget{classMultiColSLAM_1_1cORBmatcher_add40b15c65cf307aff3c21047ad20187}{}\label{classMultiColSLAM_1_1cORBmatcher_add40b15c65cf307aff3c21047ad20187}
+
+\item 
+int {\bfseries Search\+By\+Projection} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&Current\+Frame, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, const std\+::set$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&s\+Already\+Found, double th, int O\+R\+Bdist)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a938c9070dd5c37d5b8c77ad3875c606f}{}\label{classMultiColSLAM_1_1cORBmatcher_a938c9070dd5c37d5b8c77ad3875c606f}
+
+\item 
+int {\bfseries Search\+By\+Projection} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, cv\+::\+Matx44d Scw, const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Points, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Matched, int th)\hypertarget{classMultiColSLAM_1_1cORBmatcher_aab1be10f9edd5371b12eb9931878c37f}{}\label{classMultiColSLAM_1_1cORBmatcher_aab1be10f9edd5371b12eb9931878c37f}
+
+\item 
+int {\bfseries Search\+By\+BoW} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Point\+Matches)\hypertarget{classMultiColSLAM_1_1cORBmatcher_ae06c9402eb6badda92ddd6ff73a8bf52}{}\label{classMultiColSLAM_1_1cORBmatcher_ae06c9402eb6badda92ddd6ff73a8bf52}
+
+\item 
+int {\bfseries Search\+By\+BoW} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Matches12)\hypertarget{classMultiColSLAM_1_1cORBmatcher_aefe9ccdcfd922cf4513e622fa43ee8f8}{}\label{classMultiColSLAM_1_1cORBmatcher_aefe9ccdcfd922cf4513e622fa43ee8f8}
+
+\item 
+int {\bfseries Window\+Search} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F1, \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F2, int window\+Size, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Point\+Matches2, int min\+Octave=-\/1, int max\+Octave=I\+N\+T\+\_\+\+M\+AX)\hypertarget{classMultiColSLAM_1_1cORBmatcher_afad608b615503d3b8790e26ac4017315}{}\label{classMultiColSLAM_1_1cORBmatcher_afad608b615503d3b8790e26ac4017315}
+
+\item 
+int {\bfseries Search\+By\+Projection} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F1, \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F2, int window\+Size, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Point\+Matches2)\hypertarget{classMultiColSLAM_1_1cORBmatcher_ab864baafbebfb40a5c43336d5cd838a4}{}\label{classMultiColSLAM_1_1cORBmatcher_ab864baafbebfb40a5c43336d5cd838a4}
+
+\item 
+int {\bfseries Search\+For\+Initialization} (\hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F1, \hyperlink{classMultiColSLAM_1_1cMultiFrame}{c\+Multi\+Frame} \&F2, std\+::vector$<$ cv\+::\+Vec2d $>$ \&vb\+Prev\+Matched, std\+::vector$<$ int $>$ \&vn\+Matches12, int window\+Size=10)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a2d38eecdcde82ef64a0b51e68e673c80}{}\label{classMultiColSLAM_1_1cORBmatcher_a2d38eecdcde82ef64a0b51e68e673c80}
+
+\item 
+int {\bfseries Search\+For\+Triangulation\+Raw} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys1, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays1, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys2, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays2, std\+::vector$<$ std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ $>$ \&v\+Matched\+Pairs)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a0b5be1b94ab15370960cf72c5ac6053d}{}\label{classMultiColSLAM_1_1cORBmatcher_a0b5be1b94ab15370960cf72c5ac6053d}
+
+\item 
+int {\bfseries Search\+For\+Triangulation} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys1, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays1, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys2, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays2, std\+::vector$<$ std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ $>$ \&v\+Matched\+Pairs)\hypertarget{classMultiColSLAM_1_1cORBmatcher_aa9938384d5cf304bead23bfdc8fb7dfb}{}\label{classMultiColSLAM_1_1cORBmatcher_aa9938384d5cf304bead23bfdc8fb7dfb}
+
+\item 
+int {\bfseries Search\+For\+Triangulation\+Between\+Cameras} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, const int cam1, const int cam2, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys1, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays1, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+Matched\+Keys2, std\+::vector$<$ cv\+::\+Vec3d $>$ \&v\+Matched\+Keys\+Rays2, std\+::vector$<$ std\+::pair$<$ size\+\_\+t, size\+\_\+t $>$ $>$ \&v\+Matched\+Pairs)\hypertarget{classMultiColSLAM_1_1cORBmatcher_af17a70b877cb35e287d94489995acd2f}{}\label{classMultiColSLAM_1_1cORBmatcher_af17a70b877cb35e287d94489995acd2f}
+
+\item 
+int {\bfseries Search\+By\+Sim3} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F1, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+K\+F2, vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Matches12, const double \&s12, const cv\+::\+Matx33d \&R12, const cv\+::\+Vec3d \&t12, double th)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a8896a4961a06813653a6260590bd4a27}{}\label{classMultiColSLAM_1_1cORBmatcher_a8896a4961a06813653a6260590bd4a27}
+
+\item 
+int {\bfseries Fuse} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$cur\+KF, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Points, double th=2.\+5)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a849cf6f73f94dca42adf093dd248afc8}{}\label{classMultiColSLAM_1_1cORBmatcher_a849cf6f73f94dca42adf093dd248afc8}
+
+\item 
+int {\bfseries Fuse} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$cur\+KF, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$ $>$ neigh\+K\+Fs, std\+::unordered\+\_\+map$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$, int $>$ \&vp\+Map\+Points, double th=2.\+5)\hypertarget{classMultiColSLAM_1_1cORBmatcher_aed38e7b3eb5e1523e216d769f0e0a23a}{}\label{classMultiColSLAM_1_1cORBmatcher_aed38e7b3eb5e1523e216d769f0e0a23a}
+
+\item 
+int {\bfseries Fuse} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$cur\+KF, std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Map\+Points, double th=2.\+5)\hypertarget{classMultiColSLAM_1_1cORBmatcher_acb6a0ab61d5b49d37310ff615e279aa7}{}\label{classMultiColSLAM_1_1cORBmatcher_acb6a0ab61d5b49d37310ff615e279aa7}
+
+\item 
+int {\bfseries Fuse} (\hyperlink{classMultiColSLAM_1_1cMultiKeyFrame}{c\+Multi\+Key\+Frame} $\ast$p\+KF, cv\+::\+Matx44d Scw, const std\+::vector$<$ \hyperlink{classMultiColSLAM_1_1cMapPoint}{c\+Map\+Point} $\ast$ $>$ \&vp\+Points, double th=2.\+5)\hypertarget{classMultiColSLAM_1_1cORBmatcher_ab56a9c77bd5abb1a34f54e9d3c8de834}{}\label{classMultiColSLAM_1_1cORBmatcher_ab56a9c77bd5abb1a34f54e9d3c8de834}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Descriptor\+Distance} (const cv\+::\+Mat \&a, const cv\+::\+Mat \&b)\hypertarget{classMultiColSLAM_1_1cORBmatcher_afbb58ae37fa48deedad44d01d8f3f36f}{}\label{classMultiColSLAM_1_1cORBmatcher_afbb58ae37fa48deedad44d01d8f3f36f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries T\+H\+\_\+\+H\+I\+G\+H\+\_\+}\hypertarget{classMultiColSLAM_1_1cORBmatcher_a9e54a7338c3eb1606069903c1f93779b}{}\label{classMultiColSLAM_1_1cORBmatcher_a9e54a7338c3eb1606069903c1f93779b}
+
+\item 
+int {\bfseries T\+H\+\_\+\+L\+O\+W\+\_\+}\hypertarget{classMultiColSLAM_1_1cORBmatcher_ab422ea8a1a6e3e7f56c4d1754f7d5375}{}\label{classMultiColSLAM_1_1cORBmatcher_ab422ea8a1a6e3e7f56c4d1754f7d5375}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries H\+I\+S\+T\+O\+\_\+\+L\+E\+N\+G\+TH}\hypertarget{classMultiColSLAM_1_1cORBmatcher_a6149dc3562f596047a3b8547f3afdfd1}{}\label{classMultiColSLAM_1_1cORBmatcher_a6149dc3562f596047a3b8547f3afdfd1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries Radius\+By\+Viewing\+Cos} (const double \&view\+Cos)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a56895b1d3c05064d0f002d31583c200a}{}\label{classMultiColSLAM_1_1cORBmatcher_a56895b1d3c05064d0f002d31583c200a}
+
+\item 
+void {\bfseries Compute\+Three\+Maxima} (std\+::vector$<$ int $>$ $\ast$histo, const int L, int \&ind1, int \&ind2, int \&ind3)\hypertarget{classMultiColSLAM_1_1cORBmatcher_a63bbfc01193babeda1b94ab8820f13a1}{}\label{classMultiColSLAM_1_1cORBmatcher_a63bbfc01193babeda1b94ab8820f13a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries mf\+N\+Nratio}\hypertarget{classMultiColSLAM_1_1cORBmatcher_a245c998d51b001aeae58ef86315be170}{}\label{classMultiColSLAM_1_1cORBmatcher_a245c998d51b001aeae58ef86315be170}
+
+\item 
+bool {\bfseries mb\+Check\+Orientation}\hypertarget{classMultiColSLAM_1_1cORBmatcher_a341d3d54041e8eebb463697c084ba2a1}{}\label{classMultiColSLAM_1_1cORBmatcher_a341d3d54041e8eebb463697c084ba2a1}
+
+\item 
+bool {\bfseries having\+Masks}\hypertarget{classMultiColSLAM_1_1cORBmatcher_ae5f0f1f2e7d5213fb21e9a6ef15bd297}{}\label{classMultiColSLAM_1_1cORBmatcher_ae5f0f1f2e7d5213fb21e9a6ef15bd297}
+
+\item 
+int {\bfseries mb\+Feat\+Dim}\hypertarget{classMultiColSLAM_1_1cORBmatcher_ae86173ab10991626a455c8e510e73189}{}\label{classMultiColSLAM_1_1cORBmatcher_ae86173ab10991626a455c8e510e73189}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/c\+O\+R\+Bmatcher.\+h\end{DoxyCompactItemize}

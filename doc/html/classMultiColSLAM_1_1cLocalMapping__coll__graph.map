@@ -1,0 +1,14 @@
+<map id="MultiColSLAM::cLocalMapping" name="MultiColSLAM::cLocalMapping">
+<area shape="rect" id="node2" href="$classMultiColSLAM_1_1cTracking.html" title="MultiColSLAM::cTracking" alt="" coords="1168,399,1339,425"/>
+<area shape="rect" id="node10" href="$classMultiColSLAM_1_1cLoopClosing.html" title="MultiColSLAM::cLoopClosing" alt="" coords="1481,444,1675,471"/>
+<area shape="rect" id="node3" href="$classMultiColSLAM_1_1cMapPublisher.html" title="MultiColSLAM::cMapPublisher" alt="" coords="597,415,797,441"/>
+<area shape="rect" id="node4" href="$classMultiColSLAM_1_1cMap.html" title="MultiColSLAM::cMap" alt="" coords="37,595,183,621"/>
+<area shape="rect" id="node11" href="$classMultiColSLAM_1_1cMultiKeyFrame.html" title="MultiColSLAM::cMultiKeyFrame" alt="" coords="364,353,573,380"/>
+<area shape="rect" id="node12" href="$classMultiColSLAM_1_1cMultiFramePublisher.html" title="MultiColSLAM::cMultiFrame\lPublisher" alt="" coords="604,671,791,713"/>
+<area shape="rect" id="node5" href="$classMultiColSLAM_1_1cSystem.html" title="MultiColSLAM::cSystem" alt="" coords="839,213,1005,240"/>
+<area shape="rect" id="node6" href="$classMultiColSLAM_1_1cMultiKeyFrameDatabase.html" title="MultiColSLAM::cMultiKeyFrame\lDatabase" alt="" coords="5,257,215,298"/>
+<area shape="rect" id="node7" href="$classMultiColSLAM_1_1cViewer.html" title="MultiColSLAM::cViewer" alt="" coords="841,455,1003,481"/>
+<area shape="rect" id="node8" href="$classMultiColSLAM_1_1cMultiCamSys__.html" title="MultiColSLAM::cMultiCamSys_" alt="" coords="7,109,213,136"/>
+<area shape="rect" id="node13" href="$classMultiColSLAM_1_1cMultiFrame.html" title="MultiColSLAM::cMultiFrame" alt="" coords="829,112,1015,139"/>
+<area shape="rect" id="node9" href="$classMultiColSLAM_1_1cMultiInitializer.html" title="MultiColSLAM::cMultiInitializer" alt="" coords="821,505,1023,532"/>
+</map>

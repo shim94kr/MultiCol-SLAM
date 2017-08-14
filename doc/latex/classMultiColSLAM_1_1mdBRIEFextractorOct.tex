@@ -1,0 +1,123 @@
+\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct}{}\section{Multi\+Col\+S\+L\+AM\+:\+:md\+B\+R\+I\+E\+Fextractor\+Oct Class Reference}
+\label{classMultiColSLAM_1_1mdBRIEFextractorOct}\index{Multi\+Col\+S\+L\+A\+M\+::md\+B\+R\+I\+E\+Fextractor\+Oct@{Multi\+Col\+S\+L\+A\+M\+::md\+B\+R\+I\+E\+Fextractor\+Oct}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ {\bfseries H\+A\+R\+R\+I\+S\+\_\+\+S\+C\+O\+RE} = 0, 
+{\bfseries F\+A\+S\+T\+\_\+\+S\+C\+O\+RE} = 1
+ \}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a735244f6047412b75ac43a5d67f4c621}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a735244f6047412b75ac43a5d67f4c621}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries md\+B\+R\+I\+E\+Fextractor\+Oct} (int \+\_\+nfeatures=1000, float \+\_\+scale\+Factor=1.\+2, int \+\_\+nlevels=8, int \+\_\+edge\+Threshold=25, int \+\_\+first\+Level=0, int \+\_\+score\+Type=H\+A\+R\+R\+I\+S\+\_\+\+S\+C\+O\+RE, int \+\_\+patch\+Size=32, int \+\_\+fast\+Threshold=20, bool \+\_\+use\+Agast=false, int \+\_\+fast\+Agast\+Type=2, bool \+\_\+do\+\_\+d\+Brief=false, bool \+\_\+learn\+Masks=false, int \+\_\+desc\+Size=32)\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a97fcc207bd3003b907ab1215afa5456d}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a97fcc207bd3003b907ab1215afa5456d}
+
+\item 
+void {\bfseries operator()} (cv\+::\+Input\+Array \+\_\+image, cv\+::\+Input\+Array \+\_\+mask, std\+::vector$<$ cv\+::\+Key\+Point $>$ \&\+\_\+keypoints, \hyperlink{classMultiColSLAM_1_1cCamModelGeneral__}{c\+Cam\+Model\+General\+\_\+} \&cam\+Model, cv\+::\+Output\+Array \+\_\+descriptors, cv\+::\+Output\+Array \+\_\+descriptor\+Masks)\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a58b277ef92295a6093b770fe60fb2d9c}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a58b277ef92295a6093b770fe60fb2d9c}
+
+\item 
+int {\bfseries Get\+Levels} ()\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a93c891bb1a8ae2f9575b13514fafa4c8}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a93c891bb1a8ae2f9575b13514fafa4c8}
+
+\item 
+double {\bfseries Get\+Scale\+Factor} ()\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a657048e5277d37abd4a28b2ed13935bb}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a657048e5277d37abd4a28b2ed13935bb}
+
+\item 
+bool {\bfseries Get\+Masks\+Learned} ()\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aec28f8f96ec4cef48e398fa9c79e26a8}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aec28f8f96ec4cef48e398fa9c79e26a8}
+
+\item 
+int {\bfseries Get\+Descriptor\+Size} ()\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ac6604059484ce79a9e46d9f6219db9bc}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ac6604059484ce79a9e46d9f6219db9bc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Compute\+Pyramid} (cv\+::\+Mat image, cv\+::\+Mat Mask=cv\+::\+Mat())\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a34e617b89aad33b8baf5ff160fa1480d}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a34e617b89aad33b8baf5ff160fa1480d}
+
+\item 
+void {\bfseries Compute\+Key\+Points\+Oct\+Tree} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Key\+Point $>$ $>$ \&all\+Keypoints)\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_abc83299607474e76f195f47fafc97e64}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_abc83299607474e76f195f47fafc97e64}
+
+\item 
+std\+::vector$<$ cv\+::\+Key\+Point $>$ {\bfseries Distribute\+Oct\+Tree} (const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&v\+To\+Distribute\+Keys, const int \&minX, const int \&maxX, const int \&minY, const int \&maxY, const int \&n\+Features, const int \&level)\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ad4bb778d8f3d9ff53cd1773fe1bcf915}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ad4bb778d8f3d9ff53cd1773fe1bcf915}
+
+\item 
+void {\bfseries Compute\+Key\+Points\+Old} (std\+::vector$<$ std\+::vector$<$ cv\+::\+Key\+Point $>$ $>$ \&all\+Keypoints)\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ae56e6b739363fd3a80470eac6b229e59}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ae56e6b739363fd3a80470eac6b229e59}
+
+\item 
+int {\bfseries descriptor\+Size} () const \hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ae9dc926bc5cd772ed717b8892be1545d}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ae9dc926bc5cd772ed717b8892be1545d}
+
+\item 
+int {\bfseries descriptor\+Type} () const \hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ab87af935830b78d836cc1e44dc039d8b}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ab87af935830b78d836cc1e44dc039d8b}
+
+\item 
+int {\bfseries default\+Norm} () const \hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a9a1000e9964ef88b31941a9daf3e15f9}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a9a1000e9964ef88b31941a9daf3e15f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Point $>$ {\bfseries pattern}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a5214f07df30c6a777b9df23d80f8383e}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a5214f07df30c6a777b9df23d80f8383e}
+
+\item 
+int {\bfseries nfeatures}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a599f92cb2511b765f9b1796843280650}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a599f92cb2511b765f9b1796843280650}
+
+\item 
+double {\bfseries scale\+Factor}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a716076eea98eacac500a36b4bf696b46}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a716076eea98eacac500a36b4bf696b46}
+
+\item 
+int {\bfseries numlevels}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_ae7be0b4d39f2b81e776bf7fecaa543cb}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_ae7be0b4d39f2b81e776bf7fecaa543cb}
+
+\item 
+int {\bfseries edge\+Threshold}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a558500d5584b5c4d642987bda3654e56}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a558500d5584b5c4d642987bda3654e56}
+
+\item 
+int {\bfseries first\+Level}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a007668632ce60e3071241462c8fb29e5}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a007668632ce60e3071241462c8fb29e5}
+
+\item 
+int {\bfseries desc\+Size}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a750901630e7a94551bd92563ddb9a30b}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a750901630e7a94551bd92563ddb9a30b}
+
+\item 
+int {\bfseries score\+Type}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_af3f0c8c3531de98e77a03e345b5845a7}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_af3f0c8c3531de98e77a03e345b5845a7}
+
+\item 
+int {\bfseries patch\+Size}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_afb793526aa8e1c348ee65c912577d890}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_afb793526aa8e1c348ee65c912577d890}
+
+\item 
+int {\bfseries fast\+Threshold}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_adf003cad13e3fc9c232f6fc17d2600a0}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_adf003cad13e3fc9c232f6fc17d2600a0}
+
+\item 
+bool {\bfseries use\+Agast}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a9249e46157695ba9fe5406e12ceb1f25}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a9249e46157695ba9fe5406e12ceb1f25}
+
+\item 
+int {\bfseries fast\+Agast\+Type}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aee7613c2c41fe1ddc9e26fdc3ff40abc}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aee7613c2c41fe1ddc9e26fdc3ff40abc}
+
+\item 
+bool {\bfseries learn\+Masks}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aefa670fdd2a738033ffb7dcb4c5fca6c}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aefa670fdd2a738033ffb7dcb4c5fca6c}
+
+\item 
+bool {\bfseries do\+\_\+d\+Brief}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aa114eb7ff90af315368623ea087e544b}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aa114eb7ff90af315368623ea087e544b}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries mn\+Features\+Per\+Level}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a46114151517c6c0590f7ff0dffdfa16f}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a46114151517c6c0590f7ff0dffdfa16f}
+
+\item 
+std\+::vector$<$ int $>$ {\bfseries umax}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aed249efdd09c710cd6477e086b29e239}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aed249efdd09c710cd6477e086b29e239}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Scale\+Factor}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a5742197fe75efe977a159b156ae91781}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a5742197fe75efe977a159b156ae91781}
+
+\item 
+std\+::vector$<$ double $>$ {\bfseries mv\+Inv\+Scale\+Factor}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a0b9a0c49d547f36a72d42ffb95be7d80}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a0b9a0c49d547f36a72d42ffb95be7d80}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Image\+Pyramid}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_a59a2f3e13d8915a9474b49861e402ce4}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_a59a2f3e13d8915a9474b49861e402ce4}
+
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ {\bfseries mv\+Mask\+Pyramid}\hypertarget{classMultiColSLAM_1_1mdBRIEFextractorOct_aab8acf05aa0bfa79096550ca98799a18}{}\label{classMultiColSLAM_1_1mdBRIEFextractorOct_aab8acf05aa0bfa79096550ca98799a18}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/md\+B\+R\+I\+E\+Fextractor\+Oct.\+h\end{DoxyCompactItemize}
