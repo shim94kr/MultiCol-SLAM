@@ -45,7 +45,9 @@ namespace MultiColSLAM
 	class cCamModelGeneral_
 	{
 	public:
-		// construtors
+		/**
+		* \brief Construtors
+		**/
 		cCamModelGeneral_() :
 			c(1),
 			d(0),
@@ -60,7 +62,12 @@ namespace MultiColSLAM
 			Iheight(0),
 			p1(1)
 		{}
-
+		/**
+		* \brief Constructors
+		* \param[in] cdeu0v0[] : affine parameter + principal point
+		* \param[in] p : forward polynomials
+		* \param[in] invP : inverse polynomials
+		**/
 		cCamModelGeneral_(double cdeu0v0[], cv::Mat_<double> p_, cv::Mat_<double> invP_) :
 			c(cdeu0v0[0]),
 			d(cdeu0v0[1]),
@@ -79,6 +86,14 @@ namespace MultiColSLAM
 			invAffine = c - d*e;
 		}
 
+		/**
+		* \brief Constructors
+		* \param[in] cdeu0v0[] : affine parameter + principal point
+		* \param[in] p : forward polynomials
+		* \param[in] invP : inverse polynomials
+		* \param[in] Iw : image width
+		* \param[in] Ih : image height
+		**/
 		cCamModelGeneral_(double cdeu0v0[],
 			cv::Mat_<double> p_, cv::Mat_<double> invP_,
 			double Iw_, double Ih_) :
@@ -102,7 +117,12 @@ namespace MultiColSLAM
 		}
 
 		~cCamModelGeneral_(){}
-
+		/**
+		* \brief 
+		*
+		*
+		*
+		**/
 		void WorldToImg(const double& x, const double& y, const double& z,    // 3D scene point
 			double& u, double& v) const;
 

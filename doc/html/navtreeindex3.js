@@ -239,6 +239,8 @@ var NAVTREEINDEX3 =
 "classmdBRIEFextractor1.html#af8746fcd77fd7f41f10f5390f68d87d7":[1,0,3,16],
 "dir_d44c64559bbebec7f509842c48db8b23.html":[2,0,0],
 "files.html":[2,0],
+"functions.html":[1,3,0],
+"functions_func.html":[1,3,1],
 "g2o__MultiCol__sim3__expmap_8h_source.html":[2,0,0,21],
 "g2o__MultiCol__vertices__edges_8h_source.html":[2,0,0,22],
 "hierarchy.html":[1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "mdBRIEFextractorOct_8h_source.html":[2,0,0,25],
 "mdBRIEFextractor_8h_source.html":[2,0,0,23],
 "misc_8h_source.html":[2,0,0,26],
-"namespaceMultiColSLAM.html":[1,0,0],
-"namespaceMultiColSLAM.html":[0,0,0],
-"namespacemembers.html":[0,1,0]
+"namespaceMultiColSLAM.html":[0,0,0]
 };
