@@ -1,6 +1,6 @@
 %YAML:1.0
 # Camera frames per second 
-Camera.fps: 25.0
+Camera.fps: 30.0
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
 Camera.RGB: 1
@@ -52,8 +52,8 @@ trajrun: 1
 ### trajectory options
 #------------------------------
 ### initial frame Traj 1
-traj.StartFrame: 25
-traj.EndFrame: 759
+traj.StartFrame: 1 
+traj.EndFrame: 463
 #traj.EndFrame: 100
 #------------------------------
 
@@ -69,4 +69,4 @@ Viewer.ViewpointX: 1.0
 Viewer.ViewpointY: 1.0
 Viewer.ViewpointZ: 1.0
 Viewer.ViewpointF: 500.0
-Viewer.DrawNrCams: 3
+Viewer.DrawNrCams: 1

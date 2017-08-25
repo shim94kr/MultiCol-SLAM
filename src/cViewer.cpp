@@ -53,8 +53,8 @@ namespace MultiColSLAM
 		mImageHeight = fSettings["Camera.height"];
 		if (mImageWidth < 1 || mImageHeight < 1)
 		{
-			mImageWidth = 640;
-			mImageHeight = 480;
+			mImageWidth = 960;
+			mImageHeight = 720;
 		}
 
 		mViewpointX = fSettings["Viewer.ViewpointX"];

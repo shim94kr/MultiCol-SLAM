@@ -1,0 +1,416 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AcceptMultiKeyFrames	cLocalMapping.cpp	/^	bool cLocalMapping::AcceptMultiKeyFrames()$/;"	f	class:MultiColSLAM::cLocalMapping
+ActivateLocalizationMode	cSystem.cpp	/^	void cSystem::ActivateLocalizationMode()$/;"	f	class:MultiColSLAM::cSystem
+AddChild	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::AddChild(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+AddConnection	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::AddConnection(cMultiKeyFrame *pKF, const int &weight)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+AddKeyFrame	cMap.cpp	/^	void cMap::AddKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMap
+AddLoopEdge	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::AddLoopEdge(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+AddMapPoint	cMap.cpp	/^	void cMap::AddMapPoint(cMapPoint *pMP)$/;"	f	class:MultiColSLAM::cMap
+AddMapPoint	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::AddMapPoint(cMapPoint *pMP, const size_t &idx)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+AddObservation	cMapPoint.cpp	/^	void cMapPoint::AddObservation(cMultiKeyFrame* pKF, const size_t& idx)$/;"	f	class:MultiColSLAM::cMapPoint
+Add_M_c	cam_system_omni.cpp	/^	void cMultiCamSys_::Add_M_c(cv::Matx<double, 4, 4> M_c_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Add_M_c_from_min	cam_system_omni.cpp	/^	void cMultiCamSys_::Add_M_c_from_min(cv::Matx<double, 6, 1> M_c_min_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Add_M_c_from_min_and_IO	cam_system_omni.cpp	/^	void cMultiCamSys_::Add_M_c_from_min_and_IO(cv::Matx<double, 6, 1> M_c_min_,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+BundleAdjustment	cOptimizer.cpp	/^	void cOptimizer::BundleAdjustment(const std::vector<cMultiKeyFrame*> &vpKFs,$/;"	f	class:MultiColSLAM::cOptimizer
+CamToWorld	cam_system_omni.cpp	/^	void cMultiCamSys_::CamToWorld(int c, cv::Point3_<double>& pt3, cv::Point_<double>& pt2)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+CamToWorld	cam_system_omni.cpp	/^	void cMultiCamSys_::CamToWorld(int c, cv::Vec<double, 3>& pt3, cv::Point_<double>& pt2)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+CamToWorld_ogv	cam_system_omni.cpp	/^	void cMultiCamSys_::CamToWorld_ogv(int c,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+ChangeParent	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::ChangeParent(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+CheckDistEpipolarLine	misc.cpp	/^	bool CheckDistEpipolarLine(const cv::Vec3d &ray1,$/;"	f	namespace:MultiColSLAM
+CheckFinish	cLocalMapping.cpp	/^	bool cLocalMapping::CheckFinish()$/;"	f	class:MultiColSLAM::cLocalMapping
+CheckFinish	cLoopClosing.cpp	/^	bool cLoopClosing::CheckFinish()$/;"	f	class:MultiColSLAM::cLoopClosing
+CheckFinish	cMapPublisher.cpp	/^	bool cMapPublisher::CheckFinish()$/;"	f	class:MultiColSLAM::cMapPublisher
+CheckFinish	cViewer.cpp	/^	bool cViewer::CheckFinish()$/;"	f	class:MultiColSLAM::cViewer
+CheckFinished	cTracking.cpp	/^bool cTracking::CheckFinished()$/;"	f	class:MultiColSLAM::cTracking
+CheckInliers	cSim3Solver.cpp	/^	void cSim3Solver::CheckInliers()$/;"	f	class:MultiColSLAM::cSim3Solver
+CheckNewKeyFrames	cLoopClosing.cpp	/^	bool cLoopClosing::CheckNewKeyFrames()$/;"	f	class:MultiColSLAM::cLoopClosing
+CheckNewMultiKeyFrames	cLocalMapping.cpp	/^	bool cLocalMapping::CheckNewMultiKeyFrames()$/;"	f	class:MultiColSLAM::cLocalMapping
+CheckRT	cMultiInitializer.cpp	/^	int cMultiInitializer::CheckRT(const cMultiFrame& CurrentFrame,$/;"	f	class:MultiColSLAM::cMultiInitializer
+CheckResetByPublishers	cTracking.cpp	/^void cTracking::CheckResetByPublishers()$/;"	f	class:MultiColSLAM::cTracking
+ComputeBoW	cMultiFrame.cpp	/^	void cMultiFrame::ComputeBoW()$/;"	f	class:MultiColSLAM::cMultiFrame
+ComputeBoW	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::ComputeBoW()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+ComputeDistinctiveDescriptors	cMapPoint.cpp	/^	void cMapPoint::ComputeDistinctiveDescriptors(bool havingMasks)$/;"	f	class:MultiColSLAM::cMapPoint
+ComputeE	misc.cpp	/^	cv::Matx33d ComputeE(const cv::Matx44d& T1, const cv::Matx44d& T2)$/;"	f	namespace:MultiColSLAM
+ComputeKeyPointsOctTree	mdBRIEFextractorOct.cpp	/^void mdBRIEFextractorOct::ComputeKeyPointsOctTree($/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+ComputeKeyPointsOld	mdBRIEFextractorOct.cpp	/^void mdBRIEFextractorOct::ComputeKeyPointsOld($/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+ComputePyramid	mdBRIEFextractorOct.cpp	/^void mdBRIEFextractorOct::ComputePyramid($/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+ComputeSceneMedianDepth	cMultiKeyFrame.cpp	/^	double cMultiKeyFrame::ComputeSceneMedianDepth(int q)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+ComputeSim3	cLoopClosing.cpp	/^	bool cLoopClosing::ComputeSim3()$/;"	f	class:MultiColSLAM::cLoopClosing
+ComputeThreeMaxima	cORBmatcher.cpp	/^void cORBmatcher::ComputeThreeMaxima(vector<int>* histo, $/;"	f	class:MultiColSLAM::cORBmatcher
+CorrectLoop	cLoopClosing.cpp	/^	void cLoopClosing::CorrectLoop()$/;"	f	class:MultiColSLAM::cLoopClosing
+CountNumberTrackedPointsPerCam	cTracking.cpp	/^void cTracking::CountNumberTrackedPointsPerCam()$/;"	f	class:MultiColSLAM::cTracking
+CreateInitialMap	cTracking.cpp	/^void cTracking::CreateInitialMap(cv::Matx33d &Rcw, cv::Vec3d &tcw, int leadingCam)$/;"	f	class:MultiColSLAM::cTracking
+CreateMirrorMask	cam_model_omni.cpp	/^	void CreateMirrorMask(cCamModelGeneral_ camera,$/;"	f	namespace:MultiColSLAM
+CreateNewKeyFrame	cTracking.cpp	/^void cTracking::CreateNewKeyFrame()$/;"	f	class:MultiColSLAM::cTracking
+CreateNewMapPoints	cLocalMapping.cpp	/^	void cLocalMapping::CreateNewMapPoints()$/;"	f	class:MultiColSLAM::cLocalMapping
+DEG2RADf	mdBRIEFextractorOct.cpp	/^const float DEG2RADf = static_cast<float>(CV_PI) \/ 180.f;$/;"	m	namespace:MultiColSLAM	file:
+DeactivateLocalizationMode	cSystem.cpp	/^	void cSystem::DeactivateLocalizationMode()$/;"	f	class:MultiColSLAM::cSystem
+DescriptorDistance64	cORBmatcher.cpp	/^int DescriptorDistance64(const uint64_t* descr_i,$/;"	f	namespace:MultiColSLAM
+DescriptorDistance64Masked	cORBmatcher.cpp	/^int DescriptorDistance64Masked(const uint64_t* descr_i,$/;"	f	namespace:MultiColSLAM
+DetectLoop	cLoopClosing.cpp	/^	bool cLoopClosing::DetectLoop()$/;"	f	class:MultiColSLAM::cLoopClosing
+DetectLoopCandidates	cMultiKeyFrameDatabase.cpp	/^	vector<cMultiKeyFrame*> cMultiKeyFrameDatabase::DetectLoopCandidates(cMultiKeyFrame* pKF,$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+DetectRelocalisationCandidates	cMultiKeyFrameDatabase.cpp	/^	std::vector<cMultiKeyFrame*> cMultiKeyFrameDatabase::DetectRelocalisationCandidates(cMultiFrame *F)$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+DistributeOctTree	mdBRIEFextractorOct.cpp	/^vector<cv::KeyPoint> mdBRIEFextractorOct::DistributeOctTree($/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+DivideNode	mdBRIEFextractorOct.cpp	/^void ExtractorNode_mdbrief::DivideNode($/;"	f	class:MultiColSLAM::ExtractorNode_mdbrief
+DrawMultiFrame	cMultiFramePublisher.cpp	/^	void cMultiFramePublisher::DrawMultiFrame(std::vector<cv::Mat>& imgs)$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+DrawTextInfo	cMultiFramePublisher.cpp	/^	void cMultiFramePublisher::DrawTextInfo(cv::Mat &im,$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+EDGE_THRESHOLD	mdBRIEFextractorOct.cpp	/^const int EDGE_THRESHOLD = 25;$/;"	m	namespace:MultiColSLAM	file:
+EraseAllObservations	cMapPoint.cpp	/^	void cMapPoint::EraseAllObservations(cMultiKeyFrame* pKF)$/;"	f	class:MultiColSLAM::cMapPoint
+EraseChild	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::EraseChild(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+EraseConnection	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::EraseConnection(cMultiKeyFrame* pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+EraseKeyFrame	cMap.cpp	/^	void cMap::EraseKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMap
+EraseMapPoint	cMap.cpp	/^	void cMap::EraseMapPoint(cMapPoint *pMP)$/;"	f	class:MultiColSLAM::cMap
+EraseMapPointMatch	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::EraseMapPointMatch(const size_t &idx)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+EraseObservation	cMapPoint.cpp	/^	void cMapPoint::EraseObservation(cMultiKeyFrame* pKF, const size_t& idx)$/;"	f	class:MultiColSLAM::cMapPoint
+FirstInitialization	cTracking.cpp	/^void cTracking::FirstInitialization()$/;"	f	class:MultiColSLAM::cTracking
+ForceRelocalisation	cTracking.cpp	/^void cTracking::ForceRelocalisation()$/;"	f	class:MultiColSLAM::cTracking
+Fuse	cORBmatcher.cpp	/^int cORBmatcher::Fuse(cMultiKeyFrame *pKF, cv::Matx44d Scw,$/;"	f	class:MultiColSLAM::cORBmatcher
+Fuse	cORBmatcher.cpp	/^int cORBmatcher::Fuse(cMultiKeyFrame *pKF,$/;"	f	class:MultiColSLAM::cORBmatcher
+Fuse	cORBmatcher.cpp	/^int cORBmatcher::Fuse(cMultiKeyFrame* pKF,$/;"	f	class:MultiColSLAM::cORBmatcher
+GET_VALUE	mdBRIEFextractorOct.cpp	325;"	d	file:
+GET_VALUE	mdBRIEFextractorOct.cpp	353;"	d	file:
+GET_VALUE	mdBRIEFextractorOct.cpp	379;"	d	file:
+GET_VALUE	mdBRIEFextractorOct.cpp	407;"	d	file:
+GET_VALUE	mdBRIEFextractorOct.cpp	446;"	d	file:
+GET_VALUE	mdBRIEFextractorOct.cpp	550;"	d	file:
+GET_VALUE_MASK1	mdBRIEFextractorOct.cpp	451;"	d	file:
+GET_VALUE_MASK1	mdBRIEFextractorOct.cpp	551;"	d	file:
+GET_VALUE_MASK2	mdBRIEFextractorOct.cpp	456;"	d	file:
+GET_VALUE_MASK2	mdBRIEFextractorOct.cpp	552;"	d	file:
+GetAllKeyFrames	cMap.cpp	/^	std::vector<cMultiKeyFrame*> cMap::GetAllKeyFrames()$/;"	f	class:MultiColSLAM::cMap
+GetAllMapPoints	cMap.cpp	/^	std::vector<cMapPoint*> cMap::GetAllMapPoints()$/;"	f	class:MultiColSLAM::cMap
+GetBestCovisibilityKeyFrames	cMultiKeyFrame.cpp	/^	std::vector<cMultiKeyFrame*> cMultiKeyFrame::GetBestCovisibilityKeyFrames(const int &N)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetBowVector	cMultiKeyFrame.cpp	/^	DBoW2::BowVector cMultiKeyFrame::GetBowVector()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetBowVector	cMultiKeyFrame.cpp	/^	DBoW2::BowVector cMultiKeyFrame::GetBowVector(int& c)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetCameraCenter	cMultiKeyFrame.cpp	/^	cv::Vec3d cMultiKeyFrame::GetCameraCenter()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetChilds	cMultiKeyFrame.cpp	/^	std::set<cMultiKeyFrame*> cMultiKeyFrame::GetChilds()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetConnectedKeyFrames	cMultiKeyFrame.cpp	/^	std::set<cMultiKeyFrame*> cMultiKeyFrame::GetConnectedKeyFrames()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetCovisiblesByWeight	cMultiKeyFrame.cpp	/^	std::vector<cMultiKeyFrame*> cMultiKeyFrame::GetCovisiblesByWeight(const int &w)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetCurrentCameraPose	cMapPublisher.cpp	/^	cv::Matx44d cMapPublisher::GetCurrentCameraPose()$/;"	f	class:MultiColSLAM::cMapPublisher
+GetCurrentDescriptor	cMapPoint.cpp	/^	cv::Mat cMapPoint::GetCurrentDescriptor()$/;"	f	class:MultiColSLAM::cMapPoint
+GetCurrentDescriptorPtr	cMapPoint.cpp	/^	const uint64_t* cMapPoint::GetCurrentDescriptorPtr()$/;"	f	class:MultiColSLAM::cMapPoint
+GetCurrentOpenGLMCSPose	cMapPublisher.cpp	/^	void cMapPublisher::GetCurrentOpenGLMCSPose($/;"	f	class:MultiColSLAM::cMapPublisher
+GetDescriptor	cMapPoint.cpp	/^	cv::Mat cMapPoint::GetDescriptor()$/;"	f	class:MultiColSLAM::cMapPoint
+GetDescriptor	cMultiKeyFrame.cpp	/^	cv::Mat cMultiKeyFrame::GetDescriptor(const int& cam, const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetDescriptorMask	cMapPoint.cpp	/^	cv::Mat cMapPoint::GetDescriptorMask()$/;"	f	class:MultiColSLAM::cMapPoint
+GetDescriptorMask	cMultiKeyFrame.cpp	/^	cv::Mat cMultiKeyFrame::GetDescriptorMask(const int& cam, const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetDescriptorMaskPtr	cMapPoint.cpp	/^	const uint64_t* cMapPoint::GetDescriptorMaskPtr()$/;"	f	class:MultiColSLAM::cMapPoint
+GetDescriptorMaskRowPtr	cMultiKeyFrame.cpp	/^	const uint64_t* cMultiKeyFrame::GetDescriptorMaskRowPtr(const int& cam, const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetDescriptorPtr	cMapPoint.cpp	/^	const uint64_t* cMapPoint::GetDescriptorPtr()$/;"	f	class:MultiColSLAM::cMapPoint
+GetDescriptorRowPtr	cMultiKeyFrame.cpp	/^	const uint64_t* cMultiKeyFrame::GetDescriptorRowPtr(const int& cam, const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetEstimatedRotation	cSim3Solver.cpp	/^	cv::Matx33d cSim3Solver::GetEstimatedRotation()$/;"	f	class:MultiColSLAM::cSim3Solver
+GetEstimatedScale	cSim3Solver.cpp	/^	double cSim3Solver::GetEstimatedScale()$/;"	f	class:MultiColSLAM::cSim3Solver
+GetEstimatedTranslation	cSim3Solver.cpp	/^	cv::Vec3d cSim3Solver::GetEstimatedTranslation()$/;"	f	class:MultiColSLAM::cSim3Solver
+GetFeatureVector	cMultiKeyFrame.cpp	/^	DBoW2::FeatureVector cMultiKeyFrame::GetFeatureVector()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetFeatureVector	cMultiKeyFrame.cpp	/^	DBoW2::FeatureVector cMultiKeyFrame::GetFeatureVector(int& c)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetFeaturesInArea	cMultiFrame.cpp	/^	std::vector<size_t> cMultiFrame::GetFeaturesInArea(const int& cam,$/;"	f	class:MultiColSLAM::cMultiFrame
+GetFeaturesInArea	cMultiKeyFrame.cpp	/^	std::vector<size_t> cMultiKeyFrame::GetFeaturesInArea($/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetFoundRatio	cMapPoint.cpp	/^	double cMapPoint::GetFoundRatio()$/;"	f	class:MultiColSLAM::cMapPoint
+GetImage	cMultiKeyFrame.cpp	/^	cv::Mat cMultiKeyFrame::GetImage(const int& cam)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetIndexInKeyFrame	cMapPoint.cpp	/^	std::vector<size_t> cMapPoint::GetIndexInKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMapPoint
+GetKeyPoint	cMultiKeyFrame.cpp	/^	cv::KeyPoint cMultiKeyFrame::GetKeyPoint(const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetKeyPointRay	cMultiKeyFrame.cpp	/^	cv::Vec3d cMultiKeyFrame::GetKeyPointRay(const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetKeyPointScaleLevel	cMultiKeyFrame.cpp	/^	int cMultiKeyFrame::GetKeyPointScaleLevel(const size_t &idx) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetKeyPoints	cMultiKeyFrame.cpp	/^	std::vector<cv::KeyPoint> cMultiKeyFrame::GetKeyPoints() const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetKeyPointsRays	cMultiKeyFrame.cpp	/^	std::vector<cv::Vec3d> cMultiKeyFrame::GetKeyPointsRays() const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetLoopEdges	cMultiKeyFrame.cpp	/^	std::set<cMultiKeyFrame*> cMultiKeyFrame::GetLoopEdges()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetMapPoint	cMultiKeyFrame.cpp	/^	cMapPoint* cMultiKeyFrame::GetMapPoint(const size_t &idx)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetMapPointMatches	cMultiKeyFrame.cpp	/^	std::vector<cMapPoint*> cMultiKeyFrame::GetMapPointMatches()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetMapPoints	cMultiKeyFrame.cpp	/^	std::set<cMapPoint*> cMultiKeyFrame::GetMapPoints()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetMaxDistanceInvariance	cMapPoint.cpp	/^	double cMapPoint::GetMaxDistanceInvariance()$/;"	f	class:MultiColSLAM::cMapPoint
+GetMaxKFid	cMap.cpp	/^	unsigned int cMap::GetMaxKFid()$/;"	f	class:MultiColSLAM::cMap
+GetMinDistanceInvariance	cMapPoint.cpp	/^	double cMapPoint::GetMinDistanceInvariance()$/;"	f	class:MultiColSLAM::cMapPoint
+GetNormal	cMapPoint.cpp	/^	cv::Vec3d cMapPoint::GetNormal()$/;"	f	class:MultiColSLAM::cMapPoint
+GetNrCams	cTracking.cpp	/^int cTracking::GetNrCams()$/;"	f	class:MultiColSLAM::cTracking
+GetNrKeypointsInFrame	cMultiKeyFrame.cpp	/^	size_t cMultiKeyFrame::GetNrKeypointsInFrame()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetObservations	cMapPoint.cpp	/^	std::map<cMultiKeyFrame*, std::vector<size_t>> cMapPoint::GetObservations()$/;"	f	class:MultiColSLAM::cMapPoint
+GetParent	cMultiKeyFrame.cpp	/^	cMultiKeyFrame* cMultiKeyFrame::GetParent()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetPose	cMultiKeyFrame.cpp	/^	cv::Matx44d cMultiKeyFrame::GetPose()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetPoseInverse	cMultiKeyFrame.cpp	/^	cv::Matx44d cMultiKeyFrame::GetPoseInverse()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetReferenceKeyFrame	cMapPoint.cpp	/^	cMultiKeyFrame* cMapPoint::GetReferenceKeyFrame()$/;"	f	class:MultiColSLAM::cMapPoint
+GetReferenceMapPoints	cMap.cpp	/^	std::vector<cMapPoint*> cMap::GetReferenceMapPoints()$/;"	f	class:MultiColSLAM::cMap
+GetRotation	cMultiKeyFrame.cpp	/^	cv::Matx33d cMultiKeyFrame::GetRotation()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetTranslation	cMultiKeyFrame.cpp	/^	cv::Vec3d cMultiKeyFrame::GetTranslation()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetValidMapPointCnt	cMultiKeyFrame.cpp	/^	size_t cMultiKeyFrame::GetValidMapPointCnt()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetVectorCovisibleKeyFrames	cMultiKeyFrame.cpp	/^	std::vector<cMultiKeyFrame*> cMultiKeyFrame::GetVectorCovisibleKeyFrames()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetWeight	cMultiKeyFrame.cpp	/^	int cMultiKeyFrame::GetWeight(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+GetWorldPos	cMapPoint.cpp	/^	cv::Vec3d cMapPoint::GetWorldPos()$/;"	f	class:MultiColSLAM::cMapPoint
+GlobalBundleAdjustment	cOptimizer.cpp	/^	void cOptimizer::GlobalBundleAdjustment(cMap* pMap,$/;"	f	class:MultiColSLAM::cOptimizer
+GrabImageSet	cTracking.cpp	/^cv::Matx44d cTracking::GrabImageSet(const std::vector<cv::Mat>& imgSet,$/;"	f	class:MultiColSLAM::cTracking
+HALF_PATCH_SIZE	mdBRIEFextractorOct.cpp	/^const int HALF_PATCH_SIZE = 16;$/;"	m	namespace:MultiColSLAM	file:
+HARRIS_K	mdBRIEFextractorOct.cpp	/^const float HARRIS_K = 0.04f;$/;"	m	namespace:MultiColSLAM	file:
+HISTO_LENGTH	cORBmatcher.cpp	/^const int cORBmatcher::HISTO_LENGTH = 30;$/;"	m	class:MultiColSLAM::cORBmatcher	file:
+HarrisResponses	mdBRIEFextractorOct.cpp	/^static void HarrisResponses(const Mat& img,$/;"	f	namespace:MultiColSLAM
+IC_Angle	mdBRIEFextractorOct.cpp	/^static float IC_Angle(const Mat& image, Point2f pt,  const vector<int> & u_max)$/;"	f	namespace:MultiColSLAM
+ImgToWorld	cam_model_omni.cpp	/^	void cCamModelGeneral_::ImgToWorld(cv::Point3_<double>& X,						\/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+ImgToWorld	cam_model_omni.cpp	/^	void cCamModelGeneral_::ImgToWorld(cv::Vec3d& X,						\/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+ImgToWorld	cam_model_omni.cpp	/^	void cCamModelGeneral_::ImgToWorld(double& x, double& y, double& z,						\/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+IncreaseFound	cMapPoint.cpp	/^	void cMapPoint::IncreaseFound()$/;"	f	class:MultiColSLAM::cMapPoint
+IncreaseFound	cMapPoint.cpp	/^	void cMapPoint::IncreaseFound(const int& val)$/;"	f	class:MultiColSLAM::cMapPoint
+IncreaseVisible	cMapPoint.cpp	/^	void cMapPoint::IncreaseVisible()$/;"	f	class:MultiColSLAM::cMapPoint
+IncreaseVisible	cMapPoint.cpp	/^	void cMapPoint::IncreaseVisible(const int& val)$/;"	f	class:MultiColSLAM::cMapPoint
+Initialize	cMultiInitializer.cpp	/^	bool cMultiInitializer::Initialize(cMultiFrame &currentFrame,$/;"	f	class:MultiColSLAM::cMultiInitializer
+Initialize	cTracking.cpp	/^void cTracking::Initialize()$/;"	f	class:MultiColSLAM::cTracking
+InsertKeyFrame	cLoopClosing.cpp	/^	void cLoopClosing::InsertKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cLoopClosing
+InsertMultiKeyFrame	cLocalMapping.cpp	/^	void cLocalMapping::InsertMultiKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cLocalMapping
+InterruptBA	cLocalMapping.cpp	/^	void cLocalMapping::InterruptBA()$/;"	f	class:MultiColSLAM::cLocalMapping
+IsInImage	cMultiKeyFrame.cpp	/^	bool cMultiKeyFrame::IsInImage(const int& cam, const double &x, const double &y) const$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+IsInKeyFrame	cMapPoint.cpp	/^	bool cMapPoint::IsInKeyFrame(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMapPoint
+IsLoopCandidate	cMultiKeyFrame.cpp	/^	bool cMultiKeyFrame::IsLoopCandidate()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+IsReference	cMultiKeyFrame.cpp	/^	bool cMultiKeyFrame::IsReference()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+KeyFrameCulling	cLocalMapping.cpp	/^	void cLocalMapping::KeyFrameCulling()$/;"	f	class:MultiColSLAM::cLocalMapping
+KeyFramesInMap	cMap.cpp	/^	int cMap::KeyFramesInMap()$/;"	f	class:MultiColSLAM::cMap
+LoadImagesAndTimestamps	mult_col_slam_lafida.cpp	/^void LoadImagesAndTimestamps(const int startFrame,$/;"	f
+LoadMCS	cSystem.cpp	/^	void cSystem::LoadMCS(const string path2calibrations,$/;"	f	class:MultiColSLAM::cSystem
+LocalBundleAdjustment	cOptimizer.cpp	/^	std::list<cMultiKeyFrame*> cOptimizer::LocalBundleAdjustment($/;"	f	class:MultiColSLAM::cOptimizer
+MapPointCulling	cLocalMapping.cpp	/^	void cLocalMapping::MapPointCulling()$/;"	f	class:MultiColSLAM::cLocalMapping
+MapPointsInMap	cMap.cpp	/^	int cMap::MapPointsInMap()$/;"	f	class:MultiColSLAM::cMap
+MultiColSLAM	cConverter.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cLocalMapping.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cLoopClosing.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMap.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMapPoint.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMapPublisher.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMultiFrame.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMultiFramePublisher.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMultiInitializer.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMultiKeyFrame.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cMultiKeyFrameDatabase.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cORBmatcher.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cOptimizer.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cOptimizerLoopStuff.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cSim3Solver.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cSystem.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cTracking.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cViewer.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cam_model_omni.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	cam_system_omni.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	g2o_MultiCol_sim3_expmap.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	g2o_MultiCol_vertices_edges.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	mdBRIEFextractorOct.cpp	/^namespace MultiColSLAM$/;"	n	file:
+MultiColSLAM	misc.cpp	/^namespace MultiColSLAM$/;"	n	file:
+NeedNewKeyFrame	cTracking.cpp	/^bool cTracking::NeedNewKeyFrame()$/;"	f	class:MultiColSLAM::cTracking
+Observations	cMapPoint.cpp	/^	int cMapPoint::Observations()$/;"	f	class:MultiColSLAM::cMapPoint
+OptimizeEssentialGraph	cOptimizerLoopStuff.cpp	/^	void cOptimizer::OptimizeEssentialGraph(cMap* pMap,$/;"	f	class:MultiColSLAM::cOptimizer
+OptimizeSim3	cOptimizerLoopStuff.cpp	/^	int cOptimizer::OptimizeSim3(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cOptimizer
+PATCH_SIZE	mdBRIEFextractorOct.cpp	/^const int PATCH_SIZE = 32;$/;"	m	namespace:MultiColSLAM	file:
+PosInGrid	cMultiFrame.cpp	/^	bool cMultiFrame::PosInGrid(const int& cam,$/;"	f	class:MultiColSLAM::cMultiFrame
+PoseOptimization	cOptimizer.cpp	/^	int cOptimizer::PoseOptimization(cMultiFrame *pFrame,$/;"	f	class:MultiColSLAM::cOptimizer
+ProcessNewMultiKeyFrame	cLocalMapping.cpp	/^	void cLocalMapping::ProcessNewMultiKeyFrame()$/;"	f	class:MultiColSLAM::cLocalMapping
+PublishCurrentCamera	cMapPublisher.cpp	/^	void cMapPublisher::PublishCurrentCamera($/;"	f	class:MultiColSLAM::cMapPublisher
+PublishMapPoints	cMapPublisher.cpp	/^	void cMapPublisher::PublishMapPoints()$/;"	f	class:MultiColSLAM::cMapPublisher
+PublishMultiKeyFrames	cMapPublisher.cpp	/^	void cMapPublisher::PublishMultiKeyFrames(const bool bDrawKF,$/;"	f	class:MultiColSLAM::cMapPublisher
+RadiusByViewingCos	cORBmatcher.cpp	/^double cORBmatcher::RadiusByViewingCos(const double &viewCos)$/;"	f	class:MultiColSLAM::cORBmatcher
+Release	cLocalMapping.cpp	/^	void cLocalMapping::Release()$/;"	f	class:MultiColSLAM::cLocalMapping
+Release	cMapPublisher.cpp	/^	void cMapPublisher::Release()$/;"	f	class:MultiColSLAM::cMapPublisher
+Release	cViewer.cpp	/^	void cViewer::Release()$/;"	f	class:MultiColSLAM::cViewer
+Relocalisation	cTracking.cpp	/^bool cTracking::Relocalisation()$/;"	f	class:MultiColSLAM::cTracking
+RelocalisationRequested	cTracking.cpp	/^bool cTracking::RelocalisationRequested()$/;"	f	class:MultiColSLAM::cTracking
+Replace	cMapPoint.cpp	/^	void cMapPoint::Replace(cMapPoint* pMP)$/;"	f	class:MultiColSLAM::cMapPoint
+ReplaceMapPointMatch	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::ReplaceMapPointMatch(const size_t &idx, cMapPoint* pMP)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+RequestFinish	cLocalMapping.cpp	/^	void cLocalMapping::RequestFinish()$/;"	f	class:MultiColSLAM::cLocalMapping
+RequestFinish	cLoopClosing.cpp	/^	void cLoopClosing::RequestFinish()$/;"	f	class:MultiColSLAM::cLoopClosing
+RequestFinish	cMapPublisher.cpp	/^	void cMapPublisher::RequestFinish()$/;"	f	class:MultiColSLAM::cMapPublisher
+RequestFinish	cViewer.cpp	/^	void cViewer::RequestFinish()$/;"	f	class:MultiColSLAM::cViewer
+RequestReset	cLocalMapping.cpp	/^	void cLocalMapping::RequestReset()$/;"	f	class:MultiColSLAM::cLocalMapping
+RequestReset	cLoopClosing.cpp	/^	void cLoopClosing::RequestReset()$/;"	f	class:MultiColSLAM::cLoopClosing
+RequestStop	cLocalMapping.cpp	/^	void cLocalMapping::RequestStop()$/;"	f	class:MultiColSLAM::cLocalMapping
+RequestStop	cMapPublisher.cpp	/^	void cMapPublisher::RequestStop()$/;"	f	class:MultiColSLAM::cMapPublisher
+RequestStop	cViewer.cpp	/^	void cViewer::RequestStop()$/;"	f	class:MultiColSLAM::cViewer
+Reset	cSystem.cpp	/^	void cSystem::Reset()$/;"	f	class:MultiColSLAM::cSystem
+Reset	cTracking.cpp	/^void cTracking::Reset()$/;"	f	class:MultiColSLAM::cTracking
+ResetCamFlag	cMapPublisher.cpp	/^	void cMapPublisher::ResetCamFlag()$/;"	f	class:MultiColSLAM::cMapPublisher
+ResetIfRequested	cLocalMapping.cpp	/^	void cLocalMapping::ResetIfRequested()$/;"	f	class:MultiColSLAM::cLocalMapping
+ResetIfRequested	cLoopClosing.cpp	/^	void cLoopClosing::ResetIfRequested()$/;"	f	class:MultiColSLAM::cLoopClosing
+ResetUpdated	cMap.cpp	/^	void cMap::ResetUpdated()$/;"	f	class:MultiColSLAM::cMap
+Run	cLocalMapping.cpp	/^	void cLocalMapping::Run()$/;"	f	class:MultiColSLAM::cLocalMapping
+Run	cLoopClosing.cpp	/^	void cLoopClosing::Run()$/;"	f	class:MultiColSLAM::cLoopClosing
+Run	cViewer.cpp	/^	void cViewer::Run()$/;"	f	class:MultiColSLAM::cViewer
+SaveMKFTrajectoryLAFIDA	cSystem.cpp	/^	void cSystem::SaveMKFTrajectoryLAFIDA(const string &filename)$/;"	f	class:MultiColSLAM::cSystem
+SearchAndFuse	cLoopClosing.cpp	/^	void cLoopClosing::SearchAndFuse(KeyFrameAndPose &CorrectedPosesMap)$/;"	f	class:MultiColSLAM::cLoopClosing
+SearchByBoW	cORBmatcher.cpp	/^int cORBmatcher::SearchByBoW(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchByBoW	cORBmatcher.cpp	/^int cORBmatcher::SearchByBoW(cMultiKeyFrame* pKF, $/;"	f	class:MultiColSLAM::cORBmatcher
+SearchByProjection	cORBmatcher.cpp	/^int cORBmatcher::SearchByProjection(cMultiFrame &CurrentFrame,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchByProjection	cORBmatcher.cpp	/^int cORBmatcher::SearchByProjection(cMultiFrame &F,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchByProjection	cORBmatcher.cpp	/^int cORBmatcher::SearchByProjection(cMultiFrame &F1, $/;"	f	class:MultiColSLAM::cORBmatcher
+SearchByProjection	cORBmatcher.cpp	/^int cORBmatcher::SearchByProjection(cMultiKeyFrame* pKF,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchBySim3	cORBmatcher.cpp	/^int cORBmatcher::SearchBySim3(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchForInitialization	cORBmatcher.cpp	/^int cORBmatcher::SearchForInitialization(cMultiFrame &F1, $/;"	f	class:MultiColSLAM::cORBmatcher
+SearchForTriangulationBetweenCameras	cORBmatcher.cpp	/^int cORBmatcher::SearchForTriangulationBetweenCameras(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchForTriangulationRaw	cORBmatcher.cpp	/^int cORBmatcher::SearchForTriangulationRaw(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cORBmatcher
+SearchInNeighbors	cLocalMapping.cpp	/^	void cLocalMapping::SearchInNeighbors()$/;"	f	class:MultiColSLAM::cLocalMapping
+SearchReferencePointsInFrustum	cTracking.cpp	/^int cTracking::SearchReferencePointsInFrustum()$/;"	f	class:MultiColSLAM::cTracking
+SetAcceptMultiKeyFrames	cLocalMapping.cpp	/^	void cLocalMapping::SetAcceptMultiKeyFrames(bool flag)$/;"	f	class:MultiColSLAM::cLocalMapping
+SetBadFlag	cMapPoint.cpp	/^	void cMapPoint::SetBadFlag()$/;"	f	class:MultiColSLAM::cMapPoint
+SetBadFlag	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetBadFlag()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetCurrentCameraPose	cMapPublisher.cpp	/^	void cMapPublisher::SetCurrentCameraPose(const cv::Matx44d Tcw)$/;"	f	class:MultiColSLAM::cMapPublisher
+SetErase	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetErase()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetFinish	cLocalMapping.cpp	/^	void cLocalMapping::SetFinish()$/;"	f	class:MultiColSLAM::cLocalMapping
+SetFinish	cLoopClosing.cpp	/^	void cLoopClosing::SetFinish()$/;"	f	class:MultiColSLAM::cLoopClosing
+SetFinish	cMapPublisher.cpp	/^	void cMapPublisher::SetFinish()$/;"	f	class:MultiColSLAM::cMapPublisher
+SetFinish	cViewer.cpp	/^	void cViewer::SetFinish()$/;"	f	class:MultiColSLAM::cViewer
+SetFlagAfterBA	cMap.cpp	/^	void cMap::SetFlagAfterBA()$/;"	f	class:MultiColSLAM::cMap
+SetKeyFrameDatabase	cTracking.cpp	/^void cTracking::SetKeyFrameDatabase(cMultiKeyFrameDatabase *pKFDB)$/;"	f	class:MultiColSLAM::cTracking
+SetLocalMapper	cLoopClosing.cpp	/^	void cLoopClosing::SetLocalMapper(cLocalMapping *pLocalMapper)$/;"	f	class:MultiColSLAM::cLoopClosing
+SetLocalMapper	cTracking.cpp	/^void cTracking::SetLocalMapper(cLocalMapping *pLocalMapper)$/;"	f	class:MultiColSLAM::cTracking
+SetLoopCandidate	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetLoopCandidate(const bool ref)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetLoopCloser	cLocalMapping.cpp	/^	void cLocalMapping::SetLoopCloser(cLoopClosing* pLoopCloser)$/;"	f	class:MultiColSLAM::cLocalMapping
+SetLoopClosing	cTracking.cpp	/^void cTracking::SetLoopClosing(cLoopClosing *pLoopClosing)$/;"	f	class:MultiColSLAM::cTracking
+SetMCS	cMapPublisher.cpp	/^	void cMapPublisher::SetMCS(const std::vector<cv::Matx44d> M_c_s)$/;"	f	class:MultiColSLAM::cMapPublisher
+SetMCS	cMultiFramePublisher.cpp	/^	void cMultiFramePublisher::SetMCS(cMultiCamSys_* tmpSys)$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+SetMap	cMultiFramePublisher.cpp	/^	void cMultiFramePublisher::SetMap(cMap *pMap)$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+SetMatcherProperties	cLocalMapping.cpp	/^	void cLocalMapping::SetMatcherProperties(int _descDim, bool _havingMasks)$/;"	f	class:MultiColSLAM::cLocalMapping
+SetMatcherProperties	cLoopClosing.cpp	/^	void cLoopClosing::SetMatcherProperties(int _descDim, bool _havingMasks)$/;"	f	class:MultiColSLAM::cLoopClosing
+SetNotErase	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetNotErase()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetNotStop	cLocalMapping.cpp	/^	bool cLocalMapping::SetNotStop(bool flag)$/;"	f	class:MultiColSLAM::cLocalMapping
+SetPose	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetPose(const cv::Matx33d &Rcw, const cv::Vec3d &tcw)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetPose	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetPose(const cv::Matx44d &Tcw_)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetPose	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetPose(const cv::Matx61d &Tcw_min_)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetRansacParameters	cSim3Solver.cpp	/^	void cSim3Solver::SetRansacParameters(double probability,$/;"	f	class:MultiColSLAM::cSim3Solver
+SetReference	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::SetReference(const bool ref)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+SetReferenceMapPoints	cMap.cpp	/^	void cMap::SetReferenceMapPoints(const std::vector<cMapPoint*> &vpMPs)$/;"	f	class:MultiColSLAM::cMap
+SetScaledFlag	cMapPoint.cpp	/^	void cMapPoint::SetScaledFlag()$/;"	f	class:MultiColSLAM::cMapPoint
+SetTracker	cLocalMapping.cpp	/^	void cLocalMapping::SetTracker(cTracking *pTracker)$/;"	f	class:MultiColSLAM::cLocalMapping
+SetTracker	cLoopClosing.cpp	/^	void cLoopClosing::SetTracker(cTracking *pTracker)$/;"	f	class:MultiColSLAM::cLoopClosing
+SetViewer	cTracking.cpp	/^void cTracking::SetViewer(cViewer *pViewer)$/;"	f	class:MultiColSLAM::cTracking
+SetWorldPos	cMapPoint.cpp	/^	void cMapPoint::SetWorldPos(const cv::Vec3d &Pos)$/;"	f	class:MultiColSLAM::cMapPoint
+Set_All_M_c	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_All_M_c(std::vector<cv::Matx<double, 4, 4>> M_c_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_All_M_c_from_min	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_All_M_c_from_min(std::vector<cv::Matx<double, 6, 1>> M_c_min_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_M_c	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_M_c(int c, cv::Matx<double, 4, 4> M_c_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_M_c_from_min	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_M_c_from_min(int c, cv::Matx<double, 6, 1> M_c_minRep)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_M_c_from_min_and_IO	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_M_c_from_min_and_IO(int c, cv::Matx<double, 6, 1> M_c_min_, cCamModelGeneral_ camM)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_M_t	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_M_t(cv::Matx<double, 4, 4> M_t_)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Set_M_t_from_min	cam_system_omni.cpp	/^	void cMultiCamSys_::Set_M_t_from_min(cv::Matx<double, 6, 1> M_t_minRep)$/;"	f	class:MultiColSLAM::cMultiCamSys_
+Shutdown	cSystem.cpp	/^	void cSystem::Shutdown()$/;"	f	class:MultiColSLAM::cSystem
+Stop	cLocalMapping.cpp	/^	bool cLocalMapping::Stop()$/;"	f	class:MultiColSLAM::cLocalMapping
+Stop	cMapPublisher.cpp	/^	bool cMapPublisher::Stop()$/;"	f	class:MultiColSLAM::cMapPublisher
+Stop	cViewer.cpp	/^	bool cViewer::Stop()$/;"	f	class:MultiColSLAM::cViewer
+T_in_ms	misc.cpp	/^	double T_in_ms(HResClk::time_point start,$/;"	f	namespace:MultiColSLAM
+T_in_ns	misc.cpp	/^	double T_in_ns(HResClk::time_point start,$/;"	f	namespace:MultiColSLAM
+TotalNrObservations	cMapPoint.cpp	/^	int cMapPoint::TotalNrObservations()$/;"	f	class:MultiColSLAM::cMapPoint
+Track	cTracking.cpp	/^bool cTracking::Track()$/;"	f	class:MultiColSLAM::cTracking
+TrackLocalMap	cTracking.cpp	/^bool cTracking::TrackLocalMap()$/;"	f	class:MultiColSLAM::cTracking
+TrackMultiColSLAM	cSystem.cpp	/^	cv::Matx44d cSystem::TrackMultiColSLAM($/;"	f	class:MultiColSLAM::cSystem
+TrackPreviousFrame	cTracking.cpp	/^bool cTracking::TrackPreviousFrame()$/;"	f	class:MultiColSLAM::cTracking
+TrackWithMotionModel	cTracking.cpp	/^bool cTracking::TrackWithMotionModel()$/;"	f	class:MultiColSLAM::cTracking
+TrackedMapPoints	cMultiKeyFrame.cpp	/^	int cMultiKeyFrame::TrackedMapPoints()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+Update	cMultiFramePublisher.cpp	/^	void cMultiFramePublisher::Update(cTracking *pTracker)$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+UpdateBestCovisibles	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::UpdateBestCovisibles()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+UpdateConnections	cMultiKeyFrame.cpp	/^	void cMultiKeyFrame::UpdateConnections()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+UpdateCurrentDescriptor	cMapPoint.cpp	/^	void cMapPoint::UpdateCurrentDescriptor(cv::Mat& currDesc)$/;"	f	class:MultiColSLAM::cMapPoint
+UpdateNormalAndDepth	cMapPoint.cpp	/^	void cMapPoint::UpdateNormalAndDepth()$/;"	f	class:MultiColSLAM::cMapPoint
+UpdateReference	cTracking.cpp	/^void cTracking::UpdateReference()$/;"	f	class:MultiColSLAM::cTracking
+UpdateReferenceKeyFrames	cTracking.cpp	/^void cTracking::UpdateReferenceKeyFrames()$/;"	f	class:MultiColSLAM::cTracking
+UpdateReferencePoints	cTracking.cpp	/^void cTracking::UpdateReferencePoints()$/;"	f	class:MultiColSLAM::cTracking
+VertexSim3Expmap_Multi	g2o_MultiCol_sim3_expmap.cpp	/^	VertexSim3Expmap_Multi::VertexSim3Expmap_Multi($/;"	f	class:MultiColSLAM::VertexSim3Expmap_Multi
+WindowSearch	cORBmatcher.cpp	/^int cORBmatcher::WindowSearch(cMultiFrame &F1, cMultiFrame &F2,$/;"	f	class:MultiColSLAM::cORBmatcher
+WorldToCam	cam_system_omni.cpp	/^	void cMultiCamSys_::WorldToCam(int c,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+WorldToCamHom	cam_system_omni.cpp	/^	void cMultiCamSys_::WorldToCamHom(int c,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+WorldToCamHom_fast	cam_system_omni.cpp	/^	bool cMultiCamSys_::WorldToCamHom_fast(int c,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+WorldToCamHom_fast	cam_system_omni.cpp	/^	void cMultiCamSys_::WorldToCamHom_fast(int c,$/;"	f	class:MultiColSLAM::cMultiCamSys_
+WorldToImg	cam_model_omni.cpp	/^	void cCamModelGeneral_::WorldToImg(const cv::Point3_<double>& X,			\/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+WorldToImg	cam_model_omni.cpp	/^	void cCamModelGeneral_::WorldToImg(const cv::Vec3d& X,			\/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+WorldToImg	cam_model_omni.cpp	/^	void cCamModelGeneral_::WorldToImg(const double& x, const double& y, const double& z,    \/\/ 3D scene point$/;"	f	class:MultiColSLAM::cCamModelGeneral_
+add	cMultiKeyFrameDatabase.cpp	/^	void cMultiKeyFrameDatabase::add(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+cLocalMapping	cLocalMapping.cpp	/^	cLocalMapping::cLocalMapping(cMap *pMap) :$/;"	f	class:MultiColSLAM::cLocalMapping
+cLoopClosing	cLoopClosing.cpp	/^	cLoopClosing::cLoopClosing(cMap *pMap, cMultiKeyFrameDatabase *pDB, ORBVocabulary *pVoc) :$/;"	f	class:MultiColSLAM::cLoopClosing
+cMap	cMap.cpp	/^	cMap::cMap()$/;"	f	class:MultiColSLAM::cMap
+cMapPoint	cMapPoint.cpp	/^	cMapPoint::cMapPoint(const cv::Vec3d &Pos,$/;"	f	class:MultiColSLAM::cMapPoint
+cMapPublisher	cMapPublisher.cpp	/^	cMapPublisher::cMapPublisher(cMap* pMap,$/;"	f	class:MultiColSLAM::cMapPublisher
+cMultiFrame	cMultiFrame.cpp	/^	cMultiFrame::cMultiFrame()$/;"	f	class:MultiColSLAM::cMultiFrame
+cMultiFrame	cMultiFrame.cpp	/^	cMultiFrame::cMultiFrame(const cMultiFrame& mframe)$/;"	f	class:MultiColSLAM::cMultiFrame
+cMultiFrame	cMultiFrame.cpp	/^	cMultiFrame::cMultiFrame(const std::vector<cv::Mat>& images_,$/;"	f	class:MultiColSLAM::cMultiFrame
+cMultiFramePublisher	cMultiFramePublisher.cpp	/^	cMultiFramePublisher::cMultiFramePublisher(cMap *pMap) :$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+cMultiInitializer	cMultiInitializer.cpp	/^	cMultiInitializer::cMultiInitializer(const cMultiFrame &ReferenceFrame,$/;"	f	class:MultiColSLAM::cMultiInitializer
+cMultiKeyFrame	cMultiKeyFrame.cpp	/^	cMultiKeyFrame::cMultiKeyFrame(cMultiFrame &F,$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+cMultiKeyFrameDatabase	cMultiKeyFrameDatabase.cpp	/^	cMultiKeyFrameDatabase::cMultiKeyFrameDatabase(const ORBVocabulary &voc) :$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+cORBmatcher	cORBmatcher.cpp	/^cORBmatcher::cORBmatcher(double nnratio, $/;"	f	class:MultiColSLAM::cORBmatcher
+cSim3Solver	cSim3Solver.cpp	/^	cSim3Solver::cSim3Solver(cMultiKeyFrame *pKF1,$/;"	f	class:MultiColSLAM::cSim3Solver
+cSystem	cSystem.cpp	/^	cSystem::cSystem(const string &strVocFile, const string &strSettingsFile,$/;"	f	class:MultiColSLAM::cSystem
+cTracking	cTracking.cpp	/^cTracking::cTracking($/;"	f	class:MultiColSLAM::cTracking
+cViewer	cViewer.cpp	/^	cViewer::cViewer($/;"	f	class:MultiColSLAM::cViewer
+centroid	cSim3Solver.cpp	/^	void cSim3Solver::centroid(cv::Matx33d &P,$/;"	f	class:MultiColSLAM::cSim3Solver
+clear	cMap.cpp	/^	void cMap::clear()$/;"	f	class:MultiColSLAM::cMap
+clear	cMultiKeyFrameDatabase.cpp	/^	void cMultiKeyFrameDatabase::clear()$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+computeDescriptors	mdBRIEFextractorOct.cpp	/^static void computeDescriptors($/;"	f	namespace:MultiColSLAM
+computeError	g2o_MultiCol_vertices_edges.cpp	/^void EdgeProjectXYZ2MCS::computeError()$/;"	f	class:MultiColSLAM::EdgeProjectXYZ2MCS
+computeOrientation	mdBRIEFextractorOct.cpp	/^static void computeOrientation(const Mat& image,$/;"	f	namespace:MultiColSLAM
+computeT	cSim3Solver.cpp	/^	void cSim3Solver::computeT(cv::Matx33d &P1,$/;"	f	class:MultiColSLAM::cSim3Solver
+compute_ORB	mdBRIEFextractorOct.cpp	/^static void compute_ORB(const Mat& image,$/;"	f	namespace:MultiColSLAM
+compute_dBRIEF	mdBRIEFextractorOct.cpp	/^static void compute_dBRIEF(const Mat& image,$/;"	f	namespace:MultiColSLAM
+compute_mdBRIEF	mdBRIEFextractorOct.cpp	/^static void compute_mdBRIEF(const Mat& image,$/;"	f	namespace:MultiColSLAM
+cosThresh	cLocalMapping.cpp	/^	const double cosThresh = cos(3.0 * M_PID \/ 180.0);$/;"	m	namespace:MultiColSLAM	file:
+defaultNorm	mdBRIEFextractorOct.cpp	/^int mdBRIEFextractorOct::defaultNorm() const$/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+descriptorSize	mdBRIEFextractorOct.cpp	/^int mdBRIEFextractorOct::descriptorSize() const$/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+descriptorType	mdBRIEFextractorOct.cpp	/^int mdBRIEFextractorOct::descriptorType() const$/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+edgeSim3	g2o_MultiCol_sim3_expmap.cpp	/^	edgeSim3::edgeSim3() :$/;"	f	class:MultiColSLAM::edgeSim3
+erase	cMultiKeyFrameDatabase.cpp	/^	void cMultiKeyFrameDatabase::erase(cMultiKeyFrame* pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrameDatabase
+find	cSim3Solver.cpp	/^	bool cSim3Solver::find(std::vector<bool> &vbInliers12,$/;"	f	class:MultiColSLAM::cSim3Solver
+hasChild	cMultiKeyFrame.cpp	/^	bool cMultiKeyFrame::hasChild(cMultiKeyFrame *pKF)$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+invMat	cConverter.cpp	/^	cv::Matx44d cConverter::invMat(const cv::Matx44d& M)$/;"	f	class:MultiColSLAM::cConverter
+isBad	cMapPoint.cpp	/^	bool cMapPoint::isBad()$/;"	f	class:MultiColSLAM::cMapPoint
+isBad	cMultiKeyFrame.cpp	/^	bool cMultiKeyFrame::isBad()$/;"	f	class:MultiColSLAM::cMultiKeyFrame
+isCamUpdated	cMapPublisher.cpp	/^	bool cMapPublisher::isCamUpdated()$/;"	f	class:MultiColSLAM::cMapPublisher
+isFinished	cLocalMapping.cpp	/^	bool cLocalMapping::isFinished()$/;"	f	class:MultiColSLAM::cLocalMapping
+isFinished	cLoopClosing.cpp	/^	bool cLoopClosing::isFinished()$/;"	f	class:MultiColSLAM::cLoopClosing
+isFinished	cMapPublisher.cpp	/^	bool cMapPublisher::isFinished()$/;"	f	class:MultiColSLAM::cMapPublisher
+isFinished	cViewer.cpp	/^	bool cViewer::isFinished()$/;"	f	class:MultiColSLAM::cViewer
+isInFrustum	cMultiFrame.cpp	/^	bool cMultiFrame::isInFrustum(int cam, cMapPoint *pMP, double viewingCosLimit)$/;"	f	class:MultiColSLAM::cMultiFrame
+isMapUpdated	cMap.cpp	/^	bool cMap::isMapUpdated()$/;"	f	class:MultiColSLAM::cMap
+isMapUpdated	cMultiFramePublisher.cpp	/^	bool cMultiFramePublisher::isMapUpdated()$/;"	f	class:MultiColSLAM::cMultiFramePublisher
+isPointInMirrorMask	cam_model_omni.cpp	/^	bool cCamModelGeneral_::isPointInMirrorMask($/;"	f	class:MultiColSLAM::cCamModelGeneral_
+isScaled	cMapPoint.cpp	/^	bool cMapPoint::isScaled()$/;"	f	class:MultiColSLAM::cMapPoint
+isStopped	cLocalMapping.cpp	/^	bool cLocalMapping::isStopped()$/;"	f	class:MultiColSLAM::cLocalMapping
+isStopped	cMapPublisher.cpp	/^	bool cMapPublisher::isStopped()$/;"	f	class:MultiColSLAM::cMapPublisher
+isStopped	cViewer.cpp	/^	bool cViewer::isStopped()$/;"	f	class:MultiColSLAM::cViewer
+iterate	cSim3Solver.cpp	/^	bool cSim3Solver::iterate(int nIterations,$/;"	f	class:MultiColSLAM::cSim3Solver
+linearizeOplus	g2o_MultiCol_vertices_edges.cpp	/^void EdgeProjectXYZ2MCS::linearizeOplus()$/;"	f	class:MultiColSLAM::EdgeProjectXYZ2MCS
+main	mult_col_slam_lafida.cpp	/^int main(int argc, char **argv)$/;"	f
+max	cTracking.cpp	1240;"	d	file:
+maxDIST	cLocalMapping.cpp	/^	const double maxDIST = 25.0;$/;"	m	namespace:MultiColSLAM	file:
+mbInitialComputations	cMultiFrame.cpp	/^	bool cMultiFrame::mbInitialComputations = true;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+mcsJacs1	g2o_MultiCol_vertices_edges.cpp	/^void mcsJacs1(const cv::Vec3d& pt3,$/;"	f	namespace:MultiColSLAM
+mdBRIEFextractorOct	mdBRIEFextractorOct.cpp	/^mdBRIEFextractorOct::mdBRIEFextractorOct(int _nfeatures,$/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+mean3DPointError	cLocalMapping.cpp	/^	const double mean3DPointError = 0.25;$/;"	m	namespace:MultiColSLAM	file:
+min	cTracking.cpp	1241;"	d	file:
+minTriangQuali	cLocalMapping.cpp	/^	const double minTriangQuali = 0.2;$/;"	m	namespace:MultiColSLAM	file:
+mnMaxX	cMultiFrame.cpp	/^	std::vector<int> cMultiFrame::mnMaxX, cMultiFrame::mnMaxY;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+mnMaxY	cMultiFrame.cpp	/^	std::vector<int> cMultiFrame::mnMaxX, cMultiFrame::mnMaxY;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+mnMinX	cMultiFrame.cpp	/^	std::vector<int> cMultiFrame::mnMinX, cMultiFrame::mnMinY;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+mnMinY	cMultiFrame.cpp	/^	std::vector<int> cMultiFrame::mnMinX, cMultiFrame::mnMinY;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+nNextId	cMapPoint.cpp	/^	long unsigned int cMapPoint::nNextId = 0;$/;"	m	class:MultiColSLAM::cMapPoint	file:
+nNextId	cMultiFrame.cpp	/^	long unsigned int cMultiFrame::nNextId = 0;$/;"	m	class:MultiColSLAM::cMultiFrame	file:
+nNextId	cMultiKeyFrame.cpp	/^	long unsigned int cMultiKeyFrame::nNextId = 0;$/;"	m	class:MultiColSLAM::cMultiKeyFrame	file:
+ogv2ocv	cConverter.cpp	/^	cv::Matx<double, 4, 4> cConverter::ogv2ocv(const Eigen::Matrix<double, 3, 4>& ogv_mat)$/;"	f	class:MultiColSLAM::cConverter
+operator ()	mdBRIEFextractorOct.cpp	/^void mdBRIEFextractorOct::operator()($/;"	f	class:MultiColSLAM::mdBRIEFextractorOct
+pixelSize	cLocalMapping.cpp	/^	const double pixelSize = 6e-6; \/\/ in meter$/;"	m	namespace:MultiColSLAM	file:
+read	g2o_MultiCol_sim3_expmap.cpp	/^	bool edgeSim3::read(std::istream& is)$/;"	f	class:MultiColSLAM::edgeSim3
+read	g2o_MultiCol_sim3_expmap.cpp	/^	bool simpleVertexSim3Expmap::read(std::istream& is)$/;"	f	class:MultiColSLAM::simpleVertexSim3Expmap
+rotateAndDistortPattern	mdBRIEFextractorOct.cpp	/^static void rotateAndDistortPattern(const Point2d& undist_kps,$/;"	f	namespace:MultiColSLAM
+rotatePattern	mdBRIEFextractorOct.cpp	/^static void rotatePattern($/;"	f	namespace:MultiColSLAM
+simpleVertexSim3Expmap	g2o_MultiCol_sim3_expmap.cpp	/^	simpleVertexSim3Expmap::simpleVertexSim3Expmap() : BaseVertex<7, g2o::Sim3>()$/;"	f	class:MultiColSLAM::simpleVertexSim3Expmap
+stdPose	cOptimizer.cpp	/^	double cOptimizer::stdPose = 2.0;$/;"	m	class:MultiColSLAM::cOptimizer	file:
+stdRecon	cOptimizer.cpp	/^	double cOptimizer::stdRecon = 2.0;$/;"	m	class:MultiColSLAM::cOptimizer	file:
+stdSim	cOptimizerLoopStuff.cpp	/^	double cOptimizer::stdSim = 4.0;$/;"	m	class:MultiColSLAM::cOptimizer	file:
+stopRequested	cLocalMapping.cpp	/^	bool cLocalMapping::stopRequested()$/;"	f	class:MultiColSLAM::cLocalMapping
+toCvMat	cConverter.cpp	/^	cv::Matx33d cConverter::toCvMat(const Eigen::Matrix3d& m)$/;"	f	class:MultiColSLAM::cConverter
+toCvMat	cConverter.cpp	/^	cv::Matx44d cConverter::toCvMat(const Eigen::Matrix<double, 4, 4>& m)$/;"	f	class:MultiColSLAM::cConverter
+toCvMat	cConverter.cpp	/^	cv::Matx44d cConverter::toCvMat(const g2o::SE3Quat& SE3)$/;"	f	class:MultiColSLAM::cConverter
+toCvMat	cConverter.cpp	/^	cv::Matx44d cConverter::toCvMat(const g2o::Sim3& Sim3)$/;"	f	class:MultiColSLAM::cConverter
+toCvSE3	cConverter.cpp	/^	cv::Matx44d cConverter::toCvSE3(const Eigen::Matrix<double, 3, 3>& R,$/;"	f	class:MultiColSLAM::cConverter
+toDescriptorVector	cConverter.cpp	/^	std::vector<cv::Mat> cConverter::toDescriptorVector(const cv::Mat& Descriptors)$/;"	f	class:MultiColSLAM::cConverter
+toDescriptorVector	cConverter.cpp	/^	std::vector<cv::Mat> cConverter::toDescriptorVector(const std::vector<cv::Mat>& Descriptors)$/;"	f	class:MultiColSLAM::cConverter
+toMat	cConverter.cpp	/^	cv::Mat cConverter::toMat(const cv::Matx44d& matx44d)$/;"	f	class:MultiColSLAM::cConverter
+toMatrix3d	cConverter.cpp	/^	Eigen::Matrix<double, 3, 3> cConverter::toMatrix3d(const cv::Matx33d& cvMat3)$/;"	f	class:MultiColSLAM::cConverter
+toQuaternion	cConverter.cpp	/^	std::vector<double> cConverter::toQuaternion(const cv::Matx33d& M)$/;"	f	class:MultiColSLAM::cConverter
+toSE3Quat	cConverter.cpp	/^	g2o::SE3Quat cConverter::toSE3Quat(const cv::Matx44d& homCV)$/;"	f	class:MultiColSLAM::cConverter
+toVector3d	cConverter.cpp	/^	Eigen::Matrix<double, 3, 1> cConverter::toVector3d(const cv::Vec3d& cvVector)$/;"	f	class:MultiColSLAM::cConverter
+toVector3d	cConverter.cpp	/^	Eigen::Matrix<double, 3, 1> cConverter::toVector3d(const cv::Vec4d& cvVector)$/;"	f	class:MultiColSLAM::cConverter
+triangulate_point	misc.cpp	/^	cv::Vec3d triangulate_point($/;"	f	namespace:MultiColSLAM
+write	g2o_MultiCol_sim3_expmap.cpp	/^	bool edgeSim3::write(std::ostream& os) const$/;"	f	class:MultiColSLAM::edgeSim3
+write	g2o_MultiCol_sim3_expmap.cpp	/^	bool simpleVertexSim3Expmap::write(std::ostream& os) const$/;"	f	class:MultiColSLAM::simpleVertexSim3Expmap
