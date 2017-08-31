@@ -27,7 +27,7 @@ extractor.descSize: 32
 extractor.nFeatures: 400
 
 # Extractor: Scale factor between levels in the scale pyramid 	
-extractor.scaleFactor: 1.2
+extractor.scaleFactor: 2.5 
 
 # Extractor: Number of levels in the scale pyramid	
 extractor.nLevels: 8
@@ -69,4 +69,4 @@ Viewer.ViewpointX: 1.0
 Viewer.ViewpointY: 1.0
 Viewer.ViewpointZ: 1.0
 Viewer.ViewpointF: 500.0
-Viewer.DrawNrCams: 1
+Viewer.DrawNrCams: 4

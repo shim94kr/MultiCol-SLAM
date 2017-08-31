@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['t_5fin_5fms',['T_in_ms',['../namespaceMultiColSLAM.html#a456deb26b63f885dc40b5f2bd972e3b1',1,'MultiColSLAM']]],
-  ['t_5fin_5fns',['T_in_ns',['../namespaceMultiColSLAM.html#a29255d78ed9e43d9768e2461351da22a',1,'MultiColSLAM']]]
+  ['hom2cayley',['hom2cayley',['../namespaceMultiColSLAM.html#a23b15483afb841352e467cb7d6234bbd',1,'MultiColSLAM']]],
+  ['horner',['horner',['../namespaceMultiColSLAM.html#aead0992d54c67c406d668cff0e396838',1,'MultiColSLAM']]]
 ];

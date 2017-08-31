@@ -99,67 +99,87 @@ $(document).ready(function(){initNavTree('classMultiColSLAM_1_1cMultiCamSys__.ht
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a94d83f3bd851844d9b86866b899aac14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d83f3bd851844d9b86866b899aac14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>cMultiCamSys_</b> (cv::Matx&lt; double, 4, 4 &gt; M_t_, std::vector&lt; cv::Matx&lt; double, 4, 4 &gt;&gt; M_c_, std::vector&lt; <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> &gt; camModels_)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a94d83f3bd851844d9b86866b899aac14">cMultiCamSys_</a> (cv::Matx&lt; double, 4, 4 &gt; M_t_, std::vector&lt; cv::Matx&lt; double, 4, 4 &gt;&gt; M_c_, std::vector&lt; <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> &gt; camModels_)</td></tr>
+<tr class="memdesc:a94d83f3bd851844d9b86866b899aac14"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor initalizes MCS pose and MCS calibration <br /></td></tr>
 <tr class="separator:a94d83f3bd851844d9b86866b899aac14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5252fc027f0a0f8db1b096392302eae8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5252fc027f0a0f8db1b096392302eae8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WorldToCam</b> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a5252fc027f0a0f8db1b096392302eae8">WorldToCam</a> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+<tr class="memdesc:a5252fc027f0a0f8db1b096392302eae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">[point(3-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다 <br /></td></tr>
 <tr class="separator:a5252fc027f0a0f8db1b096392302eae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc2a17f67cd88fbf51e1459b5618c96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc2a17f67cd88fbf51e1459b5618c96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WorldToCam</b> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Vec2d &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#abfc2a17f67cd88fbf51e1459b5618c96">WorldToCam</a> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Vec2d &amp;pt2)</td></tr>
+<tr class="memdesc:abfc2a17f67cd88fbf51e1459b5618c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">[point&amp;vector(3-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다 <br /></td></tr>
 <tr class="separator:abfc2a17f67cd88fbf51e1459b5618c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6567244dbfa1fc64b2a59ba4653559"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e6567244dbfa1fc64b2a59ba4653559"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WorldToCamHom</b> (int c, cv::Vec&lt; double, 4 &gt; &amp;pt4, cv::Vec2d &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a9e6567244dbfa1fc64b2a59ba4653559">WorldToCamHom</a> (int c, cv::Vec&lt; double, 4 &gt; &amp;pt4, cv::Vec2d &amp;pt2)</td></tr>
+<tr class="memdesc:a9e6567244dbfa1fc64b2a59ba4653559"><td class="mdescLeft">&#160;</td><td class="mdescRight">[vector(4-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다. 4-th element를 미리 넣어줘서 Hom(ogeneous)라 붙인듯 하다. <br /></td></tr>
 <tr class="separator:a9e6567244dbfa1fc64b2a59ba4653559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b69acbfaf8be51d44ba4b6fa59afa13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b69acbfaf8be51d44ba4b6fa59afa13"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>WorldToCamHom_fast</b> (int c, cv::Vec&lt; double, 4 &gt; &amp;pt4, cv::Vec&lt; double, 2 &gt; &amp;pt2)</td></tr>
+<tr class="memitem:a3b69acbfaf8be51d44ba4b6fa59afa13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a3b69acbfaf8be51d44ba4b6fa59afa13">WorldToCamHom_fast</a> (int c, cv::Vec&lt; double, 4 &gt; &amp;pt4, cv::Vec&lt; double, 2 &gt; &amp;pt2)</td></tr>
+<tr class="memdesc:a3b69acbfaf8be51d44ba4b6fa59afa13"><td class="mdescLeft">&#160;</td><td class="mdescRight">[vector(4-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다. 4-th element를 미리 넣어줘서 Hom(ogeneous)라 붙인듯 하다.  <a href="#a3b69acbfaf8be51d44ba4b6fa59afa13">More...</a><br /></td></tr>
 <tr class="separator:a3b69acbfaf8be51d44ba4b6fa59afa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ccb45fcc1754abf27858be133b25ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ccb45fcc1754abf27858be133b25ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WorldToCamHom_fast</b> (int c, cv::Vec&lt; double, 3 &gt; &amp;pt3, cv::Vec&lt; double, 2 &gt; &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a32ccb45fcc1754abf27858be133b25ed">WorldToCamHom_fast</a> (int c, cv::Vec&lt; double, 3 &gt; &amp;pt3, cv::Vec&lt; double, 2 &gt; &amp;pt2)</td></tr>
+<tr class="memdesc:a32ccb45fcc1754abf27858be133b25ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">[vector(3-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다. 다른 코드랑 비슷한데 왜 fast인가? <br /></td></tr>
 <tr class="separator:a32ccb45fcc1754abf27858be133b25ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad5f0cfbbd2017e49b49b0a49d5acda6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad5f0cfbbd2017e49b49b0a49d5acda6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CamToWorld_ogv</b> (int c, opengv::bearingVector_t &amp;bearingV, cv::Point_&lt; double &gt; pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#aad5f0cfbbd2017e49b49b0a49d5acda6">CamToWorld_ogv</a> (int c, opengv::bearingVector_t &amp;bearingV, cv::Point_&lt; double &gt; pt2)</td></tr>
+<tr class="memdesc:aad5f0cfbbd2017e49b49b0a49d5acda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[opengv format] image point to bearing vector <br /></td></tr>
 <tr class="separator:aad5f0cfbbd2017e49b49b0a49d5acda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1acde556e1a3e1a439103ccffa7431"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d1acde556e1a3e1a439103ccffa7431"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CamToWorld</b> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a6d1acde556e1a3e1a439103ccffa7431">CamToWorld</a> (int c, cv::Point3_&lt; double &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+<tr class="memdesc:a6d1acde556e1a3e1a439103ccffa7431"><td class="mdescLeft">&#160;</td><td class="mdescRight">[point(3) format] image point to bearing vector <br /></td></tr>
 <tr class="separator:a6d1acde556e1a3e1a439103ccffa7431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1406b95527481a1527016e6ae7b31aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1406b95527481a1527016e6ae7b31aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CamToWorld</b> (int c, cv::Vec&lt; double, 3 &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#af1406b95527481a1527016e6ae7b31aa">CamToWorld</a> (int c, cv::Vec&lt; double, 3 &gt; &amp;pt3, cv::Point_&lt; double &gt; &amp;pt2)</td></tr>
+<tr class="memdesc:af1406b95527481a1527016e6ae7b31aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">[vector(3) format] image point to bearing vector <br /></td></tr>
 <tr class="separator:af1406b95527481a1527016e6ae7b31aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8778a4538527a291be32dbb542d31a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8778a4538527a291be32dbb542d31a10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_M_t_from_min</b> (cv::Matx&lt; double, 6, 1 &gt; M_t_minRep)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a8778a4538527a291be32dbb542d31a10">Set_M_t_from_min</a> (cv::Matx&lt; double, 6, 1 &gt; M_t_minRep)</td></tr>
+<tr class="memdesc:a8778a4538527a291be32dbb542d31a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">set pose(M_t, M_t_min, M_t_inv, MtMc) from minimal homogeneous transformation vector <br /></td></tr>
 <tr class="separator:a8778a4538527a291be32dbb542d31a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f55a4c3d92dda52ecaf3517df5daa12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f55a4c3d92dda52ecaf3517df5daa12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_M_t</b> (cv::Matx&lt; double, 4, 4 &gt; M_t_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a5f55a4c3d92dda52ecaf3517df5daa12">Set_M_t</a> (cv::Matx&lt; double, 4, 4 &gt; M_t_)</td></tr>
+<tr class="memdesc:a5f55a4c3d92dda52ecaf3517df5daa12"><td class="mdescLeft">&#160;</td><td class="mdescRight">set pose(M_t, M_t_min, M_t_inv, MtMc) from 4*4 transformation matrix <br /></td></tr>
 <tr class="separator:a5f55a4c3d92dda52ecaf3517df5daa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989b4a52f4e372d2620ced94fc675b02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a989b4a52f4e372d2620ced94fc675b02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_M_c_from_min</b> (int c, cv::Matx&lt; double, 6, 1 &gt; M_c_minRep)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a989b4a52f4e372d2620ced94fc675b02">Set_M_c_from_min</a> (int c, cv::Matx&lt; double, 6, 1 &gt; M_c_minRep)</td></tr>
+<tr class="memdesc:a989b4a52f4e372d2620ced94fc675b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">set calibration(M_c_min, M_c, camRotations, camOffsetsi) of cam c <br /></td></tr>
 <tr class="separator:a989b4a52f4e372d2620ced94fc675b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39483546d528acc5acdbe500cbf9d23c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39483546d528acc5acdbe500cbf9d23c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_M_c</b> (int c, cv::Matx&lt; double, 4, 4 &gt; M_c_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a39483546d528acc5acdbe500cbf9d23c">Set_M_c</a> (int c, cv::Matx&lt; double, 4, 4 &gt; M_c_)</td></tr>
+<tr class="memdesc:a39483546d528acc5acdbe500cbf9d23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set calibration(M_c_min, M_c, camRotations, camOffsetsi) of cam c <br /></td></tr>
 <tr class="separator:a39483546d528acc5acdbe500cbf9d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aed2953b9921d66fb483286307f25a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aed2953b9921d66fb483286307f25a5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_All_M_c</b> (std::vector&lt; cv::Matx&lt; double, 4, 4 &gt;&gt; M_c_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a8aed2953b9921d66fb483286307f25a5">Set_All_M_c</a> (std::vector&lt; cv::Matx&lt; double, 4, 4 &gt;&gt; M_c_)</td></tr>
+<tr class="memdesc:a8aed2953b9921d66fb483286307f25a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set calibration(M_c_min, M_c, camRotations, camOffsetsi) for all cam <br /></td></tr>
 <tr class="separator:a8aed2953b9921d66fb483286307f25a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65265786747902d0dc2c631c12f54ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65265786747902d0dc2c631c12f54ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_All_M_c_from_min</b> (std::vector&lt; cv::Matx&lt; double, 6, 1 &gt;&gt; M_c_min_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#aa65265786747902d0dc2c631c12f54ca">Set_All_M_c_from_min</a> (std::vector&lt; cv::Matx&lt; double, 6, 1 &gt;&gt; M_c_min_)</td></tr>
+<tr class="memdesc:aa65265786747902d0dc2c631c12f54ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">set calibration(M_c_min, M_c, camRotations, camOffsetsi) for all cam <br /></td></tr>
 <tr class="separator:aa65265786747902d0dc2c631c12f54ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7af083b06c487bb6383d77ea09b41ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7af083b06c487bb6383d77ea09b41ba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add_M_c</b> (cv::Matx&lt; double, 4, 4 &gt; M_c_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#af7af083b06c487bb6383d77ea09b41ba">Add_M_c</a> (cv::Matx&lt; double, 4, 4 &gt; M_c_)</td></tr>
+<tr class="memdesc:af7af083b06c487bb6383d77ea09b41ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">add MCS camera pose(nrCams++) <br /></td></tr>
 <tr class="separator:af7af083b06c487bb6383d77ea09b41ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2b4de35eccc1ed3948568efa3cdada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef2b4de35eccc1ed3948568efa3cdada"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add_M_c_from_min</b> (cv::Matx&lt; double, 6, 1 &gt; M_c_min_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#aef2b4de35eccc1ed3948568efa3cdada">Add_M_c_from_min</a> (cv::Matx&lt; double, 6, 1 &gt; M_c_min_)</td></tr>
+<tr class="memdesc:aef2b4de35eccc1ed3948568efa3cdada"><td class="mdescLeft">&#160;</td><td class="mdescRight">add MCS camera pose(nrCams++) <br /></td></tr>
 <tr class="separator:aef2b4de35eccc1ed3948568efa3cdada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dff9ed09343e4b39441683477709e2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dff9ed09343e4b39441683477709e2b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add_M_c_from_min_and_IO</b> (cv::Matx&lt; double, 6, 1 &gt; M_c_min_, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a0dff9ed09343e4b39441683477709e2b">Add_M_c_from_min_and_IO</a> (cv::Matx&lt; double, 6, 1 &gt; M_c_min_, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+<tr class="memdesc:a0dff9ed09343e4b39441683477709e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">add MCS camera pose and set the last one to the actual pose <br /></td></tr>
 <tr class="separator:a0dff9ed09343e4b39441683477709e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f5bf5167933561ffde33350312509b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70f5bf5167933561ffde33350312509b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_M_c_from_min_and_IO</b> (int c, cv::Matx&lt; double, 6, 1 &gt; M_c_min_, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a70f5bf5167933561ffde33350312509b">Set_M_c_from_min_and_IO</a> (int c, cv::Matx&lt; double, 6, 1 &gt; M_c_min_, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+<tr class="memdesc:a70f5bf5167933561ffde33350312509b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set calibration of cam c with camModels <br /></td></tr>
 <tr class="separator:a70f5bf5167933561ffde33350312509b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b9a082a2aaf50d1113a32c06e02fe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50b9a082a2aaf50d1113a32c06e02fe7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_IO</b> (int c, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a50b9a082a2aaf50d1113a32c06e02fe7">Set_IO</a> (int c, <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> camM)</td></tr>
+<tr class="memdesc:a50b9a082a2aaf50d1113a32c06e02fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set camModels from IO <br /></td></tr>
 <tr class="separator:a50b9a082a2aaf50d1113a32c06e02fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd27e6e2abbb9e6785b1d562eb863a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafd27e6e2abbb9e6785b1d562eb863a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set_IOs</b> (std::vector&lt; <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> &gt; camModels_)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#aafd27e6e2abbb9e6785b1d562eb863a0">Set_IOs</a> (std::vector&lt; <a class="el" href="classMultiColSLAM_1_1cCamModelGeneral__.html">cCamModelGeneral_</a> &gt; camModels_)</td></tr>
+<tr class="memdesc:aafd27e6e2abbb9e6785b1d562eb863a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">set camModels from IO <br /></td></tr>
 <tr class="separator:aafd27e6e2abbb9e6785b1d562eb863a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06f07ebb253231e62be662b271b29fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad06f07ebb253231e62be662b271b29fa"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNrCams</b> ()</td></tr>
@@ -180,19 +200,24 @@ cv::Matx&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom
 cv::Matx&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get_M_c</b> (int c)</td></tr>
 <tr class="separator:a4de21b71db310b287cc666bed789109e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f8e9e1e66b1416078d416acf5f1f39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87f8e9e1e66b1416078d416acf5f1f39"></a>
-Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><b>Get_R_c_ogv</b> (int c)</td></tr>
+Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a87f8e9e1e66b1416078d416acf5f1f39">Get_R_c_ogv</a> (int c)</td></tr>
+<tr class="memdesc:a87f8e9e1e66b1416078d416acf5f1f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">return camRotation for cam c with opengv setup <br /></td></tr>
 <tr class="separator:a87f8e9e1e66b1416078d416acf5f1f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f45ac2f302bea8db20e734fc0225996"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f45ac2f302bea8db20e734fc0225996"></a>
-Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><b>Get_t_c_ogv</b> (int c)</td></tr>
+Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a1f45ac2f302bea8db20e734fc0225996">Get_t_c_ogv</a> (int c)</td></tr>
+<tr class="memdesc:a1f45ac2f302bea8db20e734fc0225996"><td class="mdescLeft">&#160;</td><td class="mdescRight">return camOffset for cam c with opengv setup <br /></td></tr>
 <tr class="separator:a1f45ac2f302bea8db20e734fc0225996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab028b78c5dab72629fd74ec15443ade9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab028b78c5dab72629fd74ec15443ade9"></a>
-opengv::rotations_t&#160;</td><td class="memItemRight" valign="bottom"><b>Get_All_R_c_ogv</b> ()</td></tr>
+opengv::rotations_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#ab028b78c5dab72629fd74ec15443ade9">Get_All_R_c_ogv</a> ()</td></tr>
+<tr class="memdesc:ab028b78c5dab72629fd74ec15443ade9"><td class="mdescLeft">&#160;</td><td class="mdescRight">return camRotation for all cameras with opengv setup <br /></td></tr>
 <tr class="separator:ab028b78c5dab72629fd74ec15443ade9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb6629eb3f8395a9bedaa36135a9905e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb6629eb3f8395a9bedaa36135a9905e"></a>
-opengv::translations_t&#160;</td><td class="memItemRight" valign="bottom"><b>Get_All_t_c_ogv</b> ()</td></tr>
+opengv::translations_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#aeb6629eb3f8395a9bedaa36135a9905e">Get_All_t_c_ogv</a> ()</td></tr>
+<tr class="memdesc:aeb6629eb3f8395a9bedaa36135a9905e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return camRotation for all cameras with opengv setup <br /></td></tr>
 <tr class="separator:aeb6629eb3f8395a9bedaa36135a9905e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65429b5a22428e060a0cb86c440675d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65429b5a22428e060a0cb86c440675d2"></a>
-std::vector&lt; cv::Matx&lt; double, 4, 4 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get_All_M_c</b> ()</td></tr>
+std::vector&lt; cv::Matx&lt; double, 4, 4 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMultiColSLAM_1_1cMultiCamSys__.html#a65429b5a22428e060a0cb86c440675d2">Get_All_M_c</a> ()</td></tr>
+<tr class="memdesc:a65429b5a22428e060a0cb86c440675d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return M_c for all camera <br /></td></tr>
 <tr class="separator:a65429b5a22428e060a0cb86c440675d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8caf0456b22287af685f936c389880"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c8caf0456b22287af685f936c389880"></a>
 cv::Matx&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get_MtMc</b> (int cam)</td></tr>
@@ -201,6 +226,42 @@ cv::Matx&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom
 cv::Matx&lt; double, 4, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Get_MtMc_inv</b> (int cam)</td></tr>
 <tr class="separator:a36c683b72ee7277016e2ff563acc4b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3b69acbfaf8be51d44ba4b6fa59afa13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MultiColSLAM::cMultiCamSys_::WorldToCamHom_fast </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Vec&lt; double, 4 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pt4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Vec&lt; double, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pt2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[vector(4-&gt;2) format] world point pt3을 world frame에서 body frame로, body frame에서 camera frame로, camera frame에서 image coordinate로 바꾼다. 4-th element를 미리 넣어줘서 Hom(ogeneous)라 붙인듯 하다. </p>
+<dl class="section return"><dt>Returns</dt><dd>camera frame에서 y좌표가 0이하이면 true! &ndash;&gt; why? </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="cam__system__omni_8h_source.html">cam_system_omni.h</a></li>
 </ul>

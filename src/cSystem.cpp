@@ -170,8 +170,6 @@ namespace MultiColSLAM
 				mirrorMasks.push_back(cv::Mat::ones(cv::Size(Iw, Ih), CV_8UC1));
 
 			camModel.SetMirrorMasks(mirrorMasks);
-
-			camModel.SetMirrorMasks(mirrorMasks);
 			camModels[c] = camModel;
 
 		}

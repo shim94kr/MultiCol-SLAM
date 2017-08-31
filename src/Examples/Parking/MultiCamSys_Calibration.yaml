@@ -2,43 +2,42 @@
 
 # Multi-camera calibration matrices (M_c)
 # rotation elements are in cayley parametrization
-CameraSystem.nrCams: 1
+CameraSystem.nrCams: 4
 
-CameraSystem.cam1_1: 0     #r1
-CameraSystem.cam1_2: 0          #r2
-CameraSystem.cam1_3: 0       #r3
-CameraSystem.cam1_4: 0               #t1
-CameraSystem.cam1_5: 0             #t2
-CameraSystem.cam1_6: 0              #t3
+#CameraSystem.cam1_1: 0     #r1
+#CameraSystem.cam1_2: 0          #r2
+#CameraSystem.cam1_3: 0       #r3
+#CameraSystem.cam1_4: 0               #t1
+#CameraSystem.cam1_5: 0             #t2
+#CameraSystem.cam1_6: 0              #t3
 
 # camera back -> front
-#CameraSystem.cam1_1: 1.092827439           #r1
-#CameraSystem.cam1_2: 0.1236173076          #r2
-#CameraSystem.cam1_3: -0.1034763826         #r3
-#CameraSystem.cam1_4: -0.040407             #t1
-#CameraSystem.cam1_5: -0.58665              #t2
-#CameraSystem.cam1_6: 0.16890475            #t3
+CameraSystem.cam1_1: 1.092827439           #r1
+CameraSystem.cam1_2: 0.1236173076          #r2
+CameraSystem.cam1_3: -0.1034763826         #r3
+CameraSystem.cam1_4: -0.040407             #t1
+CameraSystem.cam1_5: -0.58665              #t2
+CameraSystem.cam1_6: 0.16890475            #t3
 # camera right -> right    
-#CameraSystem.cam2_1: 0.4472702914          #r1
-#CameraSystem.cam2_2: -0.02536574268        #r2
-#CameraSystem.cam2_3: -0.07481092039        #r3
-#CameraSystem.cam2_4: -0.160586             #t1
-#CameraSystem.cam2_5: -0.2045485            #t2
-#CameraSystem.cam2_6: 0.2190035             #t3
+CameraSystem.cam2_1: 0.4472702914          #r1
+CameraSystem.cam2_2: -0.02536574268        #r2
+CameraSystem.cam2_3: -0.07481092039        #r3
+CameraSystem.cam2_4: -0.160586             #t1
+CameraSystem.cam2_5: -0.2045485            #t2
+CameraSystem.cam2_6: 0.2190035             #t3
 # camera left -> rear    
-#CameraSystem.cam3_1: 1.173948597           #r1
-#CameraSystem.cam3_2: 0.1015130617          #r2
-#CameraSystem.cam3_3: -0.07437179555        #r3
-#CameraSystem.cam3_4: 0.002856375           #t1
-#CameraSystem.cam3_5: -0.6146425            #t2
-#CameraSystem.cam3_6: 0.239688              #t3
+CameraSystem.cam3_1: 1.173948597           #r1
+CameraSystem.cam3_2: 0.1015130617          #r2
+CameraSystem.cam3_3: -0.07437179555        #r3
+CameraSystem.cam3_4: 0.002856375           #t1
+CameraSystem.cam3_5: -0.6146425            #t2
+CameraSystem.cam3_6: 0.239688              #t3
 
 # camera left
-#CameraSystem.cam4_1: 0.39387543373948     #r1
-#CameraSystem.cam4_2: -0.0094450           #r2
-#CameraSystem.cam4_3: -0.08365781984       #r3
-#CameraSystem.cam4_4: 0.18667              #t1
-#CameraSystem.cam4_5: -0.267335            #t2
-#CameraSystem.cam4_6: 0.215776             #t3
-
+CameraSystem.cam4_1: 0.39387543373948     #r1
+CameraSystem.cam4_2: -0.0094450           #r2
+CameraSystem.cam4_3: -0.08365781984       #r3
+CameraSystem.cam4_4: 0.18667              #t1
+CameraSystem.cam4_5: -0.267335            #t2
+CameraSystem.cam4_6: 0.215776             #t3
 
