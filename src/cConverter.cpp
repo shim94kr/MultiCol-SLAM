@@ -28,7 +28,6 @@
 
 namespace MultiColSLAM
 {
-	/** \brief return inverse matrix of M = [R t] */
 	cv::Matx44d cConverter::invMat(const cv::Matx44d& M)
 	{
 		cv::Matx33d R = M.get_minor<3, 3>(0, 0);

@@ -47,7 +47,7 @@ namespace MultiColSLAM
 	public:
 		/**
 		* \brief Construtors
-		*/
+		**/
 		cCamModelGeneral_() :
 			c(1),
 			d(0),
@@ -67,7 +67,7 @@ namespace MultiColSLAM
 		* \param[in] cdeu0v0[] : affine parameter + principal point
 		* \param[in] p : forward polynomials
 		* \param[in] invP : inverse polynomials
-		*/
+		**/
 		cCamModelGeneral_(double cdeu0v0[], cv::Mat_<double> p_, cv::Mat_<double> invP_) :
 			c(cdeu0v0[0]),
 			d(cdeu0v0[1]),
@@ -93,7 +93,7 @@ namespace MultiColSLAM
 		* \param[in] invP : inverse polynomials
 		* \param[in] Iw : image width
 		* \param[in] Ih : image height
-		*/
+		**/
 		cCamModelGeneral_(double cdeu0v0[],
 			cv::Mat_<double> p_, cv::Mat_<double> invP_,
 			double Iw_, double Ih_) :
@@ -118,43 +118,32 @@ namespace MultiColSLAM
 
 		~cCamModelGeneral_(){}
 		/**
-		* \brief [double format] Get 3D scene point as an input, return image point as pixel format.
-		*/
+		* \brief 
+		*
+		*
+		*
+		**/
 		void WorldToImg(const double& x, const double& y, const double& z,    // 3D scene point
 			double& u, double& v) const;
-		/**
-		* \brief [Point format] Get 3D scene point as an input, return image point as pixel format.
-		*/
+
 		void WorldToImg(const cv::Point3_<double>& X,			// 3D scene point
 			cv::Point_<double>& m);
-		/**
-		* \brief [Vector format(d)] Get 3D scene point as an input, return image point as pixel format.
-		*/
+
 		void WorldToImg(const cv::Vec3d& X,			// 3D scene point
 			cv::Vec2d& m);
-		/**
-		* \brief [Vector format(f)] Get 3D scene point as an input, return image point as pixel format.
-		*/
+
 		void WorldToImg(const cv::Vec3d& X,			// 3D scene point
 			cv::Vec2f& m);
-		/**
-		* \brief [double format] using u and v as an input, return bearing vector(x,y,z)
-		*/
-		void ImgToWorld(double& x, double& y, double& z,			// 3D scene point
+
+		void ImgToWorld(double& x, double& y, double& z,						// 3D scene point
 			const double& u, const double& v);
-		/**
-		* \brief [point format] using u and v as an input, return bearing vector(x,y,z)
-		*/
-		void ImgToWorld(cv::Point3_<double>& X,					// 3D scene point
+
+		void ImgToWorld(cv::Point3_<double>& X,						// 3D scene point
 			const cv::Point_<double>& m);
-		/**
-		* \brief [vector format] using u and v as an input, return bearing vector(x,y,z)
-		*/
+
 		void ImgToWorld(cv::Vec3d& X,						// 3D scene point
 			const cv::Vec2d& m);
-		/**
-		* \brief return undistort point(out_ptx, out_pty) with known scale factor
-		*/
+
 		void undistortPointsOcam(
 			const double& ptx, const double& pty,
 			const double& undistScaleFactor,
@@ -168,9 +157,6 @@ namespace MultiColSLAM
 			out_pty = -y / z * undistScaleFactor;
 		}
 
-		/**
-		* \brief using p1, return distort point(dist_ptx, dist_pty) with pixel format
-		*/
 		void distortPointsOcam(
 			const double& ptx, const double& pty,
 			double& dist_ptx, double& dist_pty)
@@ -195,7 +181,6 @@ namespace MultiColSLAM
 		double GetWidth() { return Iwidth; }
 		double GetHeight() { return Iheight; }
 
-		/** \brief Mirror Mask는 곡면 바깥부분을 제외시키는 역할을 한다. 이것으로 차체를 가리면 될 것 같다. */
 		cv::Mat GetMirrorMask(int pyrL) { return mirrorMasks[pyrL]; }
 		void SetMirrorMasks(std::vector<cv::Mat> mirrorMasks_) { mirrorMasks = mirrorMasks_; }
 
@@ -257,25 +242,24 @@ namespace MultiColSLAM
 
 	protected:
 
-		/** \brief component of affine matrix*/
+		// affin
 		double c;
 		double d;
 		double e;
-		/** \brief determinent of affine matrix = c-d*e */
 		double invAffine;
 		cv::Mat_<double> cde1;
-		/** \brief principal*/
+		// principal
 		double u0;
 		double v0;
-		/** \brief polynomial */
+		// polynomial
 		double p1;
 		cv::Mat_<double> p;
 		int p_deg;
-		/** \brief inverse polynomial */
+		// inverse polynomial
 		cv::Mat_<double> invP;
 
 		int invP_deg;
-		/** \brief image width and height */
+		// image width and height
 		double Iwidth;
 		double Iheight;
 		// mirror mask on pyramid levels

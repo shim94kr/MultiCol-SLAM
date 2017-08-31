@@ -241,7 +241,6 @@ var NAVTREEINDEX3 =
 "files.html":[2,0],
 "functions.html":[1,3,0],
 "functions_func.html":[1,3,1],
-"functions_vars.html":[1,3,2],
 "g2o__MultiCol__sim3__expmap_8h_source.html":[2,0,0,21],
 "g2o__MultiCol__vertices__edges_8h_source.html":[2,0,0,22],
 "hierarchy.html":[1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "mdBRIEFextractor1_8h_source.html":[2,0,0,24],
 "mdBRIEFextractorOct_8h_source.html":[2,0,0,25],
 "mdBRIEFextractor_8h_source.html":[2,0,0,23],
-"misc_8h_source.html":[2,0,0,26]
+"misc_8h_source.html":[2,0,0,26],
+"namespaceMultiColSLAM.html":[0,0,0]
 };

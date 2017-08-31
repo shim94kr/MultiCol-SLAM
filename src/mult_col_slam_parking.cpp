@@ -87,7 +87,7 @@ int main(int argc, char **argv)
 	// --------------
 	// 4. Load image paths and timestamps
 	// --------------
-	vector<vector<string>> imgFilenames; // time * cam * path
+	vector<vector<string>> imgFilenames;
 	vector<double> timestamps;
 	LoadImagesAndTimestamps(startFrame, endFrame, path2imgs, imgFilenames, timestamps);
 

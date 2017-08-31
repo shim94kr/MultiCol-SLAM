@@ -317,7 +317,7 @@ namespace MultiColSLAM
 	{
 	public:
 		ExtractorNode_mdbrief() :bNoMore(false){}
-		/** \brief while making tree with descriptors, if node contains more than one point, subdivide*/
+
 		void DivideNode(ExtractorNode_mdbrief &n1,
 			ExtractorNode_mdbrief &n2,
 			ExtractorNode_mdbrief &n3,
@@ -326,7 +326,6 @@ namespace MultiColSLAM
 		std::vector<cv::KeyPoint> vKeys;
 		cv::Point2i UL, UR, BL, BR;
 		std::list<ExtractorNode_mdbrief>::iterator lit;
-		/** \brief indicator whether the node only contains one point. */
 		bool bNoMore;
 	};
 

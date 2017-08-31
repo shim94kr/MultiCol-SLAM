@@ -106,12 +106,12 @@ namespace MultiColSLAM
 	/**
 	* evaluate a polynom using Horner
 	*
-	* \param[in] coeffs  T* of coefficients
-	* \param[in] s		 number of polynomial coefficients
-	* \param[in] x		 x value to evaluate
+	* @param coeffs  T* of coefficients
+	* @param s		 number of polynomial coefficients
+	* @param x		 x value to evaluate
 	*
-	* \return function value
-	**/
+	* @return      function value
+	*/
 	inline double horner(
 		const double* coeffs, const int& s, const double& x)
 	{
@@ -185,7 +185,7 @@ namespace MultiColSLAM
 	/**
 	* 4x4 homogeneous transformation matrix to Cayley + translation representation
 	*
-	* @param[in] T	4x4 homogeneous transformation matrix
+	* @param T	4x4 homogeneous transformation matrix
 	*
 	* @return c  6x1 Cayley parameters and translation
 	*/
