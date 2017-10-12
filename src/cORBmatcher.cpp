@@ -586,7 +586,8 @@ int cORBmatcher::SearchForInitialization(cMultiFrame &F1,
 
     int nmatches = 0;
     vnMatches12 = vector<int>(F1.mvKeys.size(),-1);
-
+    
+    // HISTO_LENGTH : 30
     vector<int> rotHist[HISTO_LENGTH];
 	for (int i = 0; i < HISTO_LENGTH; ++i)
         rotHist[i].reserve(500);

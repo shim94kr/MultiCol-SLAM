@@ -865,6 +865,7 @@ void mdBRIEFextractorOct::ComputeKeyPointsOctTree(
 {
 	allKeypoints.resize(numlevels);
 
+	// number of cell in a border.
 	const double W = 30.0;
 	Ptr<AgastFeatureDetector> ag = 
 		AgastFeatureDetector::create(fastThreshold, true, fastAgastType);
@@ -907,7 +908,7 @@ void mdBRIEFextractorOct::ComputeKeyPointsOctTree(
 					continue;
 				if (maxX>maxBorderX)
 					maxX = maxBorderX;
-
+				// Keypoints in this cell!
 				vector<cv::KeyPoint> vKeysCell;
 				if (useAgast)
 					ag->detect(mvImagePyramid[level].rowRange(iniY, maxY).colRange(iniX, maxX), 
@@ -1161,6 +1162,7 @@ void mdBRIEFextractorOct::ComputePyramid(
 {
 	for (int level = 0; level < numlevels; ++level)
 	{
+		// the higher level, the smaller size.
 		double scale = mvInvScaleFactor[level];
 		Size sz(cvRound((double)image.cols*scale), cvRound((double)image.rows*scale));
 		Size wholeSize(sz.width + EDGE_THRESHOLD * 2, sz.height + EDGE_THRESHOLD * 2);
@@ -1259,6 +1261,7 @@ void mdBRIEFextractorOct::operator()(
 	ComputePyramid(image, mask);
 
 	vector < vector<KeyPoint> > allKeypoints;
+	// Compute KeyPoint(AGAST, Harris) and pick out the representative points in Octtree.
 	ComputeKeyPointsOctTree(allKeypoints);
 	//ComputeKeyPointsOld(allKeypoints);
 

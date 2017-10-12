@@ -90,6 +90,7 @@ namespace MultiColSLAM
 	}
 
 	bool cMultiCamSys_::WorldToCamHom_fast(int c,
+
 		cv::Vec<double, 4>& pt4,
 		cv::Vec<double, 2>& pt2)
 	{
@@ -110,7 +111,7 @@ namespace MultiColSLAM
 			pt2(0), pt2(1));
 		return ptRot(2, 0) <= 0.0;
 	}
-
+	
 	void cMultiCamSys_::WorldToCamHom_fast(int c,
 		cv::Vec<double, 3>& pt3,
 		cv::Vec<double, 2>& pt2)
@@ -203,10 +204,13 @@ namespace MultiColSLAM
 		M_c_min[c] = M_c_minRep;
 		M_c[c] = cayley2hom<double>(M_c_minRep);
 		//M_c[c] = rodrigues2hom<double>(M_c_minRep);
+	
+		/* Rect_(x, y, width, height)*/
 		cv::Mat rTemp = cv::Mat(M_c[c])(cv::Rect(0, 0, 3, 3));
 		cv::Mat tTemp = cv::Mat(M_c[c])(cv::Rect(3, 0, 1, 3));
 		// to opengv
 		Eigen::Matrix3d rotTemp;
+		/* cv2eigen(Mat &src, Eigen &dst) */
 		cv::cv2eigen<double>(rTemp, rotTemp);
 		camRotations[c] = rotTemp;
 

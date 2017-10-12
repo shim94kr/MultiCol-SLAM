@@ -190,8 +190,8 @@ namespace MultiColSLAM
 		vector<Mat> sizeDefvec;
 		buildPyramid(sizeDef, sizeDefvec, pyrLevel);
 		// Mirror mask for pyramid
-		float offset[4] = { 22.0f, 10.0f, 5.0f, 1.0f };
-		//float offset[4] = { 50.0f, 50.0f, 50.0f, 50.0f};
+		//float offset[4] = { 22.0f, 10.0f, 5.0f, 1.0f };
+		float offset[4] = { 50.0f, 50.0f, 50.0f, 50.0f};
 		for (int mIdx = 0; mIdx < pyrLevel; mIdx++)
 		{
 			if (mIdx != 0)
@@ -208,6 +208,7 @@ namespace MultiColSLAM
 				for (int j = 0; j < w; ++j)
 				{
 					float ans = sqrt((float)pow(i - u0, 2) + (float)pow(j - v0, 2));
+					// if it is in mirror mask, set 255 / isn't, set 0
 					if (ans < (u0 + offset[mIdx]))
 						tempMask.at<uchar>(i, j) = 255;
 					else

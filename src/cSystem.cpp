@@ -147,10 +147,10 @@ namespace MultiColSLAM
 			cv::FileStorage fSettings(calib_data, cv::FileStorage::READ);
 			int nrpol = (int)fSettings["Camera.nrpol"];
 			int nrinvpol = (int)fSettings["Camera.nrinvpol"];
-			cv::Mat_<double> poly = cv::Mat::zeros(5, 1, CV_64F);
+			cv::Mat_<double> poly = cv::Mat::zeros(nrpol, 1, CV_64F);
 			for (int i = 0; i < nrpol; ++i)
 				poly.at<double>(i, 0) = fSettings["Camera.a" + to_string(i)];
-			cv::Mat_<double>  invpoly = cv::Mat::zeros(12, 1, CV_64F);
+			cv::Mat_<double>  invpoly = cv::Mat::zeros(nrinvpol, 1, CV_64F);
 			for (int i = 0; i < nrinvpol; ++i)
 				invpoly.at<double>(i, 0) = fSettings["Camera.pol" + to_string(i)];
 
@@ -168,8 +168,6 @@ namespace MultiColSLAM
 				CreateMirrorMask(camModel, 4, mirrorMasks);
 			else
 				mirrorMasks.push_back(cv::Mat::ones(cv::Size(Iw, Ih), CV_8UC1));
-
-			camModel.SetMirrorMasks(mirrorMasks);
 
 			camModel.SetMirrorMasks(mirrorMasks);
 			camModels[c] = camModel;
@@ -207,7 +205,6 @@ namespace MultiColSLAM
 		//		mbDeactivateLocalizationMode = false;
 		//	}
 		//}
-
 		// Check reset
 		{
 			unique_lock<mutex> lock(mMutexReset);

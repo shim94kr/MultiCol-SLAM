@@ -1,3 +1,0 @@
-/root/Github/local_repository/MultiCol-SLAM/ThirdParty/g2o/build/CMakeFiles/edit_cache.dir
-/root/Github/local_repository/MultiCol-SLAM/ThirdParty/g2o/build/CMakeFiles/rebuild_cache.dir
-/root/Github/local_repository/MultiCol-SLAM/ThirdParty/g2o/build/CMakeFiles/g2o.dir

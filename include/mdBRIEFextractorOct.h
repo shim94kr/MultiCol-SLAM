@@ -317,7 +317,7 @@ namespace MultiColSLAM
 	{
 	public:
 		ExtractorNode_mdbrief() :bNoMore(false){}
-
+		/** \brief subdivide the tree of keypoints, until all node contains no more than one point*/
 		void DivideNode(ExtractorNode_mdbrief &n1,
 			ExtractorNode_mdbrief &n2,
 			ExtractorNode_mdbrief &n3,
@@ -326,6 +326,7 @@ namespace MultiColSLAM
 		std::vector<cv::KeyPoint> vKeys;
 		cv::Point2i UL, UR, BL, BR;
 		std::list<ExtractorNode_mdbrief>::iterator lit;
+		/** \brief indicator whether the node only contains one point. */
 		bool bNoMore;
 	};
 
@@ -335,7 +336,7 @@ namespace MultiColSLAM
 	public:
 
 		enum { HARRIS_SCORE = 0, FAST_SCORE = 1 };
-
+		/** \brief set # of features for each levels of image pyramid */
 		mdBRIEFextractorOct(int _nfeatures = 1000,
 			float _scaleFactor = 1.2,
 			int _nlevels = 8,
@@ -351,7 +352,7 @@ namespace MultiColSLAM
 			int _descSize = 32);
 
 		~mdBRIEFextractorOct(){}
-
+		/** \brief Compute the ORB descriptors on an image */
 		void operator()(
 			cv::InputArray _image,
 			cv::InputArray _mask,
@@ -368,11 +369,12 @@ namespace MultiColSLAM
 		int GetDescriptorSize() { return descSize; }
 
 	protected:
+	/** \brief compute image pyramid with associated mask */
 		void ComputePyramid(cv::Mat image, cv::Mat Mask = cv::Mat());
-
+	/** \brief compute keypoints(AGAST,HARRIS) and pick out the representative points in OctTree */
 		void ComputeKeyPointsOctTree(
 			std::vector<std::vector<cv::KeyPoint> >& allKeypoints);
-
+	/** \brief distribute keypoints with a tree structure to make the balance in whole image. */
 		std::vector<cv::KeyPoint> DistributeOctTree(
 			const std::vector<cv::KeyPoint>& vToDistributeKeys,
 			const int &minX,
@@ -407,12 +409,13 @@ namespace MultiColSLAM
 		int fastAgastType;
 		bool learnMasks;
 		bool do_dBrief;
-
+		/** \brief geometric series : nfeatures*[(1-r)/[(1-r)^numlevels]*[factor^(curlevel)] */
 		std::vector<int> mnFeaturesPerLevel;
-
+		/** \brief calculate the end of a row in a circular patch. This is for orientation*/
 		std::vector<int> umax;
-
+		/** \brief save scale in increasing order (0: 1, 1: 1.2, 2: 1.2^2) */
 		std::vector<double> mvScaleFactor;
+		/** \brief save scale in decreasing order (0: 1, 1: 1/1.2, 2: 1/(1.2)^2) */
 		std::vector<double> mvInvScaleFactor;
 
 		std::vector<cv::Mat> mvImagePyramid;

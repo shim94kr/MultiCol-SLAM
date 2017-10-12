@@ -57,15 +57,15 @@ namespace MultiColSLAM
 	{
 	public:
 
-		// Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads.
+		/** \brief Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads. */
 		cSystem(const string &strVocFile, const string &strSettingsFile,
 			const string& path2MCScalibrationFiles, const bool bUseViewer = true);
-
+		/** \brief setting calibration parameter to cam System */
 		void LoadMCS(const string path2calibrations, cMultiCamSys_& camSystem);
 
-		// Proccess the given frames. Images must be synchronized. The camera calibration needs to be known
-		// Input images: RGB (CV_8UC3) or grayscale (CV_8U). RGB is converted to grayscale.
-		// Returns the camera pose (empty if tracking fails).
+		/** Proccess the given frames. Images must be synchronized. The camera calibration needs to be known
+		* Input images: RGB (CV_8UC3) or grayscale (CV_8U). RGB is converted to grayscale.
+		* Returns the camera pose (empty if tracking fails). */
 		cv::Matx44d TrackMultiColSLAM(const std::vector<cv::Mat>& imgSet, const double &timestamp);
 
 		// This stops local mapping thread (map building) and performs only camera tracking.

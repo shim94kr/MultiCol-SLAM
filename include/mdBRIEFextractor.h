@@ -43,16 +43,17 @@ public:
     
     enum { HARRIS_SCORE=0, FAST_SCORE=1 };
 
-	//mdBRIEFextractor(
-	//	int _nfeatures = 1000,
-	//	double _scaleFactor = 1.2, 
-	//	int _nlevels = 8, 
-	//	int _scoreType = HARRIS_SCORE,
-	//	int _fastTh = 20,
-	//	bool _learnMask = false,
-	//	bool _useAgast = false,
-	//	int _fastAgastType = 2,
-	//	int _descSize = 32);
+	/** for parking_lot 
+	*  mdBRIEFextractor(int _nfeatures = 400,
+	*	double _scaleFactor = 2.5, 
+	*	int _nlevels = 8, 
+	*	int _scoreType = HARRIS_SCORE,
+	*	int _fastTh = 20,
+	*	bool _learnMask = false,
+	*	bool _useAgast = false,
+	*	int _fastAgastType = 2,
+	*	int _descSize = 32);
+	*/
 	mdBRIEFextractor(int _nfeatures = 1000,
 		float _scaleFactor = 1.2,
 		int _nlevels = 8,
@@ -68,7 +69,6 @@ public:
 
 	~mdBRIEFextractor(){}
 
-    // Compute the ORB features and descriptors on an image
 	void operator()(
 		cv::InputArray _image,
 		cv::InputArray _mask,
@@ -94,9 +94,8 @@ protected:
 	int descriptorType() const;
 	// returns the default norm type
 	int defaultNorm() const;
-
     void ComputePyramid(cv::Mat image, cv::Mat Mask=cv::Mat());
-    void ComputeKeyPoints(std::vector<std::vector<cv::KeyPoint> >& allKeypoints);
+    void ComputeKeyPointsOctTree(std::vector<std::vector<cv::KeyPoint> >& allKeypoints);
 
     std::vector<cv::Point> pattern;
 

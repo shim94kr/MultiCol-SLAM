@@ -150,7 +150,7 @@ namespace MultiColSLAM
 					static_cast<double>(keyPtsTemp[c][i].pt.y));
 				keyRaysTemp[c][i] = cv::Vec3d(x, y, z);
 			}
-
+			// FRAME_GRID COLS: 64, ROWS: 48
 			mfGridElementWidthInv[c] = static_cast<double>(FRAME_GRID_COLS) /
 				static_cast<double>(mnMaxX[c] - mnMinX[c]);
 			mfGridElementHeightInv[c] = static_cast<double>(FRAME_GRID_ROWS) /
@@ -233,7 +233,7 @@ namespace MultiColSLAM
 		const double minDistance = pMP->GetMinDistanceInvariance();
 
 		cv::Matx44d Tcw = camSystem.Get_MtMc(cam);
-		const cv::Vec3d PO = P - cv::Vec3d(Tcw(0, 3), Tcw(1, 3), Tcw(2, 3));
+		const cv::Vec3d PO = P - cv::Vec3d(Tcw(0, 3), Tcw(1, 3), Tcw(2, 3)); // camera centor to world Pos
 		const double dist = cv::norm(PO);
 
 		if (dist < minDistance || dist > maxDistance)

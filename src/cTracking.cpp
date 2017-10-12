@@ -252,6 +252,8 @@ bool cTracking::Track()
     }
     else
     {
+	if (mCurrentFrame.mnId == 106)
+		printf ("here is the problem");
         // System is initialized. Track Frame.
 		bool bOK = false;
 		//if (_kbhit())
@@ -871,11 +873,13 @@ bool cTracking::TrackLocalMap()
 
     // Decide if the tracking was succesful
     // More restrictive if there was a relocalization recently
-	if (mCurrentFrame.mnId < mnLastRelocFrameId + mMaxFrames && mnMatchesInliers < 15)
+	//if (mCurrentFrame.mnId < mnLastRelocFrameId + mMaxFrames && mnMatchesInliers < 15)
+	if (mCurrentFrame.mnId < mnLastRelocFrameId + mMaxFrames && mnMatchesInliers < 3)
         return false;
 
 
-	if (mnMatchesInliers < 15)
+	//if (mnMatchesInliers < 15)
+	if (mnMatchesInliers < 3)
         return false;
 	else
 	{

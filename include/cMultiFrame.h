@@ -59,6 +59,8 @@ namespace MultiColSLAM
 		cMultiFrame();
 		cMultiFrame(const cMultiFrame &frame); // copy constructor
 
+		/** Extract features(orb or mdBRIEF) and save it to keyPts and keyRays for each cam,		    * save it to mvKeys and mvKeysRays for whole camera (we can use keypoint_to_cam[global_feat_idx]=c, cont_idx_to_local_cam_idx[global_feat_idx]=local_feat_idx)
+		* and assign features to grid cells */
 		cMultiFrame(const std::vector<cv::Mat>& images_,
 			const double &timeStamp,
 			std::vector<mdBRIEFextractorOct*> extractor,
@@ -131,6 +133,7 @@ namespace MultiColSLAM
 		// Compute the cell of a keypoint (return false if outside the grid)
 		bool PosInGrid(const int& cam, cv::KeyPoint &kp, int &posX, int &posY);
 
+		/** \brief return global indices of detected features around (x,y) with radius r at corresponding pyramid level. This is performed with Grid cell structure. */
 		std::vector<size_t> GetFeaturesInArea(const int& cam,
 			const double &x, const double  &y,
 			const double  &r,

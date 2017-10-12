@@ -2,38 +2,62 @@
 
 # Camera Parameters. Adjust them!
 # Camera calibration parameters camera back
-Camera.Iw: 960
+Camera.Iw: 1280
 Camera.Ih: 720
 
 # hyperparameters
-Camera.nrpol: 7
-Camera.nrinvpol: 7
+#Camera.nrpol: 5
+#Camera.nrinvpol: 12
 
 # forward polynomial f(\rho)
-Camera.a0: 0.0
-Camera.a1: 1.0084 
-Camera.a2: -0.0177
-Camera.a3: 0.1488
-Camera.a4: -0.1409
-Camera.a5: 0.0895
-Camera.a6: -0.0206
+#Camera.a0: -209.200757992065
+#Camera.a1: 0.0 
+#Camera.a2: 0.00213741670953883
+#Camera.a3: -4.2203617319086e-06
+#Camera.a4: 1.77146086919594e-08
 
 # backward polynomial rho(\theta)
-Camera.pol0: 0.0003
-Camera.pol1: 0.9905
-Camera.pol2: 0.0073
-Camera.pol3: -0.088
-Camera.pol4: 0.0441
-Camera.pol5: -0.0143
-Camera.pol6: 0.0024
+#Camera.pol0: 293.667187375663
+#Camera.pol1: 149.982043337335
+#Camera.pol2: -10.448650568161
+#Camera.pol3: 28.2295300683376
+#Camera.pol4: 7.13365723186292
+#Camera.pol5: 0.056303218962532
+#Camera.pol6: 10.4144677485333
+#Camera.pol7: 0.166354960773665
+#Camera.pol8: -5.86858687381081
+#Camera.pol9: 1.18165998645705
+#Camera.pol10: 3.1108311354746
+#Camera.pol11: 0.810799620714366
 
-# affine matrix
-Camera.c: 1
-Camera.d: 0
-Camera.e: 0
+
+# hyperparameters
+Camera.nrpol: 4
+Camera.nrinvpol: 9
+
+#forward polynomial f(\rho)
+Camera.a0: -312.8517
+Camera.a1: 0
+Camera.a2: 0.0009922424
+Camera.a3: 0.000000821
+
+#backward polynomial rho(\theta)
+Camera.pol0: 0.4637
+Camera.pol1: 1.8315
+Camera.pol2: -5.8017
+Camera.pol3: -28.3354
+Camera.pol4: 0.7325
+Camera.pol5: 121.7296
+Camera.pol6: 486.3592
+Camera.pol7: 566.9028
+
+#affine matrix
+Camera.c: 1.0017
+Camera.d: -0.0178
+Camera.e: 0.0202
 
 # principal point
-Camera.u0: 495
+Camera.u0: 655
 Camera.v0: 410
 
 # create a mirror mask for fisheye cameras

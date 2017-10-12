@@ -104,7 +104,7 @@ namespace MultiColSLAM
 			int camidx1 = referenceFrame.keypoint_to_cam.find(idx1)->second;
 			int camidx2 = currentFrame.keypoint_to_cam.find(idx2)->second;
 			// save which index belongs to which bearing vector, so that we can recover the
-			// observations later
+			// observations later (local -> global)
 			bear1_cont_indices[camidx1].push_back(idx1);
 			bear1[camidx1].push_back(opengv::bearingVector_t(mvKeysRays1[idx1](0),
 				mvKeysRays1[idx1](1), mvKeysRays1[idx1](2)));

@@ -159,6 +159,7 @@ namespace MultiColSLAM
 		// get functions
 		int GetNrCams() { return static_cast<int>(camModels.size()); }
 
+		/** \brief return c-th cam model */
 		cCamModelGeneral_ GetCamModelObj(int c) { return camModels[c]; }
 		cv::Matx<double, 6, 1> Get_M_t_min() { return M_t_min; }
 

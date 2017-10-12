@@ -69,4 +69,4 @@ Viewer.ViewpointX: 1.0
 Viewer.ViewpointY: 1.0
 Viewer.ViewpointZ: 1.0
 Viewer.ViewpointF: 500.0
-Viewer.DrawNrCams: 1
+Viewer.DrawNrCams: 4

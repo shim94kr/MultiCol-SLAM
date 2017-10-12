@@ -198,7 +198,7 @@ namespace MultiColSLAM
 		/** \brief Mirror Mask는 곡면 바깥부분을 제외시키는 역할을 한다. 이것으로 차체를 가리면 될 것 같다. */
 		cv::Mat GetMirrorMask(int pyrL) { return mirrorMasks[pyrL]; }
 		void SetMirrorMasks(std::vector<cv::Mat> mirrorMasks_) { mirrorMasks = mirrorMasks_; }
-
+		/** \brief check whether (u,v) at pyr level in pyramid is in Mirror mask. true if it is, false if isn't */
 		bool isPointInMirrorMask(const double& u, const double& v, int pyr);
 
 

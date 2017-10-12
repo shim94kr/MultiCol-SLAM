@@ -88,14 +88,14 @@ namespace MultiColSLAM
 			double parallax,
 			int currCam);
 
-		// Keypoints from Reference Frame (Frame 1)
+		/** \brief Keypoints from Reference Frame (Frame 1) */
 		std::vector<cv::KeyPoint> mvKeys1;
 		std::vector<cv::Vec3d> mvKeysRays1;
-		// Keypoints from Current Frame (Frame 2)
+		/** \brief Keypoints from Current Frame (Frame 2) */
 		std::vector<cv::KeyPoint> mvKeys2;
 		std::vector<cv::Vec3d> mvKeysRays2;
 
-		// Current Matches from Reference to Current
+		/** \brief Current Matches from Reference to Current */
 		std::vector<Match> mvMatches12;
 		std::vector<bool> mvbMatched1;
 
